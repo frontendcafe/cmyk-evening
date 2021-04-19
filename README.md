@@ -1,3 +1,7 @@
 # Proyecto Evening Tours
 
-Nacho
+
+- Nacho
+- Astrid
+- Fran
+
