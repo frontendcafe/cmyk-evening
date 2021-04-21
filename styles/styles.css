@@ -1,70 +1,185 @@
+/** @format */
+
 :root {
-  --main-font: 'Nunito', sans-serif;
-  --active-button: "#FE6142";
-  --secondary-button: "#3F51B5";
-  --primary-text: "#120C38";
-  --shadow: "#FDFDFE";
-  --primary-background: "#FFFFFF";
-  --secondary-background: "#172176"; 
+    --main-font: "Nunito", sans-serif;
+    --active-button: "#FE6142";
+    --secondary-button: "#3F51B5";
+    --primary-text: "#120C38";
+    --shadow: "#FDFDFE";
+    --primary-background: "#FFFFFF";
+    --secondary-background: "#172176";
 
-  --h1-font-size: 72px;
-  --h2-font-size: 48px;
-  --h3-font-size: 34px; 
-  --h4-font-size: 32px;
-  --subtitle-font-size: 34px;
-  --body-font-size: 18px;
-  --footer-font-size: 24px;
-  --buttons-text-font-size: 16px;
-  --categories-font-size: 18px;
-  --links-font-size: 24px;
+    --h1-font-size: 72px;
+    --h2-font-size: 48px;
+    --h3-font-size: 34px;
+    --h4-font-size: 32px;
+    --subtitle-font-size: 34px;
+    --body-font-size: 18px;
+    --footer-font-size: 24px;
+    --buttons-text-font-size: 16px;
+    --categories-font-size: 18px;
+    --links-font-size: 24px;
 
-  --h1-font-weight: 700;
-  --h2-font-weight: 800;
-  --h3-font-weight: 800; 
-  --h4-font-weight: 700;
-  --subtitle-font-weight: 400;
-  --body-regular-font-weight: 400;
-  --body-bold-font-weight: 700;
-  --footer-font-weight: 700;
-  --buttons-text-font-weight: 900;
-  --categories-font-weight: 800;
-  --links-font-weight: 700;
+    --h1-font-weight: 700;
+    --h2-font-weight: 800;
+    --h3-font-weight: 800;
+    --h4-font-weight: 700;
+    --subtitle-font-weight: 400;
+    --body-regular-font-weight: 400;
+    --body-bold-font-weight: 700;
+    --footer-font-weight: 700;
+    --buttons-text-font-weight: 900;
+    --categories-font-weight: 800;
+    --links-font-weight: 700;
+
+    --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
+    --border: 17px solid white;
 }
 
 /* General Styles */
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  font-family: var(--main-font); 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: var(--main-font);
 }
 
 /* Mobile */
 .container {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
-  font-size: var(--h1-font-size);
-  font-weight: var(--h1-font-weight);
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+}
+
+.map-container {
+    width: 770;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+    box-shadow: var(--border-shadow);
+    border: var(--border);
+}
+
+/*Itinerario*/
+.itinerario-iframe {
+    border-radius: 21px;
+    border: 17px solid red;
+}
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.itinerario-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    padding: 3rem 0;
+    border: 1px solid red;
+}
+.itinerario-wrapper {
+    padding: 2rem;
+    border-radius: 15px;
+}
+.itinerario-container h1 {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+.itinerario-container .sessions {
+    margin-top: 2rem;
+    border-radius: 12px;
+    position: relative;
+}
+.itinerario-container li {
+    padding-bottom: 1.5rem;
+    border-left: 1px solid #abaaed;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+    &:last-child {
+        border: 0px;
+        padding-bottom: 0;
+    }
+    &:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: white;
+        border: 1px solid #4e5ed3;
+        box-shadow: 3px 3px 0px #bab5f8;
+        box-shadow: 3px 3px 0px #bab5f8;
+        border-radius: 50%;
+        position: absolute;
+        left: -10px;
+        top: 0px;
+    }
+}
+.itinerario-container .time {
+    color: #2a2839;
+    font-weight: 500;
+    @include mobile-and-up {
+        font-size: 0.9rem;
+    }
+    @include mobile-only {
+        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+    }
+}
+.itinerario-container p {
+    color: #4f4f4f;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    @include mobile-only {
+        font-size: 0.9rem;
+    }
 }
 
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
-  
 }
 
 /* Desktop */
-@media (min-width: 1025px){
-  
+@media (min-width: 1025px) {
+    .itinerario-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        padding: 3rem 0;
+        border: 1px solid red;
+    }
 }
