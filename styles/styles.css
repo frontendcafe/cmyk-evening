@@ -90,15 +90,47 @@ h1 {
 }
 
 .tour-card {
-  background-image: url(../assets/imgs/México\ 1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 30vh;
-  margin: 0 1.5rem 1.5rem;
+  margin: 0 1.5rem 3rem;
   border-radius: 30px;
   border: #fff solid 10px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.37);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.tour-card-1 {
+  position: relative;
+  background: #333 url(../assets/imgs/mexico1.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tour-card-2 {
+  position: relative;
+  background: #fff url(../assets/imgs/rionegro-arg1.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tour-card-3 {
+  position: relative;
+  background: #fff url(../assets/imgs/machu-pichu.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tour-card-1::after,
+.tour-card-2::after,
+.tour-card-3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .card-content {
@@ -108,6 +140,11 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Hover */
+.tour-card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
 }
 
 .first-content {
@@ -134,10 +171,6 @@ h1 {
 .card-place {
   font-size: 36px;
   font-weight: 800;
-}
-
-/* Other Size*/
-@media (min-width: 450px) and (max-width: 768px) {
 }
 
 /* Tablet */
