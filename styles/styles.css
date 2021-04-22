@@ -63,6 +63,11 @@ li {
     padding: 0;
     font-weight: normal;
     font-family: var(--main-font);
+
+}
+
+.fondo-blanco{
+    background-color: white;
 }
 
 /* Mobile */
@@ -87,6 +92,103 @@ h1 {
     border-radius: 21px;
     box-shadow: var(--border-shadow);
     border: var(--border);
+}
+
+
+
+/* Navegacion */
+.navegacion-container {
+    width: 100vw;
+    
+}
+.navegacion-fija{
+    display: flex;
+    width: 100vw;
+    height: 68px;
+    justify-content: space-between;
+    
+}
+.navegacion-logo{
+    height: 100%;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.img-logo-oscuro{
+    width: 110.33px;
+    height: 43.41px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navegacion-hamburguesa{
+    height: 100%;
+    margin-right: 25px;
+}
+.navegacion-hamburguesa img{
+    width: 24px;
+    height: 18px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#img-cruz{
+    display: none;
+}
+.navegacion-desplegable{
+    display: none;
+    width: 100%;
+    height: 300px;
+}
+.navegacion-desplegable div{
+    height: 25%;
+    padding-left: 20px;
+}
+.navegacion-desplegable div a{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-style: normal;
+    font-size: var(--links-font-size);
+    font-weight: var(--links-font-weight);
+    color: #120C38;
+
+}
+.navegacion-desktop{
+    display: none;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+
+}
+.navegacion-links{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion-links div{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+.navegacion-links div a{
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-style: normal;
+    font-size: var(--links-font-size);
+    font-weight: var(--links-font-weight);
+    color: #120C38;
+
+
+}
+.navegacion-fondo-imagen{
+    background-image: url(/assets/imgs/Argentina\ -\ Buenos\ Aires.jpg);
+    height: 614px;
+    background-size: cover;
 }
 
 /*Itinerario*/
@@ -128,7 +230,7 @@ li {
     position: relative;
     padding-left: 20px;
     margin-left: 10px;
-    &:last-child {
+    /* &:last-child {
         border: 0px;
         padding-bottom: 0;
     }
@@ -144,27 +246,32 @@ li {
         position: absolute;
         left: -10px;
         top: 0px;
-    }
+    } */
 }
 .itinerario-container .time {
     color: #2a2839;
     font-weight: 500;
-    @include mobile-and-up {
+    /* @include mobile-and-up {
         font-size: 0.9rem;
     }
     @include mobile-only {
         margin-bottom: 0.3rem;
         font-size: 0.85rem;
-    }
+    } */
 }
 .itinerario-container p {
     color: #4f4f4f;
     font-family: sans-serif;
     line-height: 1.5;
     margin-top: 0.4rem;
-    @include mobile-only {
+    /* @include mobile-only {
         font-size: 0.9rem;
-    }
+    } */
+}
+
+/*MODAL DE RESERVAS*/
+.modal-container{
+    display: none;
 }
 
 /* Tablet */
@@ -181,5 +288,28 @@ li {
         padding: 0 1rem;
         padding: 3rem 0;
         border: 1px solid red;
+    }
+
+    /*Navegacion*/
+    .navegacion-fondo-imagen{
+        background-image: url(/assets/imgs/Argentina\ -\ Buenos\ Aires.jpg);
+        height: 735px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .navegacion-fija{
+        display: none;
+    }
+    .navegacion-desktop{
+        display: flex;
+    }
+
+    .img-logo-oscuro{
+        width: 178px;
+        height: 66.41px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
