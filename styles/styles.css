@@ -17,6 +17,7 @@
   --buttons-text-font-size: 16px;
   --categories-font-size: 18px;
   --links-font-size: 24px;
+  --subtitle-body-font-size: 22px;
 
   --h1-font-weight: 700;
   --h2-font-weight: 800;
@@ -59,22 +60,22 @@ h1 {
   font-weight: var(--h1-font-weight);
 }
 
-/* Tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
-  
-}
-
-/* Desktop */
-@media (min-width: 1025px){
-  
-}
-
 .descripcion-tour {
   margin: 40px;
+  font: var(--primary-text);
+  color: rgb(48,42,81);
+}
+
+.informacion-tour {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px;
+  gap: 1em;
 }
 
 .city-country {
-  font-size: var(--subtitle-font-size);
+  font-size: var(--subtitle-body-font-size);
 }
 
 .city-name {
@@ -83,11 +84,29 @@ h1 {
 }
 
 #sobre-el-tour {
-  font-size: var(--subtitle-font-size);
-  font-weight: var(--primary-text);
+  font-size: var(--subtitle-body-font-size);
+  font-weight: var(--h4-font-weight);
+  margin: 5px 0 10px 0;
+}
+
+.subtitulo {
+  color: orangered;
+  font-weight: var(--h4-font-weight);
+  margin-bottom: 10px;
 }
 
 .description {
   font-size: var(--body-font-size);
   font-weight: var(--body-regular-font-weight);
+}
+
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+}
+
+/* Desktop */
+@media (min-width: 1025px){
+  
 }
