@@ -70,9 +70,24 @@ h1 {
 }
 
 .descripcion-tour {
-  color: aqua;
+  margin: 40px;
 }
 
 .city-country {
-  color:aqua;
+  font-size: var(--subtitle-font-size);
+}
+
+.city-name {
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+}
+
+#sobre-el-tour {
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--primary-text);
+}
+
+.description {
+  font-size: var(--body-font-size);
+  font-weight: var(--body-regular-font-weight);
 }
