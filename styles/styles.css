@@ -1,16 +1,19 @@
 :root {
   --main-font: 'Nunito', sans-serif;
-  --active-button: '#FE6142';
-  --secondary-button: '#3F51B5';
-  --primary-text: '#120C38';
-  --shadow: '#FDFDFE';
-  --primary-background: '#FFFFFF';
-  --secondary-background: '#172176';
+  --active-button: #fe6142;
+  --secondary-button: #3f51b5;
+  --primary-text: #120c38;
+  --shadow: #fdfdfe;
+  --primary-background: #ffffff;
+  --secondary-background: #172176;
+  --link-color: #a2acb9;
+  --color-white: #fff;
 
   --h1-font-size: 72px;
   --h2-font-size: 48px;
   --h3-font-size: 34px;
   --h4-font-size: 32px;
+  --h6-font-size: 18px;
   --subtitle-font-size: 34px;
   --body-font-size: 18px;
   --footer-font-size: 24px;
@@ -22,6 +25,8 @@
   --h2-font-weight: 800;
   --h3-font-weight: 800;
   --h4-font-weight: 700;
+  --h6-font-weight: 400;
+
   --subtitle-font-weight: 400;
   --body-regular-font-weight: 400;
   --body-bold-font-weight: 700;
@@ -29,6 +34,9 @@
   --buttons-text-font-weight: 900;
   --categories-font-weight: 800;
   --links-font-weight: 700;
+
+  --border-card: 30px;
+  --box-shadow-card: 4px 4px 13px rgba(0, 0, 0, 0.13);
 }
 
 /* General Styles */
@@ -81,7 +89,7 @@ h1 {
 }
 
 .third-title {
-  color: #120c38;
+  color: var(--primary-text);
   font-weight: var(--h3-font-weight);
   font-size: var(--h3-font-size);
   line-height: 22px;
@@ -102,64 +110,50 @@ h1 {
 .tour-card {
   height: 30vh;
   margin: 0 1.5rem 3rem;
-  border-radius: 30px;
+  border-radius: var(--border-card);
   border: #fff solid 10px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: var(--box-shadow-card);
   transition: all 0.3s;
   z-index: 1;
 }
 
-.tour-card-1 {
-  position: relative;
+div .tour-card-1 {
   background: #333 url(../assets/imgs/mexico1.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
 }
 
-.tour-card-2 {
-  position: relative;
+div .tour-card-2 {
   background: #fff url(../assets/imgs/rionegro-arg1.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
 }
 
-.tour-card-3 {
-  position: relative;
+div .tour-card-3 {
   background: #fff url(../assets/imgs/machu-pichu.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
 }
 
-.tour-card-4 {
-  position: relative;
+div .tour-card-4 {
   background: #fff url(../assets/imgs/baires-arg1.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
+
   display: none;
 }
 
-.tour-card-5 {
-  position: relative;
+div .tour-card-5 {
   background: #fff url(../assets/imgs/roma-ita1.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
+
   display: none;
 }
 
-.tour-card-6 {
-  position: relative;
+div .tour-card-6 {
   background: #fff url(../assets/imgs/santiago-chi1.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
+
   display: none;
 }
 
-.tour-card-1::after,
-.tour-card-2::after,
-.tour-card-3::after,
-.tour-card-4::after,
-.tour-card-5::after,
-.tour-card-6::after {
+div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .tour-card-6) {
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+
+div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .tour-card-6)::after {
   content: '';
   position: absolute;
   top: 0;
@@ -172,7 +166,7 @@ h1 {
 
 .card-content {
   height: 100%;
-  color: #fff;
+  color: var(--color-white);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -181,33 +175,33 @@ h1 {
 
 /* Hover */
 .tour-card:hover {
-  transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1rem) scale(1);
 }
 
 .first-content {
   align-self: flex-end;
   text-align: center;
   align-content: center;
-  background-color: #fe6142;
+  background-color: var(--active-button);
   padding: 0.5rem 1rem;
   border-radius: 21px;
 }
 
 .tour-price {
-  font-weight: 800;
-  font-size: 18px;
+  font-weight: var(--h3-font-weight);
+  font-size: var(--body-font-size);
   line-height: 25px;
   letter-spacing: -0.015em;
 }
 
 .card-country {
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: var(--h6-font-weight);
+  font-size: var(--h6-font-size);
 }
 
 .card-place {
-  font-size: 36px;
-  font-weight: 800;
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
 }
 
 /* Tablet */
@@ -222,8 +216,8 @@ h1 {
   .btn-text:link,
   .btn-text:visited {
     margin-left: auto;
-    font-size: 18px;
-    color: #a2acb9;
+    font-size: var(--body-font-size);
+    color: var(--link-color);
     display: inline-block;
     text-decoration: none;
     margin-right: 0.5rem;
@@ -252,9 +246,7 @@ h1 {
 
 /* Desktop */
 @media (min-width: 1025px) {
-  .tour-card-4,
-  .tour-card-5,
-  .tour-card-6 {
+  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
     display: block;
   }
 
