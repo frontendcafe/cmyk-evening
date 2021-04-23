@@ -2,12 +2,12 @@
 
 :root {
     --main-font: "Nunito", sans-serif;
-    --active-button: "#FE6142";
-    --secondary-button: "#3F51B5";
-    --primary-text: "#120C38";
-    --shadow: "#FDFDFE";
-    --primary-background: "#FFFFFF";
-    --secondary-background: "#172176";
+    --active-button: #FE6142;
+    --secondary-button: #3F51B5;
+    --primary-text: #120C38;
+    --shadow: #FDFDFE;
+    --primary-background: #FFFFFF;
+    --secondary-background: #172176;
 
     --h1-font-size: 72px;
     --h2-font-size: 48px;
@@ -34,6 +34,8 @@
 
     --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
     --border: 17px solid white;
+    --gradient: linear-gradient(180deg, #FDFDFE 0%, #ECEFF1 100%);
+opacity: 0.72;
 }
 
 /* General Styles */
@@ -76,110 +78,138 @@ h1 {
     font-weight: var(--h1-font-weight);
 }
 
+.itinerario-container,
+.itinerario-info,
+.itinerario-container-inicio, 
+.timeline-icono-morado,
+.itinerario-container-paradas,
+.map-container,
+.map-iframe-container,
+.span-icon,
 .map-container {
-    width: 770;
-    height: 100%;
-    max-width: 100%;
+ display: flex;
+}
+
+.itinerario-container,
+.timeline-icono-morado,
+.span-icon,
+.map-iframe-container,
+.map-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.itinerario-container {
+    flex-flow: column nowrap;
+    width: 100%;
+    padding:0;
+}
+
+.itinerario-info h3{
+    font-size: var(--footer-font-size);
+    font-weight: bold;
+    margin: 30px 0;
+}
+ 
+.itinerario-container-inicio{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itinerario-icono-morado{
+    height: 42px;
+    width: 40px;
+    background-image: url(/assets/icons/icon-pin.png);
+    background-size: 32px ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itinerario-text{
+    width: 100%;
+    padding-left: 14px;
+    padding-bottom: 16px;
+}
+
+.itinerario-container-paradas{
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 25px 0px;
+}
+.span-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.itinerario-container-line{
+    height:80px;
+    background-image: url(/assets/icons/line.png);
+    background-repeat: repeat-y;
+    background-position: 50%;
+    z-index: -1;
+
+}
+
+.map-container {
+    width: 350px;
+    height: 40%
+    max-width: 50%;
     margin: 0 auto;
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 21px;
     box-shadow: var(--border-shadow);
-    border: var(--border);
+    border: var(--border); 
 }
 
-/*Itinerario*/
-.itinerario-iframe {
-    border-radius: 21px;
-    border: 17px solid red;
-}
-ul,
-li {
-    list-style: none;
-    padding: 0;
+span{
+    background: black;
+    color: white;
 }
 
-.itinerario-container {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    padding: 3rem 0;
-    border: 1px solid red;
-}
-.itinerario-wrapper {
-    padding: 2rem;
-    border-radius: 15px;
-}
-.itinerario-container h1 {
-    font-size: 1.1rem;
-    font-family: sans-serif;
-}
-.itinerario-container .sessions {
-    margin-top: 2rem;
-    border-radius: 12px;
-    position: relative;
-}
-.itinerario-container li {
-    padding-bottom: 1.5rem;
-    border-left: 1px solid #abaaed;
-    position: relative;
-    padding-left: 20px;
-    margin-left: 10px;
-    &:last-child {
-        border: 0px;
-        padding-bottom: 0;
-    }
-    &:before {
-        content: "";
-        width: 15px;
-        height: 15px;
-        background: white;
-        border: 1px solid #4e5ed3;
-        box-shadow: 3px 3px 0px #bab5f8;
-        box-shadow: 3px 3px 0px #bab5f8;
-        border-radius: 50%;
-        position: absolute;
-        left: -10px;
-        top: 0px;
-    }
-}
-.itinerario-container .time {
-    color: #2a2839;
-    font-weight: 500;
-    @include mobile-and-up {
-        font-size: 0.9rem;
-    }
-    @include mobile-only {
-        margin-bottom: 0.3rem;
-        font-size: 0.85rem;
-    }
-}
-.itinerario-container p {
-    color: #4f4f4f;
-    font-family: sans-serif;
-    line-height: 1.5;
-    margin-top: 0.4rem;
-    @include mobile-only {
-        font-size: 0.9rem;
-    }
-}
 
 /* Tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1136px) {
+
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
 }
 
 /* Desktop */
-@media (min-width: 1025px) {
-    .itinerario-container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 0 1rem;
-        padding: 3rem 0;
-        border: 1px solid red;
+@media (min-width: 1136px) {
+
+.itinerario-info{
+    width:400px;
+}
+
+.itinerario-container {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 60px;
+}
+
+.map-iframe-container{
+    align-items: center;
+    justify-content: flex-end;
+}
+.map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
     }
+
 }
