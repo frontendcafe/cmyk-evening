@@ -120,9 +120,18 @@ h1 {
   overflow: hidden;
 }
 
+.tour-card-4 {
+  position: relative;
+  background: #fff url(../assets/imgs/baires-arg1.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  display: none;
+}
+
 .tour-card-1::after,
 .tour-card-2::after,
-.tour-card-3::after {
+.tour-card-3::after,
+.tour-card-4::after {
   content: '';
   position: absolute;
   top: 0;
@@ -175,6 +184,15 @@ h1 {
 
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .tour-card-4 {
+    display: block;
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
 }
 
 /* Desktop */
