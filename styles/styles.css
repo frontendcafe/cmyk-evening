@@ -77,7 +77,6 @@ h1 {
 }
 
 .container-title {
-  text-align: center;
   margin: 2.5rem 0;
 }
 
@@ -86,7 +85,13 @@ h1 {
   font-weight: var(--h3-font-weight);
   font-size: var(--h3-font-size);
   line-height: 22px;
-  padding: 0 1rem;
+  margin-left: 1.5rem;
+  text-align: center;
+}
+
+.btn-text,
+.arrow-next {
+  display: none;
 }
 
 .cards-section {
@@ -206,7 +211,34 @@ h1 {
 }
 
 /* Tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
+  .container-title {
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-text:link,
+  .btn-text:visited {
+    margin-left: auto;
+    font-size: 18px;
+    color: #a2acb9;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 0.5rem;
+  }
+
+  .container-title a:hover ~ svg {
+    transform: translateX(3px);
+  }
+
+  .arrow-next {
+    display: inline-block;
+    margin-right: 1.5rem;
+    transition: all 0.2s;
+  }
+
   .tour-card-4 {
     display: block;
   }
