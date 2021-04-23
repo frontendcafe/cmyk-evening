@@ -68,3 +68,11 @@ h1 {
 @media (min-width: 1025px){
   
 }
+
+.descripcion-tour {
+  color: aqua;
+}
+
+.city-country {
+  color:aqua;
+}
