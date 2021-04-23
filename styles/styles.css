@@ -71,6 +71,11 @@ h1 {
   overflow-x: hidden;
 }
 
+.mejores-tours {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
 .container-title {
   text-align: center;
   margin: 2.5rem 0;
@@ -128,10 +133,28 @@ h1 {
   display: none;
 }
 
+.tour-card-5 {
+  position: relative;
+  background: #fff url(../assets/imgs/roma-ita1.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  display: none;
+}
+
+.tour-card-6 {
+  position: relative;
+  background: #fff url(../assets/imgs/santiago-chi1.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  display: none;
+}
+
 .tour-card-1::after,
 .tour-card-2::after,
 .tour-card-3::after,
-.tour-card-4::after {
+.tour-card-4::after,
+.tour-card-5::after,
+.tour-card-6::after {
   content: '';
   position: absolute;
   top: 0;
@@ -197,4 +220,15 @@ h1 {
 
 /* Desktop */
 @media (min-width: 1025px) {
+  .tour-card-4,
+  .tour-card-5,
+  .tour-card-6 {
+    display: block;
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+  }
 }
