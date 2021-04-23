@@ -1,48 +1,49 @@
+/** @format */
+
 :root {
-  --main-font: 'Nunito', sans-serif;
-  --active-button: #fe6142;
-  --secondary-button: #3f51b5;
-  --primary-text: #120c38;
-  --shadow: #fdfdfe;
-  --primary-background: #ffffff;
-  --secondary-background: #172176;
-  --link-color: #a2acb9;
-  --color-white: #fff;
+    --main-font: "Nunito", sans-serif;
+    --active-button: #FE6142;
+    --secondary-button: #3F51B5;
+    --primary-text: #120C38;
+    --shadow: #FDFDFE;
+    --primary-background: #FFFFFF;
+    --secondary-background: #172176;
 
-  --h1-font-size: 72px;
-  --h2-font-size: 48px;
-  --h3-font-size: 34px;
-  --h4-font-size: 32px;
-  --h6-font-size: 18px;
-  --subtitle-font-size: 34px;
-  --body-font-size: 18px;
-  --footer-font-size: 24px;
-  --buttons-text-font-size: 16px;
-  --categories-font-size: 18px;
-  --links-font-size: 24px;
+    --h1-font-size: 72px;
+    --h2-font-size: 48px;
+    --h3-font-size: 34px;
+    --h4-font-size: 32px;
+    --subtitle-font-size: 34px;
+    --body-font-size: 18px;
+    --footer-font-size: 24px;
+    --buttons-text-font-size: 16px;
+    --categories-font-size: 18px;
+    --links-font-size: 24px;
 
-  --h1-font-weight: 700;
-  --h2-font-weight: 800;
-  --h3-font-weight: 800;
-  --h4-font-weight: 700;
-  --h6-font-weight: 400;
+    --h1-font-weight: 700;
+    --h2-font-weight: 800;
+    --h3-font-weight: 800;
+    --h4-font-weight: 700;
+    --subtitle-font-weight: 400;
+    --body-regular-font-weight: 400;
+    --body-bold-font-weight: 700;
+    --footer-font-weight: 700;
+    --buttons-text-font-weight: 900;
+    --categories-font-weight: 800;
+    --links-font-weight: 700;
 
-  --subtitle-font-weight: 400;
-  --body-regular-font-weight: 400;
-  --body-bold-font-weight: 700;
-  --footer-font-weight: 700;
-  --buttons-text-font-weight: 900;
-  --categories-font-weight: 800;
-  --links-font-weight: 700;
-
-  --border-card: 30px;
-  --box-shadow-card: 4px 4px 13px rgba(0, 0, 0, 0.13);
+    --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
+    --border: 17px solid white;
+    --gradient: linear-gradient(180deg, #FDFDFE 0%, #ECEFF1 100%);
+    --border-card: 30px;
+    --box-shadow-card: 4px 4px 13px rgba(0, 0, 0, 0.13);
+    opacity: 0.72;
 }
 
 /* General Styles */
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,
@@ -60,11 +61,12 @@ h5,
 h6,
 p,
 ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  font-family: var(--main-font);
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: var(--main-font);
 }
 
 /* Mobile */
@@ -204,47 +206,102 @@ div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .to
   font-weight: var(--h3-font-weight);
 }
 
-/* Tablet */
-@media (min-width: 769px) {
-  .container-title {
-    margin: 2.5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .btn-text:link,
-  .btn-text:visited {
-    margin-left: auto;
-    font-size: var(--body-font-size);
-    color: var(--link-color);
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 0.5rem;
-  }
-
-  .container-title a:hover ~ svg {
-    transform: translateX(3px);
-  }
-
-  .arrow-next {
-    display: inline-block;
-    margin-right: 1.5rem;
-    transition: all 0.2s;
-  }
-
-  .tour-card-4 {
-    display: block;
-  }
-
-  .cards-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-  }
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
 }
 
-/* Desktop */
+.itinerario-container,
+.itinerario-info,
+.itinerario-container-inicio, 
+.timeline-icono-morado,
+.itinerario-container-paradas,
+.map-container,
+.map-iframe-container,
+.span-icon,
+.map-container {
+ display: flex;
+}
+
+.itinerario-container,
+.timeline-icono-morado,
+.span-icon,
+.map-iframe-container,
+.map-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.itinerario-container {
+    flex-flow: column nowrap;
+    width: 100%;
+    padding:0;
+}
+
+.itinerario-info h3{
+    font-size: var(--footer-font-size);
+    font-weight: bold;
+    margin: 30px 0;
+}
+ 
+.itinerario-container-inicio{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itinerario-icono-morado{
+    height: 42px;
+    width: 40px;
+    background-image: url(/assets/icons/icon-pin.png);
+    background-size: 32px ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itinerario-text{
+    width: 100%;
+    padding-left: 14px;
+    padding-bottom: 16px;
+}
+
+.itinerario-container-paradas{
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 25px 0px;
+}
+.span-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.itinerario-container-line{
+    height:80px;
+    background-image: url(/assets/icons/line.png);
+    background-repeat: repeat-y;
+    background-position: 50%;
+    z-index: -1;
+
+}
+
+.map-container {
+    width: 350px;
+    height: 40%
+    max-width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+    box-shadow: var(--border-shadow);
+    border: var(--border); 
+}
+
+span{
+    background: black;
+    color: white;
+}
+
 @media (min-width: 1025px) {
   div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
     display: block;
@@ -255,4 +312,85 @@ div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .to
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
   }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1136px) {
+
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
+  
+     .container-title {
+      margin: 2.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-text:link,
+    .btn-text:visited {
+      margin-left: auto;
+      font-size: var(--body-font-size);
+      color: var(--link-color);
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 0.5rem;
+    }
+
+    .container-title a:hover ~ svg {
+      transform: translateX(3px);
+    }
+
+    .arrow-next {
+      display: inline-block;
+      margin-right: 1.5rem;
+      transition: all 0.2s;
+    }
+
+    .tour-card-4 {
+      display: block;
+    }
+
+    .cards-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1136px) {
+
+.itinerario-info{
+    width:400px;
+}
+
+.itinerario-container {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 60px;
+}
+
+.map-iframe-container{
+    align-items: center;
+    justify-content: flex-end;
+}
+.map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
 }
