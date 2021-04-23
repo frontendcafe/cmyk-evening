@@ -60,6 +60,8 @@ h1 {
   font-weight: var(--h1-font-weight);
 }
 
+
+/* detalles de los tours */
 .descripcion-tour {
   margin: 40px;
   font: var(--primary-text);
@@ -99,6 +101,7 @@ h1 {
   font-size: var(--body-font-size);
   font-weight: var(--body-regular-font-weight);
 }
+/* fin de los detalles del tour */
 
 
 /* Tablet */
