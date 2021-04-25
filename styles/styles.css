@@ -269,43 +269,45 @@ li {
     } */
 }
 
+
 /* NUESTRO EQUIPO */
 .equipo-container{
     width: 100vw;
-
-}
-.equipo-wrapper{
-    width: 100%;
-
-}
-.equipo-presentacion{
+    
+  }
+  .equipo-presentacion{
     padding: 5% 0 15px 0;
-}
-.equipo-presentacion h3{
+  }
+  .equipo-presentacion h3{
     font-size: var(--h3-font-size);
     color: var(--primary-text);
     font-weight: var(--h3-font-weight);
     text-align: center;
-}
-
-.equipo-presentacion div{
+  }
+  
+  .equipo-presentacion div{
     color: var(--primary-text);
     font-size: var(--body-font-size);
     line-height: 31px;
     letter-spacing: -0.015em;   
     padding: 5% 10%;
     text-align: justify;
-}
-.equipo-personas{
-    padding: 0 10%;
-    position: relative;
-    width: 100vw;
-}
-.equipo-personas-tarjeta{
-    text-align: -webkit-center;
-    width: 330px;
-}
-.tarjeta-imagen{
+  }
+  .equipo-tarjetas{
+    padding: 0 0 10% 0;
+    display: flex;
+    overflow: scroll;
+  }
+  .tarjeta{
+  width: 300px;
+  margin: 0 10%;
+  text-align: center;
+  }
+  .tarjeta-img{
+    display: flex;
+    justify-content: center;
+  }
+  .tarjeta-img div{
     border-radius: 50%;
     width: 270px;
     height: 270px;
@@ -313,35 +315,31 @@ li {
     margin-bottom: 30px;
     --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
     --border: 17px solid white;
-    background: linear-gradient(180deg, #FDFDFE 0%, #ECEFF1 100%);
-
-
-}
-.tarjeta-imagen img{
+    text-align: center;
+  }
+  .tarjeta-img div img{
     width: 160px;
     height: 160px;
     border-radius: 50%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-
-}
-.tarjeta-descripcion{}
-.tarjeta-descripcion h4{
+  }
+  .tarjeta-descripcion h4{
     font-size: var(--h4-font-size);
     font-weight: var(--h4-font-weight);
     color: var(--primary-text);
     line-height: 39px;
     margin: 20px 0;
-}
-.tarjeta-descripcion p{
+  }
+  .tarjeta-descripcion p{
     color: var(--primary-text);
     font-size: var(--body-font-size);
     line-height: 25px;
     margin: 10px 0;
-
-}
-.tarjeta-descripcion button{
+  
+  }
+  .tarjeta-descripcion button{
     background-color: var(--secondary-button);
     font-size: var(--buttons-text-font-size);
     font-weight: var(--buttons-text-font-weight);
@@ -353,53 +351,7 @@ li {
     color: #FFFFFF;
     margin: 15px 0 20px 0;
     text-decoration: none;
-}
-@keyframes display {
-    0% {
-      transform: translateX(200px);
-      opacity: 0;
-    }
-    10% {
-      transform: translateX(200px);
-      opacity: 1;
-    }
-    20% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    30% {
-      transform: translateX(-200px);
-      opacity: 0;
-    }
-    80% {
-        transform: translateX(-200px);
-        opacity: 0;
-      }
-
   }
-
-  .equipo-personas > div {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 150px);
-    opacity: 0;
-    animation: display 20s infinite;
-  }
-
-  div:nth-child(2) {
-    animation-delay: 4s;
-  }
-  div:nth-child(3) {
-    animation-delay: 8s;
-  }
-  div:nth-child(4) {
-    animation-delay: 12s;
-  }
-  div:nth-child(5) {
-    animation-delay: 16s;
-  }
-
-
 
 
 /*MODAL DE RESERVAS*/
@@ -445,4 +397,16 @@ li {
         top: 50%;
         transform: translateY(-50%);
     }
+
+    /*Nuestro Equipo*/
+
+    .equipo-tarjetas{
+        display: block;
+        text-align: center;
+      }
+      .tarjeta{
+
+        display: inline-block;
+        margin: 0 5% 5% 5%;
+      }
 }
