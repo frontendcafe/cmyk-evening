@@ -1,0 +1,12 @@
+div .third-title {
+  line-height: 1;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+  }
+}
