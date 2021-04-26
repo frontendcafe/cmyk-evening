@@ -1,7 +1,6 @@
 /** @format */
 
 :root {
-
   --main-font: 'Nunito', sans-serif;
   --active-button: #fe6142;
   --secondary-button: #3f51b5;
@@ -42,7 +41,6 @@
   --border: 17px solid white;
   --gradient: linear-gradient(180deg, #fdfdfe 0%, #eceff1 100%);
   --border-card: 30px;
-
 }
 
 /* General Styles */
@@ -73,10 +71,10 @@ li {
   padding: 0;
   font-weight: normal;
   font-family: var(--main-font);
-
+}
 
 .fondo-blanco {
-    background-color: white;
+  background-color: white;
 }
 
 /* Mobile */
@@ -85,7 +83,6 @@ h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
 }
-
 
 .container {
   width: 100vw;
@@ -107,7 +104,7 @@ h1 {
   font-weight: var(--h3-font-weight);
   font-size: var(--h3-font-size);
   line-height: 22px;
-  margin-left: 1.5rem;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -322,6 +319,10 @@ span {
     align-items: center;
   }
 
+  .third-title {
+    margin-left: 1.5rem;
+  }
+
   .btn-text:link,
   .btn-text:visited {
     margin-left: auto;
@@ -366,7 +367,6 @@ span {
     border: var(--border);
   }
 
-
   div .tour-card-4 {
     display: block;
   }
@@ -404,304 +404,305 @@ span {
     box-shadow: var(--border-shadow);
     border: var(--border);
   }
-  
-  /* Navegacion */
+}
+/* Navegacion */
 
 .navegacion-container {
-    width: 100vw;
+  width: 100vw;
 }
 
 .navegacion-fija {
-    display: flex;
-    width: 100vw;
-    height: 68px;
-    justify-content: space-between;
+  display: flex;
+  width: 100vw;
+  height: 68px;
+  justify-content: space-between;
 }
 
 .navegacion-logo {
-    height: 100%;
-    margin-left: 20px;
-    padding-left: 10px;
+  height: 100%;
+  margin-left: 20px;
+  padding-left: 10px;
 }
 
 .img-logo-oscuro {
-    width: 110.33px;
-    height: 43.41px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 110.33px;
+  height: 43.41px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .navegacion-hamburguesa {
-    height: 100%;
-    margin-right: 25px;
+  height: 100%;
+  margin-right: 25px;
 }
 
 .navegacion-hamburguesa img {
-    width: 24px;
-    height: 18px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 24px;
+  height: 18px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #img-cruz {
-    display: none;
+  display: none;
 }
 
 .navegacion-desplegable {
-    display: none;
-    width: 100%;
-    height: 300px;
+  display: none;
+  width: 100%;
+  height: 300px;
 }
 
 .navegacion-desplegable div {
-    height: 25%;
-    padding-left: 20px;
+  height: 25%;
+  padding-left: 20px;
 }
 
 .navegacion-desplegable div a {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-decoration: none;
-    font-style: normal;
-    font-size: var(--links-font-size);
-    font-weight: var(--links-font-weight);
-    color: var(--primary-text);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-style: normal;
+  font-size: var(--links-font-size);
+  font-weight: var(--links-font-weight);
+  color: var(--primary-text);
 }
 
 .navegacion-desktop {
-    display: none;
-    width: 100vw;
-    height: 80px;
-    justify-content: space-between;
+  display: none;
+  width: 100vw;
+  height: 80px;
+  justify-content: space-between;
 }
 
 .navegacion-links {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navegacion-links div {
-    display: inline-block;
-    height: 100%;
-    width: 30%;
-    text-align: center;
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  text-align: center;
 }
 
 .navegacion-links div a {
-    position: relative;
-    top: 40%;
-    transform: translateY(-50%);
-    text-decoration: none;
-    font-style: normal;
-    font-size: var(--links-font-size);
-    font-weight: var(--links-font-weight);
-    color: var(--primary-text);
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-style: normal;
+  font-size: var(--links-font-size);
+  font-weight: var(--links-font-weight);
+  color: var(--primary-text);
 }
 
 .navegacion-fondo-imagen {
-    background-image: url(/assets/imgs/Argentina\ -\ Buenos\ Aires.jpg);
-    height: 614px;
-    background-size: cover;
+  background-image: url(/assets/imgs/Argentina\ -\ Buenos\ Aires.jpg);
+  height: 614px;
+  background-size: cover;
 }
 
 /* CATEGORIAS POR PAISES */
 
 .paises-container {
-    width: 100vw;
+  width: 100vw;
 }
 
 .paises-wrapper {
-    box-shadow: 4px 4px 13px 0px #00000021;
-    border-radius: 15px;
-    display: flex;
-    margin: 5%;
-    justify-content: space-around;
-    padding-top: 3% 0;
+  box-shadow: 4px 4px 13px 0px #00000021;
+  border-radius: 15px;
+  display: flex;
+  margin: 5%;
+  justify-content: space-around;
+  padding-top: 3% 0;
 }
 
 .pais {
-    text-align: center;
-    padding: 3% 0;
-    cursor: pointer;
+  text-align: center;
+  padding: 3% 0;
+  cursor: pointer;
 }
 
-.pais-bandera {}
+/* .pais-bandera {} */
 
 .pais-bandera div {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    --border: 17px solid white;
-    text-align: center;
-    background: linear-gradient(180deg, #FDFDFE 0%, #ECEFF1 100%);
-    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  --border: 17px solid white;
+  text-align: center;
+  background: linear-gradient(180deg, #fdfdfe 0%, #eceff1 100%);
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
 }
 
 .pais-bandera div img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .pais-nombre {
-    padding-top: 15%;
+  padding-top: 15%;
 }
 
 .pais-nombre p {
-    font-size: 14px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 22px;
-    text-align: center;
-    color: #061823;
+  font-size: 14px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: center;
+  color: #061823;
 }
 
 /* NUESTRO EQUIPO */
 
 .equipo-container {
-    width: 100vw;
+  width: 100vw;
 }
 
 .equipo-presentacion {
-    padding: 5% 0 15px 0;
+  padding: 5% 0 15px 0;
 }
 
 .equipo-presentacion h3 {
-    font-size: var(--h3-font-size);
-    color: var(--primary-text);
-    font-weight: var(--h3-font-weight);
-    text-align: center;
+  font-size: var(--h3-font-size);
+  color: var(--primary-text);
+  font-weight: var(--h3-font-weight);
+  text-align: center;
 }
 
 .equipo-presentacion div {
-    color: var(--primary-text);
-    font-size: var(--body-font-size);
-    line-height: 31px;
-    letter-spacing: -0.015em;
-    padding: 5% 10%;
-    text-align: justify;
+  color: var(--primary-text);
+  font-size: var(--body-font-size);
+  line-height: 31px;
+  letter-spacing: -0.015em;
+  padding: 5% 10%;
+  text-align: justify;
 }
 
 .equipo-tarjetas {
-    padding: 0 0 10% 0;
-    display: flex;
-    overflow: scroll;
+  padding: 0 0 10% 0;
+  display: flex;
+  overflow: scroll;
 }
 
 .tarjeta {
-    width: 300px;
-    margin: 0 10%;
-    text-align: center;
+  width: 300px;
+  margin: 0 10%;
+  text-align: center;
 }
 
 .tarjeta-img {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .tarjeta-img div {
-    border-radius: 50%;
-    width: 270px;
-    height: 270px;
-    background: linear-gradient(180deg, #FDFDFE 0%, #ECEFF1 100%);
-    margin-bottom: 30px;
-    --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
-    --border: 17px solid white;
-    text-align: center;
+  border-radius: 50%;
+  width: 270px;
+  height: 270px;
+  background: linear-gradient(180deg, #fdfdfe 0%, #eceff1 100%);
+  margin-bottom: 30px;
+  --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
+  --border: 17px solid white;
+  text-align: center;
 }
 
 .tarjeta-img div img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .tarjeta-descripcion h4 {
-    font-size: var(--h4-font-size);
-    font-weight: var(--h4-font-weight);
-    color: var(--primary-text);
-    line-height: 39px;
-    margin: 20px 0;
+  font-size: var(--h4-font-size);
+  font-weight: var(--h4-font-weight);
+  color: var(--primary-text);
+  line-height: 39px;
+  margin: 20px 0;
 }
 
 .tarjeta-descripcion p {
-    color: var(--primary-text);
-    font-size: var(--body-font-size);
-    line-height: 25px;
-    margin: 10px 0;
+  color: var(--primary-text);
+  font-size: var(--body-font-size);
+  line-height: 25px;
+  margin: 10px 0;
 }
 
 .tarjeta-descripcion button {
-    background-color: var(--secondary-button);
-    font-size: var(--buttons-text-font-size);
-    font-weight: var(--buttons-text-font-weight);
-    width: 277px;
-    height: 55px;
-    border-radius: 37px;
-    border: none;
-    line-height: 22px;
-    color: #FFFFFF;
-    margin: 15px 0 20px 0;
-    text-decoration: none;
+  background-color: var(--secondary-button);
+  font-size: var(--buttons-text-font-size);
+  font-weight: var(--buttons-text-font-weight);
+  width: 277px;
+  height: 55px;
+  border-radius: 37px;
+  border: none;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 15px 0 20px 0;
+  text-decoration: none;
 }
 
 /*Itinerario*/
 
 .itinerario-iframe {
-    border-radius: 21px;
-    border: 17px solid red;
+  border-radius: 21px;
+  border: 17px solid red;
 }
 
-ul, li {
-    list-style: none;
-    padding: 0;
+ul,
+li {
+  list-style: none;
+  padding: 0;
 }
 
 .itinerario-container {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    padding: 3rem 0;
-    border: 1px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  padding: 3rem 0;
+  border: 1px solid red;
 }
 
 .itinerario-wrapper {
-    padding: 2rem;
-    border-radius: 15px;
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .itinerario-container h1 {
-    font-size: 1.1rem;
-    font-family: sans-serif;
+  font-size: 1.1rem;
+  font-family: sans-serif;
 }
 
 .itinerario-container .sessions {
-    margin-top: 2rem;
-    border-radius: 12px;
-    position: relative;
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
 }
 
 .itinerario-container li {
-    padding-bottom: 1.5rem;
-    border-left: 1px solid #abaaed;
-    position: relative;
-    padding-left: 20px;
-    margin-left: 10px;
-    /* &:last-child {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+  /* &:last-child {
         border: 0px;
         padding-bottom: 0;
     }
@@ -721,9 +722,9 @@ ul, li {
 }
 
 .itinerario-container .time {
-    color: #2a2839;
-    font-weight: 500;
-    /* @include mobile-and-up {
+  color: #2a2839;
+  font-weight: 500;
+  /* @include mobile-and-up {
         font-size: 0.9rem;
     }
     @include mobile-only {
@@ -733,11 +734,11 @@ ul, li {
 }
 
 .itinerario-container p {
-    color: #4f4f4f;
-    font-family: sans-serif;
-    line-height: 1.5;
-    margin-top: 0.4rem;
-    /* @include mobile-only {
+  color: #4f4f4f;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+  /* @include mobile-only {
         font-size: 0.9rem;
     } */
 }
@@ -745,96 +746,91 @@ ul, li {
 /*MODAL DE RESERVAS*/
 
 .modal-container {
-    display: none;
+  display: none;
 }
-=======
-
 
 /* Tablet */
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    /*CATEGORIAS POR PAIS*/
-    .pais-bandera div {
-        width: 70px;
-        height: 70px;
-    }
-    .pais-bandera div img {
-        width: 50px;
-        height: 50px;
-    }
+  /*CATEGORIAS POR PAIS*/
+  .pais-bandera div {
+    width: 70px;
+    height: 70px;
+  }
+  .pais-bandera div img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /* Desktop */
 
 @media (min-width: 1025px) {
-    .itinerario-container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 0 1rem;
-        padding: 3rem 0;
-        border: 1px solid red;
-    }
-    /*Navegacion*/
-    .navegacion-fondo-imagen {
-        background-image: url(/assets/imgs/Argentina\ -\ Buenos\ Aires.jpg);
-        height: 735px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .navegacion-fija {
-        display: none;
-    }
-    .navegacion-desktop {
-        display: flex;
-    }
-    .img-logo-oscuro {
-        width: 178px;
-        height: 66.41px;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    /*CATEGORIAS POR PAISES*/
-    .pais-bandera div {
-        width: 100px;
-        height: 100px;
-    }
-    .pais-bandera div img {
-        width: 65px;
-        height: 65px;
-    }
-    .pais {
-        width: 18%;
-        display: flex;
-        justify-content: space-around;
-        padding: 1% 0;
-    }
-    .pais-nombre {}
-    .pais-nombre p {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        font-weight: 800;
-font-size: 18px;
-line-height: 22px;
-color: #172176;
-    }
-
+  .itinerario-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    padding: 3rem 0;
+    border: 1px solid red;
+  }
+  /*Navegacion*/
+  .navegacion-fondo-imagen {
+    background-image: url(/assets/imgs/Argentina\ -\ Buenos\ Aires.jpg);
+    height: 735px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .navegacion-fija {
+    display: none;
+  }
+  .navegacion-desktop {
+    display: flex;
+  }
+  .img-logo-oscuro {
+    width: 178px;
+    height: 66.41px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /*CATEGORIAS POR PAISES*/
+  .pais-bandera div {
+    width: 100px;
+    height: 100px;
+  }
+  .pais-bandera div img {
+    width: 65px;
+    height: 65px;
+  }
+  .pais {
+    width: 18%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0;
+  }
+  /* .pais-nombre {} */
+  .pais-nombre p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #172176;
+  }
+}
 
 /*Nuestro Equipo*/
 
 .equipo-tarjetas {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .tarjeta {
-    display: inline-block;
-    margin: 0 5% 5% 5%;
-
-}
-
+  display: inline-block;
+  margin: 0 5% 5% 5%;
 }
