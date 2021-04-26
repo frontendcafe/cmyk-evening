@@ -1,173 +1,287 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/details-styles.css" />
     <title>Evening Tours - Detalles</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <div class="navegacion-container navegacion-fondo-imagen">
+        <div class="navegacion-responsive">
+          <div class="navegacion-fija fondo-blanco">
+            <div class="navegacion-logo">
+              <a href="index.html">
+                <img
+                  src="/assets/logos/logo-black.png"
+                  alt="Logo Evening"
+                  class="img-logo-oscuro"
+                />
+              </a>
+            </div>
+            <div class="navegacion-hamburguesa">
+              <img
+                id="img-hamburguesa"
+                src="/assets/icons/icon-menu.png"
+                alt="Abrir menu"
+              />
+              <img
+                id="img-cruz"
+                src="/assets/icons/icon-close.png"
+                alt="Cerrar menu"
+              />
+            </div>
+          </div>
+          <div class="navegacion-desplegable">
+            <div>
+              <a href="#">Home</a>
+            </div>
+            <div>
+              <a href="#">Acerca de</a>
+            </div>
+            <div>
+              <a href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+        <div class="navegacion-desktop fondo-blanco">
+          <div class="navegacion-logo">
+            <a href="index.html">
+              <img
+                src="/assets/logos/logo-black.png"
+                alt="Logo Evening"
+                class="img-logo-oscuro"
+              />
+            </a>
+          </div>
+          <div class="navegacion-links">
+            <div>
+              <a href="">Home</a>
+            </div>
+            <div>
+              <a href="">Acerca de</a>
+            </div>
+            <div>
+              <a href="">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="navegacion-container navegacion-fondo-imagen">
-            <div class="navegacion-responsive">
-              <div class="navegacion-fija fondo-blanco">
-                <div class="navegacion-logo">
-                  <a href="index.html">
-                    <img src="/assets/logos/logo-black.png" alt="Logo Evening" class="img-logo-oscuro"> 
-                  </a>
-                </div>
-                <div class="navegacion-hamburguesa">
-                    <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" >
-                    <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu">
+      <section class="itinerario-container">
+        <div class="itinerario-info">
+          <ul>
+            <h3>Itinerario</h3>
+            <ol>
+              <div class="itinerario-container-inicio">
+                <div class="itinerario-icono-morado"></div>
+                <div class="itinerario-text">
+                  Inicio
+                  <div>CAFÉ TORTONI</div>
                 </div>
               </div>
-              <div class="navegacion-desplegable">
-                <div>
-                  <a href="#">Home</a>
+            </ol>
+            <ol>
+              <div class="itinerario-container-paradas">
+                <div class="itinerario-container-line">
+                  <span class="span-icon">1</span>
                 </div>
-                <div>
-                  <a href="#">Acerca de</a>
+                <div class="itinerario-text">
+                  Parada 1
+                  <div>PLAZA DE MAYO</div>
                 </div>
-                <div>
-                  <a href="#">Contacto</a>
+              </div>
+            </ol>
+            <ol>
+              <div class="itinerario-container-paradas">
+                <div class="itinerario-container-line">
+                  <span class="span-icon">2</span>
                 </div>
+                <div class="itinerario-text">
+                  Parada 2
+                  <div>OBELISCO</div>
+                </div>
+              </div>
+            </ol>
+            <div class="itinerario-container-paradas">
+              <div class="itinerario-container-line">
+                <span class="span-icon">3</span>
+              </div>
+              <div class="itinerario-text">
+                Parada 3
+                <div>PIZZERIA GUERRIN</div>
               </div>
             </div>
-            <div class="navegacion-desktop fondo-blanco">
-              <div class="navegacion-logo">
-                <a href="index.html">
-                  <img src="/assets/logos/logo-black.png" alt="Logo Evening" class="img-logo-oscuro"> 
-                </a>
+            <ol>
+              <div class="itinerario-container-paradas">
+                <div class="">
+                  <span class="span-icon">4</span>
+                </div>
+                <div class="itinerario-text">
+                  Parada 4
+                  <div>TEATRO COLON</div>
+                </div>
               </div>
-              <div class="navegacion-links">
-                <div>
-                  <a href="">Home</a>
-                </div>
-                <div>
-                  <a href="">Acerca de</a>
-                </div>
-                <div>
-                  <a href="">Contacto</a>
-                </div>
+            </ol>
+          </ul>
+        </div>
+        <div class="map-iframe-container">
+          <div class="map-container">
+            <iframe
+              class="itinerario-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14809.762895671094!2d-102.31204154999999!3d21.879098199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1618894118452!5m2!1sen!2smx"
+              width="770"
+              height="534"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section "Te puede interesar" -->
+      <section class="mejores-tours" id="section-tours">
+        <div class="container-title">
+          <h3 class="third-title">También te puede interesar</h3>
+          <a href="#" class="btn-text">Ver Todos</a>
+          <svg
+            class="arrow-next"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M10.6659 9.00002L4.72175 2.93151C4.45672 2.66108 4.45943 2.22838 4.72716 1.95795L5.78996 0.895151C6.06309 0.624718 6.50119 0.624718 6.77163 0.897856L14.3356 8.51053C14.4708 8.64575 14.5385 8.82153 14.5385 9.00002C14.5385 9.1785 14.4708 9.35428 14.3356 9.4895L6.77163 17.1022C6.50119 17.3753 6.06309 17.3753 5.78996 17.1049L4.72716 16.0421C4.45943 15.7717 4.45672 15.339 4.72175 15.0685L10.6659 9.00002Z"
+                fill="#FE6142"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="18"
+                  height="18"
+                  fill="white"
+                  transform="translate(0 18) rotate(-90)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="cards-section">
+          <div class="tour-card tour-card-1">
+            <div class="card-content">
+              <div class="first-content">
+                <span class="tour-price">$5000</span>
+              </div>
+              <div class="second-content">
+                <h6 class="card-country">México</h6>
+                <h3 class="card-place">Teotihuacán</h3>
               </div>
             </div>
           </div>
-
-        <section class="itinerario-container">
-            <div class="itinerario-info">
-                <ul>
-                    <h3> Itinerario </h3>
-                    <ol>
-                        <div class="itinerario-container-inicio">
-                            <div class="itinerario-icono-morado "></div>
-                            <div class="itinerario-text">Inicio<div>CAFÉ TORTONI</div>
-                            </div>
-                        </div>
-                    </ol>
-                    <ol>
-                        <div class="itinerario-container-paradas">
-                            <div class="itinerario-container-line">
-                                <span class="span-icon">1</span>
-                            </div>
-                            <div class="itinerario-text">Parada 1<div>PLAZA DE MAYO</div>
-                            </div>
-                        </div>
-                    </ol>
-                    <ol>
-                        <div class="itinerario-container-paradas">
-                            <div class="itinerario-container-line">
-                                <span class="span-icon">2</span>
-                            </div>
-                            <div class="itinerario-text">Parada 2<div>OBELISCO</div>
-                            </div>
-                        </div>
-
-                    </ol>
-                    <div class="itinerario-container-paradas">
-                        <div class="itinerario-container-line">
-                            <span class="span-icon">3</span>
-                        </div>
-                        <div class="itinerario-text">Parada 3<div>PIZZERIA GUERRIN</div>
-                        </div>
-                    </div>
-                    <ol>
-                        <div class="itinerario-container-paradas">
-                            <div class="">
-                                <span class="span-icon">4</span>
-                            </div>
-                            <div class="itinerario-text">Parada 4<div>TEATRO COLON</div>
-                            </div>
-                        </div>
-                    </ol>
-
-                </ul>
-
+          <div class="tour-card tour-card-2">
+            <div class="card-content">
+              <div class="first-content">
+                <span class="tour-price">$5000</span>
+              </div>
+              <div class="second-content">
+                <h6 class="card-country">Argentina</h6>
+                <h3 class="card-place">El Chatén</h3>
+              </div>
             </div>
-            <div class="map-iframe-container">
-                <div class="map-container">
-                    <iframe class="itinerario-iframe"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14809.762895671094!2d-102.31204154999999!3d21.879098199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1618894118452!5m2!1sen!2smx"
-                        width="770" height="534" style="border:0 " allowfullscreen="" loading="lazy"></iframe>
-                </div>
+          </div>
+          <div class="tour-card tour-card-3">
+            <div class="card-content">
+              <div class="first-content">
+                <span class="tour-price">$5000</span>
+              </div>
+              <div class="second-content">
+                <h6 class="card-country">Perú</h6>
+                <h3 class="card-place">Machu Pichu</h3>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
+    <!-- ============================ -->
+
     <div class="modal-container">
-        <div class="navegacion-container fondo-blanco">
-            <div class="navegacion-responsive">
-              <div class="navegacion-fija">
-                <div class="navegacion-logo">
-                  <a href="index.html">
-                    <img src="/assets/logos/logo-black.png" alt="Logo Evening" class="img-logo-oscuro"> 
-                  </a>
-                </div>
-                <div class="navegacion-hamburguesa">
-                    <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" >
-                    <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu">
-                </div>
-              </div>
-              <div class="navegacion-desplegable">
-                <div>
-                  <a href="#">Home</a>
-                </div>
-                <div>
-                  <a href="#">Acerca de</a>
-                </div>
-                <div>
-                  <a href="#">Contacto</a>
-                </div>
-              </div>
+      <div class="navegacion-container fondo-blanco">
+        <div class="navegacion-responsive">
+          <div class="navegacion-fija">
+            <div class="navegacion-logo">
+              <a href="index.html">
+                <img
+                  src="/assets/logos/logo-black.png"
+                  alt="Logo Evening"
+                  class="img-logo-oscuro"
+                />
+              </a>
             </div>
-            <div class="navegacion-desktop">
-              <div class="navegacion-logo">
-                <a href="index.html">
-                  <img src="/assets/logos/logo-black.png" alt="Logo Evening" class="img-logo-oscuro"> 
-                </a>
-              </div>
-              <div class="navegacion-links">
-                <div>
-                  <a href="">Home</a>
-                </div>
-                <div>
-                  <a href="">Acerca de</a>
-                </div>
-                <div>
-                  <a href="">Contacto</a>
-                </div>
-              </div>
+            <div class="navegacion-hamburguesa">
+              <img
+                id="img-hamburguesa"
+                src="/assets/icons/icon-menu.png"
+                alt="Abrir menu"
+              />
+              <img
+                id="img-cruz"
+                src="/assets/icons/icon-close.png"
+                alt="Cerrar menu"
+              />
             </div>
           </div>
+          <div class="navegacion-desplegable">
+            <div>
+              <a href="#">Home</a>
+            </div>
+            <div>
+              <a href="#">Acerca de</a>
+            </div>
+            <div>
+              <a href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+        <div class="navegacion-desktop">
+          <div class="navegacion-logo">
+            <a href="index.html">
+              <img
+                src="/assets/logos/logo-black.png"
+                alt="Logo Evening"
+                class="img-logo-oscuro"
+              />
+            </a>
+          </div>
+          <div class="navegacion-links">
+            <div>
+              <a href="">Home</a>
+            </div>
+            <div>
+              <a href="">Acerca de</a>
+            </div>
+            <div>
+              <a href="">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/app.js"></script>
-</body>
-
+  </body>
 </html>
