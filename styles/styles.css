@@ -596,16 +596,18 @@ footer {
     color: white;
 }
 .footer-container-logo {
-    width: 90px;
+    width: 120px;
+    margin: 5px;
 }
 .footer-container-fe {
     width: 30px;
+    margin: 5px;
 }
 
 .footer-container {
     width: 80%;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
