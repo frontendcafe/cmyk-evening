@@ -20,15 +20,12 @@ div .third-title {
     flex-direction: column;
     margin: auto;
     width: 90%;
-    border: 3px solid pink;
-    
 }
 
 .information-tour {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    border: 3px solid lightblue;
 }
 
 .information {
@@ -53,7 +50,6 @@ div .third-title {
 
 .description-travel {
     display: flex;
-    border: 3px solid green;
     flex-direction: column-reverse;
 }
 
@@ -61,7 +57,6 @@ div .third-title {
     width: auto;
     font-size: var(--body-font-size);
     font-weight: var(--body-regular-font-weight);
-    border: 3px solid blue;
 }
 .subtitle {
     color: orangered;
@@ -76,7 +71,6 @@ div .third-title {
 .formulario {
     width: 100%;
     height: 300px;
-    background-color: red;
 }
 
 
@@ -187,8 +181,6 @@ div .third-title {
         flex-direction: column;
         margin: auto;
         width: 90%;
-        border: 3px solid pink;
-        
     }
     
     .information-tour {
@@ -197,7 +189,6 @@ div .third-title {
         grid-template-columns: 50% 50%;
         grid-template-rows: 100px 100px;
         gap: 1em;
-        border: 3px solid lightblue;
     }
     
     .city-country {
@@ -218,15 +209,13 @@ div .third-title {
     
     .description-travel {
         display: flex;
-        border: 3px solid green;
-    
     }
     
     .details {
         width: 100%;
         font-size: var(--body-font-size);
         font-weight: var(--body-regular-font-weight);
-        border: 3px solid blue;
+
     }
 
     .subtitle {
@@ -238,7 +227,6 @@ div .third-title {
     .formulario {
         width: 100%;
         height: 300px;
-        background-color: red;
     }
     
 }
