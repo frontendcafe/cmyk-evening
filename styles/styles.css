@@ -222,48 +222,6 @@ h1 {
     font-weight: var(--h1-font-weight);
 }
 
-/* detalles de los tours */
-.descripcion-tour {
-    margin: 40px;
-    font: var(--primary-text);
-    color: rgb(48, 42, 81);
-}
-
-.informacion-tour {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px;
-    gap: 1em;
-}
-
-.city-country {
-    font-size: var(--subtitle-body-font-size);
-}
-
-.city-name {
-    font-size: var(--h2-font-size);
-    font-weight: var(--h2-font-weight);
-}
-
-#sobre-el-tour {
-    font-size: var(--subtitle-body-font-size);
-    font-weight: var(--h4-font-weight);
-    margin: 5px 0 10px 0;
-}
-
-.subtitulo {
-    color: orangered;
-    font-weight: var(--h4-font-weight);
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: var(--body-font-size);
-    font-weight: var(--body-regular-font-weight);
-}
-/* fin de los detalles del tour */
-
 @media (min-width: 769px) {
     .container-title {
         margin: 2.5rem 0;
