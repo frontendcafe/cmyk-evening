@@ -288,9 +288,7 @@ div .third-title {
     .description {
         display: flex;
         margin: auto;
-        width: 90%;
-        border: 3px solid pink;
-        
+        width: 90%;        
     }
     
     .information-tour {
@@ -299,7 +297,6 @@ div .third-title {
         grid-template-columns: 50% 50%;
         grid-template-rows: 100px 100px;
         gap: 1em;
-        border: 3px solid lightblue;
     }
     
     .city-country {
@@ -320,16 +317,13 @@ div .third-title {
     
     .description-travel {
         display: flex;
-        flex-direction: row;
-        border: 3px solid green;
-    
+        flex-direction: row;   
     }
     
     .details {
         width: 60vw;
         font-size: var(--body-font-size);
         font-weight: var(--body-regular-font-weight);
-        border: 3px solid blue;
     }
     .subtitle {
         color: orangered;
@@ -340,6 +334,5 @@ div .third-title {
     .formulario {
         width: 40vw;
         height: 300px;
-        background-color: red;
     }
 }
