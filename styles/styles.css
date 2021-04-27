@@ -11,18 +11,17 @@
     --link-color: #a2acb9;
     --color-white: #fff;
 
-    --h1-font-size: 48px;
-    --h2-font-size: 32px;
-    --h3-font-size: 24px;
-    --h4-font-size: 24px;
+    --h1-font-size: 72px;
+    --h2-font-size: 48px;
+    --h3-font-size: 34px;
+    --h4-font-size: 32px;
     --h6-font-size: 18px;
-    --subtitle-font-size: 24px;
+    --subtitle-font-size: 34px;
     --body-font-size: 18px;
     --footer-font-size: 24px;
     --buttons-text-font-size: 16px;
     --categories-font-size: 18px;
-    --links-font-size: 18px;
-    --subtitle-body-font-size: 22px;
+    --links-font-size: 24px;
 
     --h1-font-weight: 700;
     --h2-font-weight: 800;
@@ -39,7 +38,7 @@
     --links-font-weight: 700;
 
     --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
-    --border: 10px solid white;
+    --border: 17px solid white;
     --gradient: linear-gradient(180deg, #fdfdfe 0%, #eceff1 100%);
     --border-card: 30px;
 }
@@ -583,37 +582,38 @@ h1 {
 /* footer */
 
 footer {
-    background-image: url("../assets/footer.png");
-    width: 100%;
-    height: 550px;
-    background-position: center;
+    background-image: url("../assets/footer");
+    height: 650px;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    overflow: hidden;
 }
 
 .footer-container {
     position: relative;
-    bottom: 70px;
+    bottom: 100px;
     display: flex;
     height: 100%;
-    margin-bottom: 500px;
     align-items: flex-end;
     justify-content: space-around;
 }
 
 #name-project {
     display: flex;
-    width: 200px;
+    width: 150px;
 }
 
 #date-project {
     display: flex;
+    color: white;
+    font-size: var(--footer-font-size);
+    font-family: var(--main-font);
 }
 
 #logo-project {
     display: flex;
-    width: 70px;
+    width: 50px;
 }
 
 /* Tablet */
@@ -627,6 +627,23 @@ footer {
     .pais-bandera div img {
         width: 50px;
         height: 50px;
+    }
+    .footer-container {
+        position: relative;
+        bottom: 100px;
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .footer-container {
+        position: relative;
+        bottom: 100px;
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: space-around;
     }
 }
 
