@@ -9,6 +9,6 @@ Fué hecho por el equipo Evening 🌃
 - Astrid (@)
 - Enrique (@)
 - Pablo (@)
-- Lupis (@lupsteeler)
+- Lupis (#lupis8755)
 
 
