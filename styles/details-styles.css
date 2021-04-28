@@ -19,6 +19,7 @@ div .third-title {
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-top: 50px;
     width: 90%;
 }
 
@@ -181,6 +182,7 @@ div .third-title {
         flex-direction: column;
         margin: auto;
         width: 90%;
+        margin-top: 50px;
     }
     
     .information-tour {
@@ -288,7 +290,8 @@ div .third-title {
     .description {
         display: flex;
         margin: auto;
-        width: 90%;        
+        width: 90%;      
+        margin-top: 50px;  
     }
     
     .information-tour {
