@@ -341,7 +341,9 @@ div .third-title {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 1156px;
+    max-width: 100%;  
+  
   }
   
   .close {
