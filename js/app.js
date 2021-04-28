@@ -20,28 +20,39 @@ async function getInfoTours() {
 }
 
 function displayCards() {
+  let screen;
   const sizeVW = window.innerWidth;
 
-  // if (sizeVW < 769) {
-  //  const screen = mobile;
-  // } else if(sizeVW < 1137) {
-  //   const screen = tablet;
-  // } else {
-  //    const screen = desktop;
-  // }
+  if (sizeVW < 769) {
+    screen = mobile;
+  } else if (sizeVW < 1137) {
+    screen = tablet;
+  } else {
+    screen = desktop;
+  }
 
-  for (let i = 0; i < screen; i++) {
+  const nArray = [];
+
+  while (nArray.length < screen) {
     const randomI = Math.floor(Math.random() * resultsArray.length);
-    console.log(randomI);
-    console.log(resultsArray);
-    const city = resultsArray[randomI].city.name;
-    const country = resultsArray[randomI].city.country;
-    const price = resultsArray[randomI].priceUsd;
+    if (!nArray.includes(randomI)) {
+      nArray.push(randomI);
+    }
+  }
+  console.log(nArray);
+  let num = 0;
+  for (let value of nArray) {
+    // const randomI = Math.floor(Math.random() * resultsArray.length);
+    // console.log(randomI);
+    // console.log(resultsArray);
+    const city = resultsArray[value].city.name;
+    const country = resultsArray[value].city.country;
+    const price = resultsArray[value].priceUsd;
     imgFile = city.split(' ').join('-');
     console.log(city);
 
     cardsSection.innerHTML += `
-      <div class="tour-card tour-card-${i + 1}" 
+      <div class="tour-card tour-card-${num + 1}" 
         style="background:#fff url(../assets/imgs/cards/${imgFile}.jpeg) no-repeat center;">
         <div class="card-content">
           <div class="first-content">
@@ -54,8 +65,11 @@ function displayCards() {
         </div>
       </div>
     `;
+    num++;
   }
 }
-// CAMBIAR TODAS LAS IMAGENES PARA LA CARPETA IMGS/CARDS Y IMPLEMENTAR UN RANDOM PARA TOMAR 3 VALORES DEL ARRAY resultsArray
+// CONSULTAR SI PODEMOS INTEGRAR LOS TOURS DE UNA MISMA CIUDAD EN UN SOLO OBJETO?
+// LA SECCIÓN EN SI NO ES MUY DINAMICA YA QUE REQUIERE DE ESTAR ACTUALIZANDO LA PÁGINA CADA VEZ QUE SE CAMBIA DE TAMAÑO DEL VW PARA QUE MUESTRE LAS CANTIDADES DE CARDS CORRESPONDIENTES SEGÚN EL RESPONSIVE
+// PS: IGUAL EL PROBLEMA SON LAS IMAGENES Y CREO QUE CAMBIANDO EL NOMBRE DE DICHAS IMAGENES Y PONIENDO UNA DISTINTA POR CADA TOUR SE PUEDE SOLUCIONAR
 
 getInfoTours();
