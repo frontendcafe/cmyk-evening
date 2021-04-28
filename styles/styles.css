@@ -162,6 +162,7 @@ div .tour-card-6 {
 div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .tour-card-6) {
   position: relative;
   background-size: cover;
+  /* max-width: 100%; */
   overflow: hidden;
 }
 
