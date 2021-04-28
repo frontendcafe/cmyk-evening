@@ -341,7 +341,10 @@ div .third-title {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+
+    width: 1156px;
+    max-width: 100%;
+
   }
   
   .close {
@@ -437,6 +440,7 @@ div .third-title {
   
   .reservar-tour {
     font-size: var(--h3-font-size);
+    
   }
   .modal-body input {
     border-radius: 37px;
@@ -448,7 +452,6 @@ div .third-title {
   .reservar-button {
     border-radius: 37px;
     background-color: var(--active-button);
-  
     font-size: 16px;
     color: white;
     outline: none;
