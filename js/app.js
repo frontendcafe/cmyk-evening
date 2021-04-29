@@ -13,7 +13,7 @@ async function getInfoTours() {
     const response = await fetch(apiURL);
     resultsArray = await response.json();
 
-    displayCards(mobile);
+    displayCards();
   } catch (error) {
     console.log(error);
   }
@@ -22,15 +22,15 @@ async function getInfoTours() {
 function displayCards() {
   let screen;
   const sizeVW = window.innerWidth;
-
+  console.log(sizeVW);
   if (sizeVW < 769) {
     screen = mobile;
-  } else if (sizeVW < 1137) {
+  } else if ((769 <= sizeVW) & (sizeVW < 1137)) {
     screen = tablet;
-  } else {
+  } else if (1137 <= sizeVW) {
     screen = desktop;
   }
-
+  console.log(screen);
   const nArray = [];
 
   while (nArray.length < screen) {
@@ -72,4 +72,5 @@ function displayCards() {
 // LA SECCIÓN EN SI NO ES MUY DINAMICA YA QUE REQUIERE DE ESTAR ACTUALIZANDO LA PÁGINA CADA VEZ QUE SE CAMBIA DE TAMAÑO DEL VW PARA QUE MUESTRE LAS CANTIDADES DE CARDS CORRESPONDIENTES SEGÚN EL RESPONSIVE
 // PS: IGUAL EL PROBLEMA SON LAS IMAGENES Y CREO QUE CAMBIANDO EL NOMBRE DE DICHAS IMAGENES Y PONIENDO UNA DISTINTA POR CADA TOUR SE PUEDE SOLUCIONAR
 
+// window.addEventListener('resize', getInfoTours);
 getInfoTours();

@@ -299,7 +299,7 @@ h1 {
 }
 
 @media (min-width: 1025px) {
-  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
+  div:is(.tour-card-4) {
     display: block;
   }
 
@@ -320,6 +320,12 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1137px) {
+  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
+    display: block;
   }
 }
 
