@@ -13,7 +13,70 @@ div .third-title {
   }
 }
 
+/* detalles de los tours */
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.information-tour {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.information {
+    padding: 10px;
+}
+
+.city-country {
+    font-size: var(--subtitle-body-font-size);
+}
+
+.city-name {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+}
+
+#sobre-el-tour {
+    font-size: var(--subtitle-body-font-size);
+    font-weight: var(--h4-font-weight);
+    margin: 5px 0 10px 0;
+
+}
+
+.description-travel {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.details {
+    width: auto;
+    font-size: var(--body-font-size);
+    font-weight: var(--body-regular-font-weight);
+}
+.subtitle {
+    color: orangered;
+    font-weight: var(--h4-font-weight);
+    margin-bottom: 10px;
+}
+
+/* fin de los detalles del tour */
+
+/* registro */
+
+.formulario {
+    width: 100%;
+    height: 300px;
+}
+
+
 /*itinerario*/
+
 
 .itinerario-container,
 .itinerario-info,
@@ -104,6 +167,7 @@ div .third-title {
 }
 
 @media (min-width: 769px) and (max-width: 1136px) {
+<<<<<<< HEAD
   .map-container {
     width: 770px;
     height: 100%;
@@ -113,9 +177,78 @@ div .third-title {
     box-shadow: var(--border-shadow);
     border: var(--border);
   }
+=======
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        margin-top: 50px;
+    }
+    
+    .information-tour {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px;
+        gap: 1em;
+    }
+    
+    .city-country {
+        font-size: var(--subtitle-body-font-size);
+    }
+    
+    .city-name {
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+    }
+    
+    #sobre-el-tour {
+        font-size: var(--subtitle-body-font-size);
+        font-weight: var(--h4-font-weight);
+        margin: 5px 0 10px 0;
+    
+    }
+    
+    .description-travel {
+        display: flex;
+    }
+    
+    .details {
+        width: 100%;
+        font-size: var(--body-font-size);
+        font-weight: var(--body-regular-font-weight);
+
+    }
+
+    .subtitle {
+        color: orangered;
+        font-weight: var(--h4-font-weight);
+        margin-bottom: 10px;
+    }
+
+    .formulario {
+        width: 100%;
+        height: 300px;
+    }
+    
+>>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 }
+
+
 /* Desktop */
 @media (min-width: 1136px) {
+<<<<<<< HEAD
   .itinerario-info {
     width: 400px;
   }
@@ -164,4 +297,108 @@ div .third-title {
     box-shadow: var(--border-shadow);
     border: var(--border);
   }
+=======
+    .itinerario-info {
+        width: 400px;
+    }
+
+    .itinerario-container {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .map-iframe-container {
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
+    .itinerario-info {
+        width: 400px;
+    }
+
+    .itinerario-container {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .map-iframe-container {
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
+
+    /* detalles del tour */
+
+    .description {
+        display: flex;
+        margin: auto;
+        width: 90%;      
+        margin-top: 50px;  
+    }
+    
+    .information-tour {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px;
+        gap: 1em;
+    }
+    
+    .city-country {
+        font-size: var(--subtitle-body-font-size);
+    }
+    
+    .city-name {
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+    }
+    
+    #sobre-el-tour {
+        font-size: var(--subtitle-body-font-size);
+        font-weight: var(--h4-font-weight);
+        margin: 5px 0 10px 0;
+    
+    }
+    
+    .description-travel {
+        display: flex;
+        flex-direction: row;   
+    }
+    
+    .details {
+        width: 60vw;
+        font-size: var(--body-font-size);
+        font-weight: var(--body-regular-font-weight);
+    }
+    .subtitle {
+        color: orangered;
+        font-weight: var(--h4-font-weight);
+        margin-bottom: 10px;
+    }
+
+    .formulario {
+        width: 40vw;
+        height: 300px;
+    }
+>>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 }

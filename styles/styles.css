@@ -1,6 +1,7 @@
 /** @format */
 
 :root {
+<<<<<<< HEAD
   --main-font: 'Nunito', sans-serif;
   --active-button: #fe6142;
   --secondary-button: #3f51b5;
@@ -42,6 +43,49 @@
   --border: 10px solid white;
   --gradient: linear-gradient(180deg, #fdfdfe 0%, #eceff1 100%);
   --border-card: 30px;
+=======
+    --main-font: "Nunito", sans-serif;
+    --active-button: #fe6142;
+    --secondary-button: #3f51b5;
+    --primary-text: #120c38;
+    --shadow: #fdfdfe;
+    --primary-background: #ffffff;
+    --secondary-background: #172176;
+    --link-color: #a2acb9;
+    --color-white: #fff;
+
+    --h1-font-size: 38px;
+    --h2-font-size: 32px;
+    --h3-font-size: 24px;
+    --h4-font-size: 24px;
+    --h6-font-size: 18px;
+    --subtitle-font-size: 24px;
+    --body-font-size: 18px;
+    --footer-font-size: 24px;
+    --buttons-text-font-size: 16px;
+    --categories-font-size: 18px;
+    --links-font-size: 18px;
+    --subtitle-body-font-size: 22px;
+
+    --h1-font-weight: 700;
+    --h2-font-weight: 800;
+    --h3-font-weight: 800;
+    --h4-font-weight: 700;
+    --h6-font-weight: 400;
+
+    --subtitle-font-weight: 400;
+    --body-regular-font-weight: 400;
+    --body-bold-font-weight: 700;
+    --footer-font-weight: 700;
+    --buttons-text-font-weight: 900;
+    --categories-font-weight: 800;
+    --links-font-weight: 700;
+
+    --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
+    --border: 10px solid white;
+    --gradient: linear-gradient(180deg, #fdfdfe 0%, #eceff1 100%);
+    --border-card: 30px;
+>>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 }
 
 /* General Styles */
@@ -80,6 +124,43 @@ li {
 
 /* Mobile */
 
+header {
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-button);
+}
+header h1 {
+    color: var(--secondary-background);
+}
+header h1::before {
+    content: "<";
+    display: inline-block;
+}
+header h1::after {
+    content: ">";
+    display: inline-block;
+}
+header img {
+    width: 700px;
+}
+.header-texto {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-imagen {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+}
 h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
@@ -90,7 +171,16 @@ h1 {
   height: 100vh;
   overflow-x: hidden;
 }
-
+.mejores-tours-header {
+    max-width: 1025px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: var(--secondary-button);
+}
+.mejores-tours-header h1 {
+    color: var(--secondary-background);
+}
 .mejores-tours {
   max-width: 1025px;
   margin: 0 auto;
@@ -222,6 +312,7 @@ h1 {
   font-weight: var(--h1-font-weight);
 }
 
+<<<<<<< HEAD
 /* detalles de los tours */
 .descripcion-tour {
   margin: 40px;
@@ -264,6 +355,8 @@ h1 {
 }
 /* fin de los detalles del tour */
 
+=======
+>>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 @media (min-width: 769px) {
   .container-title {
     margin: 2.5rem 0;
@@ -596,6 +689,7 @@ footer {
   color: white;
 }
 .footer-container-logo {
+<<<<<<< HEAD
   width: 90px;
 }
 .footer-container-fe {
@@ -610,6 +704,24 @@ footer {
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
+=======
+    width: 120px;
+    margin: 5px;
+}
+.footer-container-fe {
+    width: 30px;
+    margin: 5px;
+}
+
+.footer-container {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+>>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 }
 /* Tablet */
 
