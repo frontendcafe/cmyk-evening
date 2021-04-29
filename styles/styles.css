@@ -11,7 +11,7 @@
     --link-color: #a2acb9;
     --color-white: #fff;
 
-    --h1-font-size: 48px;
+    --h1-font-size: 38px;
     --h2-font-size: 32px;
     --h3-font-size: 24px;
     --h4-font-size: 24px;
@@ -80,6 +80,43 @@ li {
 
 /* Mobile */
 
+header {
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-button);
+}
+header h1 {
+    color: var(--secondary-background);
+}
+header h1::before {
+    content: "<";
+    display: inline-block;
+}
+header h1::after {
+    content: ">";
+    display: inline-block;
+}
+header img {
+    width: 700px;
+}
+.header-texto {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-imagen {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+}
 h1 {
     font-size: var(--h1-font-size);
     font-weight: var(--h1-font-weight);
@@ -90,7 +127,16 @@ h1 {
     height: 100vh;
     overflow-x: hidden;
 }
-
+.mejores-tours-header {
+    max-width: 1025px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: var(--secondary-button);
+}
+.mejores-tours-header h1 {
+    color: var(--secondary-background);
+}
 .mejores-tours {
     max-width: 1025px;
     margin: 0 auto;
@@ -221,48 +267,6 @@ h1 {
     font-size: var(--h1-font-size);
     font-weight: var(--h1-font-weight);
 }
-
-/* detalles de los tours */
-.descripcion-tour {
-    margin: 40px;
-    font: var(--primary-text);
-    color: rgb(48, 42, 81);
-}
-
-.informacion-tour {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px;
-    gap: 1em;
-}
-
-.city-country {
-    font-size: var(--subtitle-body-font-size);
-}
-
-.city-name {
-    font-size: var(--h2-font-size);
-    font-weight: var(--h2-font-weight);
-}
-
-#sobre-el-tour {
-    font-size: var(--subtitle-body-font-size);
-    font-weight: var(--h4-font-weight);
-    margin: 5px 0 10px 0;
-}
-
-.subtitulo {
-    color: orangered;
-    font-weight: var(--h4-font-weight);
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: var(--body-font-size);
-    font-weight: var(--body-regular-font-weight);
-}
-/* fin de los detalles del tour */
 
 @media (min-width: 769px) {
     .container-title {
@@ -596,16 +600,18 @@ footer {
     color: white;
 }
 .footer-container-logo {
-    width: 90px;
+    width: 120px;
+    margin: 5px;
 }
 .footer-container-fe {
     width: 30px;
+    margin: 5px;
 }
 
 .footer-container {
     width: 80%;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
