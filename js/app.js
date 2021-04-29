@@ -31,6 +31,7 @@ function displayCards() {
     screen = desktop;
   }
   console.log(screen);
+
   const nArray = [];
 
   while (nArray.length < screen) {
@@ -47,13 +48,15 @@ function displayCards() {
     // console.log(resultsArray);
     const city = resultsArray[value].city.name;
     const country = resultsArray[value].city.country;
+    const tourName = resultsArray[value].tourName;
     const price = resultsArray[value].priceUsd;
-    imgFile = city.split(' ').join('-');
+    const imgFile = resultsArray[value].img;
+
     console.log(city);
 
     cardsSection.innerHTML += `
       <div class="tour-card tour-card-${num + 1}" 
-        style="background:#fff url(../assets/imgs/cards/${imgFile}.jpeg) no-repeat center;">
+        style="background:#fff url(${imgFile}) no-repeat center;">
         <div class="card-content">
           <div class="first-content">
             <span class="tour-price">$${price}</span>
@@ -61,6 +64,7 @@ function displayCards() {
           <div class="second-content">
             <h6 class="card-country">${country}</h6>
             <h3 class="card-place">${city}</h3>
+            <h6 class="card-country">${tourName}</h6>
           </div>
         </div>
       </div>
