@@ -124,43 +124,6 @@ li {
 
 /* Mobile */
 
-header {
-    width: 100%;
-    max-width: 1200px;
-    border: 1px solid red;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--secondary-button);
-}
-header h1 {
-    color: var(--secondary-background);
-}
-header h1::before {
-    content: "<";
-    display: inline-block;
-}
-header h1::after {
-    content: ">";
-    display: inline-block;
-}
-header img {
-    width: 700px;
-}
-.header-texto {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-imagen {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
-    align-items: center;
-}
 h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
@@ -172,11 +135,11 @@ h1 {
   overflow-x: hidden;
 }
 .mejores-tours-header {
-    max-width: 1025px;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    text-align: center;
     color: var(--secondary-button);
+    padding: 20px 50px 0px 50px;
 }
 .mejores-tours-header h1 {
     color: var(--secondary-background);
@@ -408,11 +371,22 @@ h1 {
     display: block;
   }
 
+<<<<<<< HEAD
   .cards-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
   }
+=======
+    .cards-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+    .mejores-tours-header {
+        padding: 0 20px;
+    }
+>>>>>>> 9e832ca69657d5023f417246832e2f179a7dff37
 }
 
 /* Navegacion */
@@ -726,6 +700,7 @@ footer {
 /* Tablet */
 
 @media (min-width: 769px) and (max-width: 1024px) {
+<<<<<<< HEAD
   /*CATEGORIAS POR PAIS*/
   .pais-bandera div {
     width: 70px;
@@ -745,11 +720,36 @@ footer {
   .footer-container-fe {
     width: 40px;
   }
+=======
+    /*CATEGORIAS POR PAIS*/
+    .pais-bandera div {
+        width: 70px;
+        height: 70px;
+    }
+    .pais-bandera div img {
+        width: 50px;
+        height: 50px;
+    }
+    .footer-container {
+        flex-flow: row;
+        height: 90px;
+    }
+    .footer-container-logo {
+        width: 100px;
+    }
+    .footer-container-fe {
+        width: 40px;
+    }
+    .mejores-tours-header {
+        padding: 0 20px;
+    }
+>>>>>>> 9e832ca69657d5023f417246832e2f179a7dff37
 }
 
 /* Desktop */
 
 @media (min-width: 1025px) {
+<<<<<<< HEAD
   /*Navegacion*/
   .navegacion-fondo-imagen {
     background-image: url(/assets/tours/arg/01_arg.jpeg);
@@ -806,6 +806,67 @@ footer {
   .footer-container-fe {
     width: 40px;
   }
+=======
+    /*Navegacion*/
+    .navegacion-fondo-imagen {
+        background-image: url(/assets/tours/arg/01_arg.jpeg);
+        height: 735px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .navegacion-fija {
+        display: none;
+    }
+    .navegacion-desktop {
+        display: flex;
+    }
+    .img-logo-oscuro {
+        width: 178px;
+        height: 66.41px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /*CATEGORIAS POR PAISES*/
+    .pais-bandera div {
+        width: 100px;
+        height: 100px;
+    }
+    .pais-bandera div img {
+        width: 65px;
+        height: 65px;
+    }
+    .pais {
+        width: 18%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1% 0;
+    }
+    /* .pais-nombre {} */
+    .pais-nombre p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #172176;
+    }
+    .footer-container {
+        flex-flow: row;
+        height: 90px;
+    }
+    .footer-container-logo {
+        width: 100px;
+    }
+    .footer-container-fe {
+        width: 40px;
+    }
+    .mejores-tours-header {
+        padding: 0 20px;
+    }
+>>>>>>> 9e832ca69657d5023f417246832e2f179a7dff37
 }
 
 /*Nuestro Equipo*/
