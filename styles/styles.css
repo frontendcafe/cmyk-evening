@@ -186,9 +186,14 @@ div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .to
   justify-content: space-between;
 }
 
+.invisible {
+  display: none;
+}
+
 /* Hover */
 .tour-card:hover {
   transform: translateY(-1rem) scale(1);
+  cursor: pointer;
 }
 
 .first-content {
@@ -312,7 +317,7 @@ h1 {
 
 /* Desktop */
 @media (min-width: 769px) and (max-width: 1136px) {
-  div .tour-card-4 {
+  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
     display: block;
   }
 
