@@ -312,7 +312,6 @@ h1 {
   font-weight: var(--h1-font-weight);
 }
 
-<<<<<<< HEAD
 /* detalles de los tours */
 .descripcion-tour {
   margin: 40px;
@@ -355,8 +354,6 @@ h1 {
 }
 /* fin de los detalles del tour */
 
-=======
->>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 @media (min-width: 769px) {
   .container-title {
     margin: 2.5rem 0;
