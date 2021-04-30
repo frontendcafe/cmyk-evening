@@ -402,3 +402,22 @@ div .third-title {
     }
 >>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 }
+
+/* Desktop */
+@media (min-width: 769px) and (max-width: 1136px) {
+  div .tour-card-4 {
+    display: block;
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1137px) {
+  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
+    display: block;
+  }
+}

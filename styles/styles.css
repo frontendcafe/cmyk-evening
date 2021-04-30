@@ -215,6 +215,7 @@ div .tour-card-6 {
 div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .tour-card-6) {
   position: relative;
   background-size: cover;
+  /* max-width: 100%; */
   overflow: hidden;
 }
 
@@ -238,9 +239,14 @@ div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .to
   justify-content: space-between;
 }
 
+.invisible {
+  display: none;
+}
+
 /* Hover */
 .tour-card:hover {
   transform: translateY(-1rem) scale(1);
+  cursor: pointer;
 }
 
 .first-content {
@@ -354,7 +360,7 @@ h1 {
 }
 
 @media (min-width: 1025px) {
-  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
+  div:is(.tour-card-4) {
     display: block;
   }
 
@@ -367,7 +373,7 @@ h1 {
 
 /* Desktop */
 @media (min-width: 769px) and (max-width: 1136px) {
-  div .tour-card-4 {
+  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
     display: block;
   }
 
@@ -387,6 +393,12 @@ h1 {
         padding: 0 20px;
     }
 >>>>>>> 9e832ca69657d5023f417246832e2f179a7dff37
+}
+
+@media (min-width: 1137px) {
+  div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
+    display: block;
+  }
 }
 
 /* Navegacion */
