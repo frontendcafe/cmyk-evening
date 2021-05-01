@@ -31,27 +31,22 @@
               </a>
             </div>
             <div class="navegacion-hamburguesa">
-              <img
-                id="img-hamburguesa"
-                src="/assets/icons/icon-menu.png"
-                alt="Abrir menu"
-              />
-              <img
-                id="img-cruz"
-                src="/assets/icons/icon-close.png"
-                alt="Cerrar menu"
-              />
+              <a href="javascript:void(0);" onclick="ToggleMenu()">
+                <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
+                <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
+              </a>
+                
             </div>
           </div>
-          <div class="navegacion-desplegable">
+          <div class="navegacion-desplegable" id="nav-desplegable">
             <div>
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
             </div>
             <div>
-              <a href="#">Acerca de</a>
+              <a href="index.html#id-tours-header">Tours</a>
             </div>
             <div>
-              <a href="#">Contacto</a>
+              <a href="index.html#id-equipo">Contacto</a>
             </div>
           </div>
         </div>
@@ -67,13 +62,13 @@
           </div>
           <div class="navegacion-links">
             <div>
-              <a href="">Home</a>
+              <a href="index.html">Home</a>
             </div>
             <div>
-              <a href="">Acerca de</a>
+              <a href="index.html#id-tours-header">Tours</a>
             </div>
             <div>
-              <a href="">Contacto</a>
+              <a href="index.html#id-equipo">Contacto</a>
             </div>
           </div>
         </div>
@@ -288,16 +283,11 @@
                 </a>
               </div>
               <div class="navegacion-hamburguesa">
-                <img
-                  id="img-hamburguesa"
-                  src="/assets/icons/icon-menu.png"
-                  alt="Abrir menu"
-                />
-                <img
-                  id="img-cruz"
-                  src="/assets/icons/icon-close.png"
-                  alt="Cerrar menu"
-                />
+                <a href="javascript:void(0);" onclick="ToggleMenu()">
+                  <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
+                  <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
+                </a>
+                  
               </div>
             </div>
             <div class="navegacion-desplegable">
@@ -482,6 +472,8 @@
       </footer>
       <script src="./js/app.js"></script>
       <script src="./js/modal.js"></script>
+
     </div>
+    <script src="/js/nav.js"></script>
   </body>
 </html>
