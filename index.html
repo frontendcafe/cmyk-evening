@@ -72,19 +72,22 @@
                             </a>
                         </div>
                         <div class="navegacion-hamburguesa">
+                          <a href="javascript:void(0);"  id="toggle-menu">
                             <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
                             <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
+                          </a>
+                            
                         </div>
                     </div>
-                    <div class="navegacion-desplegable">
+                    <div class="navegacion-desplegable" id="nav-desplegable">
                         <div>
                             <a href="#">Home</a>
                         </div>
                         <div>
-                            <a href="#">Acerca de</a>
+                            <a href="#id-tours-header">Tours</a>
                         </div>
                         <div>
-                            <a href="#">Contacto</a>
+                            <a href="#id-equipo">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -99,10 +102,10 @@
                             <a href="">Home</a>
                         </div>
                         <div>
-                            <a href="">Acerca de</a>
+                            <a href="#id-tours-header">Tours</a>
                         </div>
                         <div>
-                            <a href="">Contacto</a>
+                            <a href="#id-equipo">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -171,57 +174,62 @@
         </header>
         <div class="paises-container">
             <div class="paises-wrapper fondo-blanco">
-                <div class="pais">
+                <div class="pais" id="tours-arg">
                     <div class="pais-bandera">
                         <div>
-                            <img src="/assets/icons/arg.png" alt="Bandera Argentina" />
+                            <img src="/assets/icons/arg2.png" alt="Bandera Argentina" />
                         </div>
                     </div>
-                    <div class="pais-nombre">
-                        <p>ARG</p>
+                    <div class="pais-nombre" >
+                        <p class="texto-corto">ARG</p>
+                        <p class="texto-largo">ARGENTINA</p>
                     </div>
                 </div>
-                <div class="pais">
+                <div class="pais" id="tours-mex">
                     <div class="pais-bandera">
                         <div>
                             <img src="/assets/icons/mex.png" alt="Bandera Mexico" />
                         </div>
                     </div>
                     <div class="pais-nombre">
-                        <p>MEX</p>
+                        <p class="texto-corto">MEX</p>
+                        <p class="texto-largo">MÉXICO</p>
                     </div>
                 </div>
-                <div class="pais">
+                <div class="pais" id="tours-per">
                     <div class="pais-bandera">
                         <div><img src="/assets/icons/per.png" alt="Bandera Peru" /></div>
                     </div>
-                    <div class="pais-nombre">
-                        <p>PER</p>
+                    <div class="pais-nombre" >
+                      <p class="texto-corto">PER</p>
+                      <p class="texto-largo">PERÚ</p>
                     </div>
                 </div>
-                <div class="pais">
+                <div class="pais" id="tours-chi">
                     <div class="pais-bandera">
                         <div>
-                            <img src="/assets/icons/chi.png" alt="Bandera Argentina" />
+                            <img src="/assets/icons/chi2.png" alt="Bandera Chile" />
                         </div>
                     </div>
                     <div class="pais-nombre">
-                        <p>CHI</p>
+                      <p class="texto-corto">CHI</p>
+                      <p class="texto-largo">CHILE</p>
                     </div>
                 </div>
-                <div class="pais">
+                <div class="pais" id="tours-ita">
                     <div class="pais-bandera">
                         <div>
-                            <img src="/assets/icons/ita.png" alt="Bandera Argentina" />
+                            <img src="/assets/icons/ita2.png" alt="Bandera Italia" />
                         </div>
                     </div>
                     <div class="pais-nombre">
-                        <p>ITA</p>
+                      <p class="texto-corto">ITA</p>
+                      <p class="texto-largo">ITALIA</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mejores-tours-header">
+        <div class="mejores-tours-header"  id="id-tours-header">
             <h2>Tenemos las mejores ofertas exclusivas</h2>
             <h1>¿A dónde quieres viajar hoy?</h1>
         </div>
@@ -312,16 +320,17 @@
                 </div>
             </div>
         </section>
-        <section class="equipo-container fondo-blanco">
+        <section class="equipo-container fondo-blanco" id="id-equipo">
             <div class="equipo-wrapper">
                 <div class="equipo-presentacion">
                     <h3>Nuestro equipo</h3>
                     <div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                            vehicula lectus suspendisse massa scelerisque. Pellentesque
-                            semper quis lectus faucibus. Vitae, ullamcorper lacus sit amet
-                            proin ornare. Amet molestie neque tincidunt massa malesuada.
+                            Somos un equipo de diseñadores y desarrolladores Web Front End
+                            que nos estamos embarcando en nuestro primer proyecto de trabajo en
+                            equipo en el mundo de la programación. A través del proyecto CMYK 
+                            del discord de FrontEndCafé nos conocimos y trabajamos en esta página
+                            web de Tours.
                         </p>
                     </div>
                 </div>
@@ -337,8 +346,8 @@
                                 Astrid <br />
                                 Malamud
                             </h4>
-                            <p>Maquetadora</p>
-                            <button>CONTACTO</button>
+                            <p>Desarrolladora Web</p>
+                            <button><a href="https://www.linkedin.com/in/astrid-malamud-738ba971/" target="_blank">CONTACTO</a> </button>
                         </div>
                     </div>
                     <div class="tarjeta">
@@ -353,7 +362,7 @@
                                 Malamud
                             </h4>
                             <p>Maquetadora</p>
-                            <button>CONTACTO</button>
+                            <button><a href="#" target="_blank">CONTACTO</a> </button>
                         </div>
                     </div>
                     <div class="tarjeta">
@@ -368,7 +377,7 @@
                                 Malamud
                             </h4>
                             <p>Maquetadora</p>
-                            <button>CONTACTO</button>
+                            <button><a href="#" target="_blank">CONTACTO</a> </button>
                         </div>
                     </div>
                     <div class="tarjeta">
@@ -383,7 +392,7 @@
                                 Malamud
                             </h4>
                             <p>Maquetadora</p>
-                            <button>CONTACTO</button>
+                            <button><a href="#" target="_blank">CONTACTO</a> </button>
                         </div>
                     </div>
                     <div class="tarjeta">
@@ -398,7 +407,7 @@
                                 Malamud
                             </h4>
                             <p>Maquetadora</p>
-                            <button>CONTACTO</button>
+                            <button><a href="#" target="_blank">CONTACTO</a> </button>
                         </div>
                     </div>
                     <div style="width: 10%" class="fondo-blanco"></div>
@@ -417,5 +426,6 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
     <script src="/js/header.js"></script>
+    <script src="/js/nav.js"></script>
 </body>
 </html>
