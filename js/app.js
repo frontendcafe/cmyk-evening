@@ -117,40 +117,40 @@ function displayAllCards(e) {
   });
 }
 
-function displayCardsByCountry(pais) {
-  // e.preventDefault();
-  bestTours.innerText = pais;
-  if(allTours.classList.contains('invisible')){
-    allTours.classList.add('btn-text');
-    allTours.classList.remove('invisible');
-  }
+// function displayCardsByCountry(pais) {
+//   // e.preventDefault();
+//   bestTours.innerText = pais;
+//   if(allTours.classList.contains('invisible')){
+//     allTours.classList.add('btn-text');
+//     allTours.classList.remove('invisible');
+//   }
 
 
-  cardsSection.innerHTML = '';
-  console.log(resultsArray);
-  resultsArray.forEach((tour, i) => {
+//   cardsSection.innerHTML = '';
+//   console.log(resultsArray);
+//   resultsArray.forEach((tour, i) => {
 
-    if(tour.city.country.toLowerCase() === pais.toLowerCase()){
-      console.log(tour.city.name);
-      cardsSection.innerHTML += `
-      <div class="tour-card tour-card-${i + 1}" 
-        style="background:#fff url(${tour.img}) no-repeat center;">
-        <div class="card-content">
-          <div class="first-content">
-            <span class="tour-price">$${tour.priceUsd}</span>
-          </div>
-          <div class="second-content">
-            <h6 class="card-country">${tour.city.country}</h6>
-            <h3 class="card-place">${tour.city.name}</h3>
-            <h6 class="card-country">${tour.tourName}</h6>
-          </div>
-        </div>
-      </div>
-    `;
-    }
+//     if(tour.city.country.toLowerCase() === pais.toLowerCase()){
+//       console.log(tour.city.name);
+//       cardsSection.innerHTML += `
+//       <div class="tour-card tour-card-${i + 1}" 
+//         style="background:#fff url(${tour.img}) no-repeat center;">
+//         <div class="card-content">
+//           <div class="first-content">
+//             <span class="tour-price">$${tour.priceUsd}</span>
+//           </div>
+//           <div class="second-content">
+//             <h6 class="card-country">${tour.city.country}</h6>
+//             <h3 class="card-place">${tour.city.name}</h3>
+//             <h6 class="card-country">${tour.tourName}</h6>
+//           </div>
+//         </div>
+//       </div>
+//     `;
+//     }
 
-  });
-}
+//   });
+// }
 // CONSULTAR SI PODEMOS INTEGRAR LOS TOURS DE UNA MISMA CIUDAD EN UN SOLO OBJETO?
 // LA SECCIÓN EN SI NO ES MUY DINAMICA YA QUE REQUIERE DE ESTAR ACTUALIZANDO LA PÁGINA CADA VEZ QUE SE CAMBIA DE TAMAÑO DEL VW PARA QUE MUESTRE LAS CANTIDADES DE CARDS CORRESPONDIENTES SEGÚN EL RESPONSIVE
 // PS: IGUAL EL PROBLEMA SON LAS IMAGENES Y CREO QUE CAMBIANDO EL NOMBRE DE DICHAS IMAGENES Y PONIENDO UNA DISTINTA POR CADA TOUR SE PUEDE SOLUCIONAR
@@ -158,20 +158,20 @@ function displayCardsByCountry(pais) {
 
 allTours.addEventListener('click', displayAllCards);
 window.addEventListener('resize', displayCards);
-arg.addEventListener('click', function(){
-  displayCardsByCountry('Argentina')
-});
-mex.addEventListener('click', function(){
-  displayCardsByCountry('México')
-});
-per.addEventListener('click', function(){
-  displayCardsByCountry('Perú')
-});
-chi.addEventListener('click', function(){
-  displayCardsByCountry('Chile')
-});
-ita.addEventListener('click', function(){
-  displayCardsByCountry('Italia')
-});
+// arg.addEventListener('click', function(){
+//   displayCardsByCountry('Argentina')
+// });
+// mex.addEventListener('click', function(){
+//   displayCardsByCountry('México')
+// });
+// per.addEventListener('click', function(){
+//   displayCardsByCountry('Perú')
+// });
+// chi.addEventListener('click', function(){
+//   displayCardsByCountry('Chile')
+// });
+// ita.addEventListener('click', function(){
+//   displayCardsByCountry('Italia')
+// });
 getInfoTours();
 
