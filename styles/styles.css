@@ -352,7 +352,9 @@ h1 {
 .navegacion-container {
   width: 100vw;
 }
-
+.navegacion-responsive{
+  position: relative;
+}
 .navegacion-fija {
   display: flex;
   width: 100vw;
@@ -380,7 +382,7 @@ h1 {
 }
 
 .navegacion-hamburguesa img {
-  width: 24px;
+  /* width: 24px; */
   height: 18px;
   position: relative;
   top: 50%;
