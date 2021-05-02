@@ -685,6 +685,12 @@ footer {
 
 @media (min-width: 1025px) {
     /*Navegacion*/
+    .navegacion-desplegable div{
+      display: none;
+    }
+    .navegacion-desplegable{
+      z-index: -1;
+    }
     .navegacion-fondo-imagen {
         background-image: url(/assets/tours/arg/01_arg.jpeg);
         height: 735px;
