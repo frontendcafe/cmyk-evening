@@ -545,7 +545,7 @@ h1 {
 .equipo-tarjetas {
   padding: 0 0 10% 0;
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .tarjeta {
@@ -561,8 +561,8 @@ h1 {
 
 .tarjeta-img div {
   border-radius: 50%;
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   background: linear-gradient(180deg, #fdfdfe 0%, #eceff1 100%);
   margin-bottom: 30px;
   --border-shadow: 4px 4px 13px rgba(0, 0, 0, 0.13);
@@ -606,6 +606,10 @@ h1 {
   color: #ffffff;
   margin: 15px 0 20px 0;
   text-decoration: none;
+}
+.tarjeta-descripcion button a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*MODAL DE RESERVAS*/
@@ -745,9 +749,7 @@ footer {
     .mejores-tours-header {
         padding: 0 20px;
     }
-}
-
-/*Nuestro Equipo*/
+    /*Nuestro Equipo*/
 
 .equipo-tarjetas {
   display: block;
@@ -758,3 +760,6 @@ footer {
   display: inline-block;
   margin: 0 5% 5% 5%;
 }
+}
+
+
