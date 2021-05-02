@@ -240,7 +240,7 @@
     "id": "5",
     "city": {
       "name": "Santiago de Chile",
-      "country": "chile",
+      "country": "Chile",
       "longitude": "",
       "latitude": ""
     },
@@ -296,7 +296,7 @@
     "id": "6",
     "city": {
       "name": "Valparaiso",
-      "country": "chile",
+      "country": "Chile",
       "longitude": "",
       "latitude": ""
     },
@@ -358,7 +358,7 @@
     "id": "7",
     "city": {
       "name": "La Serena",
-      "country": "chile",
+      "country": "Chile",
       "longitude": "",
       "latitude": ""
     },
@@ -421,7 +421,7 @@
     "id": "8",
     "city": {
       "name": "Maipo",
-      "country": "chile",
+      "country": "Chile",
       "longitude": "",
       "latitude": ""
     },
@@ -780,7 +780,7 @@
     "id": "14",
     "city": {
       "name": "Arquipa",
-      "country": "Peru",
+      "country": "Perú",
       "longitude": "",
       "latitude": ""
     },
@@ -899,7 +899,7 @@
     "id": "16",
     "city": {
       "name": "Arquipa",
-      "country": "Peru",
+      "country": "Perú",
       "longitude": "",
       "latitude": ""
     },
@@ -961,7 +961,7 @@
     "id": "17",
     "city": {
       "name": "Vaticano",
-      "country": "Vaticano",
+      "country": "Italia",
       "longitude": "",
       "latitude": ""
     },

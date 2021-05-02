@@ -154,19 +154,19 @@ div .tour-card-3 {
 div .tour-card-4 {
   background: #fff url(../assets/tours/arg/03_arg.jpeg) no-repeat center;
 
-  display: none;
+  /* display: none; */
 }
 
 div .tour-card-5 {
   background: #fff url(../assets/tours/ita/01_ita.jpeg) no-repeat center;
 
-  display: none;
+  /* display: none; */
 }
 
 div .tour-card-6 {
   background: #fff url(../assets/tours/chi/01_chi.jpg) no-repeat center;
 
-  display: none;
+  /* display: none; */
 }
 
 div:is(.tour-card-1, .tour-card-2, .tour-card-3, .tour-card-4, .tour-card-5, .tour-card-6) {
@@ -464,14 +464,14 @@ h1 {
   box-shadow: 4px 4px 13px 0px #00000021;
   border-radius: 15px;
   display: flex;
-  margin: 5%;
+  margin: 0 5% 3% 5%;
   justify-content: space-around;
   padding-top: 3% 0;
 }
 
 .pais {
   text-align: center;
-  padding: 3% 0;
+  padding: 5px 0;
   cursor: pointer;
 }
 
@@ -488,8 +488,8 @@ h1 {
 }
 
 .pais-bandera div img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: relative;
   top: 50%;
@@ -508,6 +508,12 @@ h1 {
   line-height: 22px;
   text-align: center;
   color: #061823;
+}
+.texto-corto{
+  display: block;
+}
+.texto-largo{
+  display: none;
 }
 
 /* NUESTRO EQUIPO */
@@ -647,12 +653,12 @@ footer {
 
     /*CATEGORIAS POR PAIS*/
     .pais-bandera div {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     .pais-bandera div img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     .footer-container {
         flex-flow: row;
@@ -695,29 +701,37 @@ footer {
     }
     /*CATEGORIAS POR PAISES*/
     .pais-bandera div {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
     .pais-bandera div img {
-        width: 65px;
-        height: 65px;
+        width: 45px;
+        height: 45px;
     }
     .pais {
         width: 18%;
         display: flex;
-        justify-content: space-around;
-        padding: 1% 0;
+        justify-content: space-evenly;
+        padding: 5px 0;
     }
-    /* .pais-nombre {} */
+    .pais-nombre {
+      padding-top: 0;
+    }
     .pais-nombre p {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         font-weight: 800;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 16px;
         color: #172176;
     }
+    .texto-corto{
+      display: none;
+    }
+    .texto-largo{
+      display: block;
+    }
+
     .footer-container {
         flex-flow: row;
         height: 90px;

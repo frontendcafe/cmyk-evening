@@ -1,3 +1,4 @@
+const boton = document.getElementById("toggle-menu");
 function ToggleMenu(){
     var menu = document.getElementById("nav-desplegable");
     var imgCruz = document.getElementById("img-cruz");
@@ -13,3 +14,6 @@ function ToggleMenu(){
         imgHamb.style.display = "none";
     }
 }
+
+
+boton.addEventListener('click', ToggleMenu);
