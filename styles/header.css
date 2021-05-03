@@ -6,9 +6,12 @@ header {
     background-color: #fff;
     padding: 0 20px;
     display: flex;
+    z-index: 1;
 }
 header h1 {
+    font-size: 44px;
     color: var(--secondary-background);
+    font-weight: var(--h2-font-weight);
 }
 header img {
     width: 100%;
@@ -97,7 +100,7 @@ images can be used instead
 .controls div {
     width: 10%;
     position: absolute;
-    height: 100%;
+    height: 25%;
     font-size: 46px;
     cursor: pointer;
     color: var(--secondary-button);
@@ -129,8 +132,6 @@ i {
 }
 
 @media (min-width: 564px) and (max-width: 769px) {
-    header {
-    }
     header img {
         width: 70%;
         display: flex;
