@@ -5,7 +5,7 @@ La aplicación es un sitio de excursiones donde se puede buscar información por
 
 Fué hecho por el equipo Evening 🌃
 
-- Nacho (@)
+- Nacho (nach0Man#0927)
 - Astrid (@)
 - Enrique (@)
 - Pablo (@)
