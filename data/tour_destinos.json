@@ -10,8 +10,8 @@
     "img": "../assets/imgs/cards/Buenos-Aires.jpeg",
     "durationHs": 6,
     "priceUsd": 50,
-    "startDate": "8:00",
-    "endDate": "14:00",
+    "startDate": "9:00",
+    "endDate": "15:00",
     "include": ["desayuno", "almuerzo", "guia", "entradas"],
     "description": [
       "En este tour conocerás la perspectiva política e histórica de nuestra ciudad. Comenzaremos el recorrido en el tradicional Café Tortoni, donde se tomará el desayuno. Luego  de la merienda caminaremos por el reconocido boulevard de la Avenida de Mayo. Descubriremos su arquitectura y sus secretos hasta llegar a la Plaza de Mayo. Hablaremos acerca de los gloriosos y terribles períodos de la historia de Argentina. Luego nos dirigiremos hacia el obelisco donde se podrán tomar fotos en este monumento neural de la ciudad. Para el almuerzo nos dirigiremos a la Pizzería Guerrin. Por último, finalizaremos el tour en el teatro colón, donde tendremos una visita guiada por esta centenaria estructura con más de 100 años de historia."
@@ -19,36 +19,36 @@
     "stops": [
       {
         "name": "Cafe Tortoni",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3782121",
+        "latitude": "-34.6086531",
         "stopNumber": 0,
         "activity": "Desayuno y visita."
       },
       {
         "name": "Plaza de Mayo",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3722832",
+        "latitude": "-34.6083667",
         "stopNumber": 1,
         "activity": "Explicacion Casa Rosada, Cabildo, Historia."
       },
       {
         "name": "Obelisco",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3817088",
+        "latitude": "-34.6061231",
         "stopNumber": 2,
         "activity": "Fotos"
       },
       {
         "name": "Pizzeria Guerrin",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.385982",
+        "latitude": "-34.6041209",
         "stopNumber": 3,
         "activity": "Comida"
       },
       {
         "name": "Teatro Colon",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3830786",
+        "latitude": "-34.6010406",
         "stopNumber": 4,
         "activity": "Visita guiada"
       }
@@ -78,41 +78,41 @@
       "tickets"
     ],
     "description": [
-      "En este tour conocerás las zonas rurales y alejadas de la ciudad de Buenos Aires. El tour comenzará en Bellevue Bed & Breakfast, donde tomaremos desayuno. Luego, pasaremos a visitar la Parroquia San Eduardo, cuya estructura recuerda la arquitectura europea, siendo una pieza de historia que perdura en el tiempo. Luego ascenderemos 3 km en una caminata por el Cerro Llao Llao. Luego, Comeremos almuerzo en el restaurant Parrilla Alun Nehuen"
+      "En este tour conocerás las zonas rurales y alejadas de Bariloche. El tour comenzará en Bellevue Bed & Breakfast, donde tomaremos desayuno. Luego, pasaremos a visitar la Parroquia San Eduardo, cuya estructura recuerda la arquitectura europea, siendo una pieza de historia que perdura en el tiempo. Luego ascenderemos 3 km en una caminata por el Cerro Llao Llao. Luego, Comeremos almuerzo en el restaurant Parrilla Alun Nehuen"
     ],
     "stops": [
       {
-        "name": "Cafe Tortoni",
-        "longitude": "",
-        "latitude": "",
+        "name": "Bellevue Salón de té",
+        "longitude": "-71.5127736",
+        "latitude": "-41.0487192",
         "stopNumber": 0,
-        "activity": "Desayuno y visita."
+        "activity": "Desayuno con vista."
       },
       {
         "name": "Parroquia San Eduardo",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.527367",
+        "latitude": "-41.0547129",
         "stopNumber": 1,
         "activity": "Fotos"
       },
       {
-        "name": "Cerro Llao Ll.",
-        "longitude": "",
-        "latitude": "",
+        "name": "Cerro Llao Llao",
+        "longitude": "-71.5522475",
+        "latitude": "-41.0480372",
         "stopNumber": 2,
         "activity": "Ascenso de 3km"
       },
       {
         "name": "Restaurant Parrilla Alun Nehuen",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.5668793",
+        "latitude": "-41.0745316",
         "stopNumber": 3,
         "activity": "Almuerzo"
       },
       {
         "name": "Cerro Campanario",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.4771936",
+        "latitude": "-41.0752416",
         "stopNumber": 4,
         "activity": "visita, fotos, cafeteria"
       }
@@ -139,36 +139,36 @@
     "stops": [
       {
         "name": "Cementerio Recoleta",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3934409",
+        "latitude": "-34.5874834",
         "stopNumber": 0,
         "activity": "paseo, visita guiada, fotos"
       },
       {
         "name": "Centro Cultural Recoleta",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3915051",
+        "latitude": "-34.586117",
         "stopNumber": 1,
         "activity": "Lugar histórico y explicación"
       },
       {
         "name": "Plaza Francia",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3915051",
+        "latitude": "-34.586117",
         "stopNumber": 2,
         "activity": "Paseo, feira, caminata, fotos"
       },
       {
         "name": "Museo Bellas Artes",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3915051",
+        "latitude": "-34.586117",
         "stopNumber": 3,
         "activity": "Visita guiada al museo"
       },
       {
         "name": "Facultad de Derecho y Floraris Genética",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.3903506",
+        "latitude": "-34.5835581",
         "stopNumber": 4,
         "activity": "Paseo, fotos y explicación"
       }
@@ -182,7 +182,7 @@
       "longitude": "",
       "latitude": ""
     },
-    "tourName": "Tour Triga, Delta, San Isidro",
+    "tourName": "Tour Tigre, Delta, San Isidro",
     "img": "../assets/imgs/cards/delta.jpeg",
     "durationHs": 6,
     "startDate": "8:00",
@@ -201,36 +201,36 @@
     "stops": [
       {
         "name": "Delta Tigre",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.559068",
+        "latitude": "-34.4338117",
         "stopNumber": 0,
         "activity": "Paseo en lancha por el delta del tigre y bebidas"
       },
       {
         "name": "Vivanco",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.5783074",
+        "latitude": "-34.4187588",
         "stopNumber": 1,
         "activity": "Almuerzo"
       },
       {
         "name": "Estación fluvial",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.5809337",
+        "latitude": "-34.4212495",
         "stopNumber": 2,
         "activity": "Paseo, fotos y descanso"
       },
       {
         "name": "Puerto de frutos",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.5732693",
+        "latitude": "-34.4198956",
         "stopNumber": 3,
         "activity": "Paseo, fotos y explicación"
       },
       {
         "name": "Catedral de San Isidro",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-58.5093398",
+        "latitude": "-34.4671466",
         "stopNumber": 4,
         "activity": "Paseo, fotos, visita guiada"
       }
@@ -489,8 +489,8 @@
     "tourName": "Tour Coyoacan CDMX",
     "img": "../assets/imgs/cards/Ciudad-de-México.jpeg",
     "durationHs": 5,
-    "startDate": "8:00",
-    "endDate": "13:00",
+    "startDate": "10:00",
+    "endDate": "15:00",
     "priceUsd": 50,
     "include": ["café", "almuerzo", "transporte", "entradas"],
     "description": [
@@ -499,36 +499,36 @@
     "stops": [
       {
         "name": "Café Jarocho",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1632789",
+        "latitude": "19.3500854",
         "stopNumber": 0,
         "activity": "Encuentro, cafetería"
       },
       {
         "name": "Museo Frida Kahlo",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1624636",
+        "latitude": "19.3551806",
         "stopNumber": 1,
         "activity": "Visita guiada"
       },
       {
         "name": "Coyoacan plaza y barrio",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1622286",
+        "latitude": "19.3496089",
         "stopNumber": 2,
         "activity": "Paseo histórico, feria, visita guiada"
       },
       {
         "name": "Mercado antojitos mexicanos",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1617337",
+        "latitude": "19.3495988",
         "stopNumber": 3,
         "activity": "Almuerzo"
       },
       {
         "name": "UNAM",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1851584",
+        "latitude": "19.3216475",
         "stopNumber": 4,
         "activity": "Paseo por la universidad"
       }
@@ -560,36 +560,36 @@
     "stops": [
       {
         "name": "Guachimontones",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-103.8371516",
+        "latitude": "20.6984358",
         "stopNumber": 0,
         "activity": "Lugar arquelógico, visita guiada"
       },
       {
         "name": "Tequila Tres Mujeres",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-103.7009879",
+        "latitude": "20.7963911",
         "stopNumber": 1,
         "activity": "Visita de destilería, visita guiada"
       },
       {
         "name": "Plaza principal Tequila",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-103.8390397",
+        "latitude": "20.8849396",
         "stopNumber": 2,
         "activity": "Paseo, explicación y almuerzo"
       },
       {
         "name": "Fábrica la Rojeña",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-103.8398751",
+        "latitude": "20.8850465",
         "stopNumber": 3,
         "activity": "Visita guiada y degustación"
       },
       {
         "name": "Cantaritos del Güero",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-103.7642837",
+        "latitude": "20.8559662",
         "stopNumber": 4,
         "activity": "Visita"
       }
@@ -622,36 +622,36 @@
     "stops": [
       {
         "name": "Zona Arequeológica Teotihuacan",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-98.8510886",
+        "latitude": "19.6837076",
         "stopNumber": 0,
         "activity": "Visita guiada a la zona arqueológica, ruinas, pirámides con explicación"
       },
       {
         "name": "Tlatelolco, sitio Arqueológico",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1413812",
+        "latitude": "19.452851",
         "stopNumber": 1,
         "activity": "Visita guiada a la zona arqueológica museo y explicación"
       },
       {
         "name": "El charco de las Ranas",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1245584",
+        "latitude": "19.4655567",
         "stopNumber": 2,
         "activity": "Alumerzo en taquería"
       },
       {
         "name": "Palacio Bellas Artes",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1412",
+        "latitude": "19.4352",
         "stopNumber": 3,
         "activity": "Visita guiada"
       },
       {
         "name": "Alameda Central",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-99.1412",
+        "latitude": "19.4352",
         "stopNumber": 4,
         "activity": "Visita a la plaza principal, explicación, pase y fotos"
       }
@@ -685,36 +685,36 @@
     "stops": [
       {
         "name": "Cenote Azul, Bacalar",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-88.4111255",
+        "latitude": "18.6475952",
         "stopNumber": 0,
         "activity": "Desayuno, andar en el cenote, fotos"
       },
       {
         "name": "Cenote Cocalitos",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-88.4102797",
+        "latitude": "18.6494825",
         "stopNumber": 1,
         "activity": "Spa natural, explicación tiempo para entrar al agua"
       },
       {
         "name": "Laguna de los 7 colores",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-88.3802018",
+        "latitude": "18.6841291",
         "stopNumber": 2,
         "activity": "Paseo en lancha, visita al canal de los piratas, tiempo para estar en el agua"
       },
       {
         "name": "Fuerte San Felipe de Bacalar",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-88.3860812",
+        "latitude": "18.6719679",
         "stopNumber": 3,
         "activity": "Visita guiada al centro de Bacalar, paseo y fotos"
       },
       {
         "name": "Bacalar",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-88.3887929",
+        "latitude": "18.6758302",
         "stopNumber": 4,
         "activity": "Tiempo libre, almuerzo"
       }
