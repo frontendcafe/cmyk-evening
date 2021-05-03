@@ -4,7 +4,8 @@
     "city": {
       "name": "Buenos Aires",
       "country": "Argentina",
-      "longitude": ""
+      "longitude": "",
+      "latitude": ""
     },
     "tourName": "Tour centro de Buenos Aires",
     "img": "../assets/imgs/cards/Buenos-Aires.jpeg",
@@ -241,8 +242,8 @@
     "city": {
       "name": "Santiago de Chile",
       "country": "Chile",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "-70.68001761321298",
+      "latitude": "-33.44745926403001"
     },
     "tourName": "Tour centro Santiago de Chile",
     "img": "../assets/imgs/cards/Santiago-de-Chile.jpeg",
@@ -257,36 +258,36 @@
     "stops": [
       {
         "name": "Cerro San Cristobal",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.6243379",
+        "latitude": "-33.4241119",
         "stopNumber": 0,
         "activity": "Vistas, fotos, historia"
       },
       {
         "name": "Castillo Hidalgo y Cerro Santa Lucia",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.6454776",
+        "latitude": "-33.4395932",
         "stopNumber": 1,
         "activity": "Lugar histórico y explicación"
       },
       {
         "name": "Plaza de armas",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.6505406",
+        "latitude": "-33.437948",
         "stopNumber": 2,
         "activity": "Explicación casa de armas"
       },
       {
-        "name": "La moneda",
-        "longitude": "",
-        "latitude": "",
+        "name": "Palacio de La Moneda",
+        "longitude": "-70.6534893",
+        "latitude": "-33.4421452",
         "stopNumber": 3,
         "activity": "Explicación la moneda"
       },
       {
         "name": "Barrio Lastarria",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.6431754",
+        "latitude": "-33.4378622",
         "stopNumber": 4,
         "activity": "Paseo y almuerzo"
       }
@@ -297,8 +298,8 @@
     "city": {
       "name": "Valparaiso",
       "country": "Chile",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "-71.6285581",
+      "latitude": "-33.0501633"
     },
     "tourName": "Tour Valparaiso y Viña del Mar",
     "img": "../assets/imgs/cards/Valparaiso.jpeg",
@@ -319,36 +320,36 @@
     "stops": [
       {
         "name": "La Sebastiana, Museo de Pablo Neruda",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.6285581",
+        "latitude": "-33.0501633",
         "stopNumber": 0,
         "activity": "Visita al museo"
       },
       {
         "name": "Plaza Sotomayor",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.631236",
+        "latitude": "-33.0386135",
         "stopNumber": 1,
         "activity": "Historia, vistas y paseo"
       },
       {
         "name": "Paseo Yugoslavo y ascensor del Peral",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.6297506",
+        "latitude": "-33.039906",
         "stopNumber": 2,
         "activity": "Paseo, arquitectura, vistas y fotos"
       },
       {
         "name": "Cerro Concepcion y Catedral",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.628255",
+        "latitude": "-33.0427061",
         "stopNumber": 3,
         "activity": "Paseo y visita a la Catedral"
       },
       {
         "name": "Playa las salinas",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.5537292",
+        "latitude": "-33.0064915",
         "stopNumber": 4,
         "activity": "Almuerzo y paseo por la playa"
       }
@@ -359,8 +360,8 @@
     "city": {
       "name": "La Serena",
       "country": "Chile",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "-71.279467",
+      "latitude": "-29.9058497"
     },
     "tourName": "Tour la Serena",
     "img": "../assets/imgs/cards/La-Serena.jpeg",
@@ -382,36 +383,36 @@
     "stops": [
       {
         "name": "Playa y Faro Monumental",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.265808",
+        "latitude": "-29.9060042",
         "stopNumber": 0,
         "activity": "Paseo por la Av. del Mar y faro Monumental"
       },
       {
         "name": "Jardín Japonés",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.2567096",
+        "latitude": "-29.900477",
         "stopNumber": 1,
         "activity": "Visita al Parque y Jardín Japonés"
       },
       {
         "name": "Plaza de la Ciudadanía",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.2567096",
+        "latitude": "-29.900477",
         "stopNumber": 2,
         "activity": "Recorrida e Historias"
       },
       {
         "name": "Museo Arqueológico",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.2567096",
+        "latitude": "-29.900477",
         "stopNumber": 3,
         "activity": "Visita al museo"
       },
       {
         "name": "Mallplaza la Serena",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-71.2552133",
+        "latitude": "-29.9125228",
         "stopNumber": 4,
         "activity": "Recorrida de compras"
       }
@@ -422,8 +423,8 @@
     "city": {
       "name": "Maipo",
       "country": "Chile",
-      "longitude": "",
-      "latitude": ""
+      "longitude": "-70.7852043",
+      "latitude": "-33.7305642"
     },
     "tourName": "Bodega Concha y Toro",
     "img": "../assets/imgs/cards/Maipo.jpeg",
@@ -443,36 +444,36 @@
     "stops": [
       {
         "name": "Concha y Toro",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.7852043",
+        "latitude": "-33.7305642",
         "stopNumber": 0,
         "activity": "Caminata por los jardines de la residencia exterior de verano de la familia Concha y Toro"
       },
       {
         "name": "Variety Garden",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.8604427",
+        "latitude": "-33.7363626",
         "stopNumber": 1,
         "activity": "Visita a un lugar con 26 variedades de uvas para vinificación"
       },
       {
         "name": "Viñedo Viejo Pirque",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.6137535",
+        "latitude": "-33.7129416",
         "stopNumber": 2,
         "activity": "Vista panorámica del valle del Maipo desde las terrazas de los viñedos"
       },
       {
         "name": "Visita a las bodegas",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.7884926",
+        "latitude": "-33.718536",
         "stopNumber": 3,
         "activity": "Paseo"
       },
       {
         "name": "Visita a las bodegas",
-        "longitude": "",
-        "latitude": "",
+        "longitude": "-70.732294",
+        "latitude": "-33.7750952",
         "stopNumber": 4,
         "activity": "Cata de vinos. Degustación exclusiva de cuatro variedades de vinos"
       }
