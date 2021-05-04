@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,10 +31,17 @@
             </div>
             <div class="navegacion-hamburguesa">
               <a href="javascript:void(0);" id="toggle-menu">
-                <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
-                <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
+                <img
+                  id="img-hamburguesa"
+                  src="/assets/icons/icon-menu.png"
+                  alt="Abrir menu"
+                />
+                <img
+                  id="img-cruz"
+                  src="/assets/icons/icon-close.png"
+                  alt="Cerrar menu"
+                />
               </a>
-                
             </div>
           </div>
           <div class="navegacion-desplegable" id="nav-desplegable">
@@ -117,13 +123,41 @@
               <!-- calendario  -->
 
               <div class="calendar-container">
-                <h3 class="fecha">Fecha de Salida:</h3>
-                <div class="calendar">Calendario a hacer en js</div>
-                <h2 class="precio-persona">Precio p/persona:&ensp; $5000</h2>
                 <br />
-                <button class="reservar-button myBtn">RESERVAR</button>
+                <h3 class="fecha-salida">Fecha de Salida:</h3>
+                <div class="container-calendar">
+                  <div class="calendar">
+                    <br />
+                    <br />
+                    <div class="month">
+                      <i class="prev"> <</i>
+                      <div class="date">
+                        <h3><b class="date-year"></b></h3>
+                      </div>
+                      <i class="next">></i>
+                    </div>
+                    <br />
+                    <div class="weekdays">
+                      <div>SU</div>
+                      <div>MO</div>
+                      <div>TU</div>
+                      <div>WE</div>
+                      <div>TH</div>
+                      <div>FR</div>
+                      <div>SA</div>
+                    </div>
+                    <div class="days"></div>
+                  </div>
+                </div>
+                <div class="calendar-border"></div>
+                <h3 class="precio-persona">
+                  &emsp; Precio p/persona:&emsp;&emsp;
+                  <span class="precio-reserva">$5000</span>
+                </h3>
+                <br />
+<div class="padding-buton">
+                <button class="reservar-button myBtn">RESERVAR</button></div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -284,10 +318,17 @@
               </div>
               <div class="navegacion-hamburguesa">
                 <a href="javascript:void(0);" onclick="ToggleMenu()">
-                  <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
-                  <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
+                  <img
+                    id="img-hamburguesa"
+                    src="/assets/icons/icon-menu.png"
+                    alt="Abrir menu"
+                  />
+                  <img
+                    id="img-cruz"
+                    src="/assets/icons/icon-close.png"
+                    alt="Cerrar menu"
+                  />
                 </a>
-                  
               </div>
             </div>
             <div class="navegacion-desplegable">
@@ -414,8 +455,6 @@
         </div>
       </div>
 
- 
-
       <div class="modal reservas">
         <div class="modal-content-confirmada">
           <div class="modal-header">
@@ -472,7 +511,6 @@
       </footer>
       <script src="./js/app.js"></script>
       <script src="./js/modal.js"></script>
-
     </div>
     <script src="/js/nav.js"></script>
   </body>

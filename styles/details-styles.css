@@ -159,6 +159,7 @@ div .third-title {
   border-radius: 21px;
   box-shadow: var(--border-shadow);
   border: var(--border);
+  
 }
 
 .itinerario-container span {
@@ -167,17 +168,6 @@ div .third-title {
 }
 
 @media (min-width: 769px) and (max-width: 1136px) {
-<<<<<<< HEAD
-  .map-container {
-    width: 770px;
-    height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 21px;
-    box-shadow: var(--border-shadow);
-    border: var(--border);
-  }
-=======
     .map-container {
         width: 770px;
         height: 100%;
@@ -242,62 +232,11 @@ div .third-title {
         height: 300px;
     }
     
->>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 }
 
 
 /* Desktop */
 @media (min-width: 1136px) {
-<<<<<<< HEAD
-  .itinerario-info {
-    width: 400px;
-  }
-
-  .itinerario-container {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 60px;
-  }
-
-  .map-iframe-container {
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .map-container {
-    width: 770px;
-    height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 21px;
-    box-shadow: var(--border-shadow);
-    border: var(--border);
-  }
-  .itinerario-info {
-    width: 400px;
-  }
-
-  .itinerario-container {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 60px;
-  }
-
-  .map-iframe-container {
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .map-container {
-    width: 770px;
-    height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 21px;
-    box-shadow: var(--border-shadow);
-    border: var(--border);
-  }
-=======
     .itinerario-info {
         width: 400px;
     }
@@ -347,34 +286,146 @@ div .third-title {
         border: var(--border);
     }
 /* calendar */ 
+
 .calendar-container{
-    width: 432px;
-    height: 603px;
-    box-shadow: var(--border-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 432px;
+  height: 603px;
+  box-shadow: var(--border-shadow);
+  border-radius: 27px;
+}
+
+.fecha-salida{
+color: var(--primary-text);
+font-size: 24px;
+font-weight: bold;
+padding-right: 150px;
+padding-top: 20px;
+}
+
+.precio-reserva{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+
+.container-calendar {
+  display: flex;
+  justify-content: center;
+  width: 366px;
+  height: 331px;
+  max-width: 100%;
   
-  }
-  .calendar{
+  margin: auto;
+  width: 50%;
+ 
+}
+
+
+.calendar-border{
+  border-bottom: 1px solid #aaa;
+  margin: 30px 40px;
+}
+
+.date h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #33302C;
+}
+.prev{
   
-    height: 366px;
-    width: 331px;
-    border: 5px solid black;
-  
-  }
-  
-  .fecha{
-    padding-right: 250px;
-  padding-bottom: 10px;
-  font-weight: 700;
-  color: #120C38;
-  }
+  padding-left: 15px;
+}
+
+.next{
+
+  padding-right: 15px;
+}
+
+
+.month {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.month i {
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #33302C;
+
+}
+
+.weekdays div {
+  font-weight: 800;
+  width: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  color: #33302C;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days div {
+  width: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 15px;
+  color:#aaa; 
+}
+
+
+
+.days div:hover {
+color:black;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0;
+
+}
+
+ 
+.calendar-border{
+  border-bottom: 1px solid #aaa;
+  margin: 30px 40px;
+  width: 300px;
+
+}
   .precio-persona{
     font-weight: 700;
   color: #120C38;
-  padding-top: 20px;
+  padding: 30px;
   font-style: bold;
   }
 
@@ -521,9 +572,13 @@ div .third-title {
     border: none;
     width: 348px;
     height: 55px;
-    padding-left: 20px;
+
+    
   }
   
+  .padding-buton{
+    padding-bottom: 20px;
+  }
   .modal-content-confirmada {
     background-color: #fefefe;
     margin: 15% auto;
@@ -579,14 +634,7 @@ div .third-title {
     flex-direction: column;
   
   }
-  .calendar{
-  
-    height: 366px;
-    width: 331px;
-    border: 5px solid black;
-  
-  }
-  
+
   .fecha{
     padding-right: 250px;
   padding-bottom: 10px;
@@ -660,7 +708,6 @@ div .third-title {
         width: 40vw;
         height: 300px;
     }
->>>>>>> e69007a856e84936ae1de76becf1103356dbb0b2
 }
 
 /* Desktop */
