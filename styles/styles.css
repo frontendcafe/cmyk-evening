@@ -80,9 +80,9 @@ li {
     height: 100%;
     scroll-behavior: smooth;
     /* Center and scale the image nicely */
-    background-position: 32% 85%;
+    background-position: -20px 32px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
 }
 .fondo-blanco {
     background-color: #fff;
@@ -638,6 +638,16 @@ footer {
     .mejores-tours-header {
         padding: 60px 50px 30px 50px;
     }
+    .bg {
+        /* The image used */
+        background-image: url("/assets/fondo.png");
+        height: 100%;
+        scroll-behavior: smooth;
+        /* Center and scale the image nicely */
+        background-position: -20px 70px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 /* Desktop */
@@ -733,8 +743,8 @@ footer {
         height: 100%;
         scroll-behavior: smooth;
         /* Center and scale the image nicely */
-        background-position: center;
+        background-position: -20px 32px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-attachment: fixed;
     }
 }

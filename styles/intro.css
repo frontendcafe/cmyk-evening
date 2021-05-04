@@ -6,11 +6,32 @@
     justify-content: center;
     margin: 0 auto;
     height: 100vh;
+     scroll-behavior: smooth;
 }
 
  main svg{
     width: 100%;
 }
+
+#intro{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+  position: relative;
+    
+    
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+    position: absolute;     
+  }
+}
+
 .intro-container-texto{
 display:flex;
 flex-flow:column;
@@ -19,7 +40,7 @@ flex-flow:column;
     color:white;
     text-decoration: none;
 }
- .button-descubre {
+/*  .button-descubre {
         font-family: var(--main-font);
         background-color: var(--active-button);
         font-size: var(--buttons-text-font-size);
@@ -35,23 +56,10 @@ flex-flow:column;
         outline: none;
         cursor: pointer;
     }
+ */
 
 
 
-@keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-    }
-}
 
 @-webkit-keyframes slide-top {
     0% {
@@ -66,7 +74,7 @@ flex-flow:column;
 
 
 .svg-elem-1 {
-    animation: slide-top 1s cubic-bezier(0.35, 0.50, 0.70, 0.94) 1.5s both;
+    animation: slide-top 1s cubic-bezier(0.25, 0.50, 0.70, 0.94) 1.5s both;
 }
 
 @-webkit-keyframes animate-svg-fill-2 {
