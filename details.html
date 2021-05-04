@@ -79,7 +79,29 @@
         </div>
       </div>
 
-                    </div>
+      <!-- detalles de los tours -->
+      <div class="descripcion-tour" id="tour-details">
+        <div class="description">
+          <div class="city-country">Argentina</div>
+          <div class="city-name">Buenos Aires</div>
+          <div class="description-travel">
+            <div class="details">
+              <p id="sobre-el-tour">Sobre el tour</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam libero non nemo, itaque incidunt ut laboriosam dolores
+                soluta, laudantium laborum excepturi deleniti? Facere corporis
+                iure cupiditate quisquam sint eum consequuntur? Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Fuga alias enim
+                fugiat! Enim voluptatem eaque eos et optio quia sed sunt harum
+                pariatur, obcaecati suscipit earum eius aliquid nam corrupti.
+              </p>
+              <div class="information-tour">
+                <div class="information">
+                  <p class="subtitle">Informacion antes del Tour</p>
+                  <p class="time-out">Hora de salida: 08:00 am</p>
+                  <p class="durationHs">Duración: 6 horas</p>
+                  <p>Confirmación Instantánea</p>
                 </div>
                 <div class="navegacion-desplegable " id="nav-desplegable">
                     <div>
@@ -413,7 +435,70 @@
                     <span class="close">&times;</span>
                     <h3 class="reservar-tour">Reservar Tour</h3>
                 </div>
-
+      <div class="modal-container">
+        <div class="navegacion-container fondo-blanco">
+          <div class="navegacion-responsive">
+            <div class="navegacion-fija">
+              <div class="navegacion-logo">
+                <a href="index.html">
+                  <img
+                    src="/assets/logos/logo-black.png"
+                    alt="Logo Evening"
+                    class="img-logo-oscuro"
+                  />
+                </a>
+              </div>
+              <div class="navegacion-hamburguesa">
+                <a href="javascript:void(0);" onclick="ToggleMenu()">
+                  <img
+                    id="img-hamburguesa"
+                    src="/assets/icons/icon-menu.png"
+                    alt="Abrir menu"
+                  />
+                  <img
+                    id="img-cruz"
+                    src="/assets/icons/icon-close.png"
+                    alt="Cerrar menu"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="navegacion-desplegable">
+              <div>
+                <a href="#">Home</a>
+              </div>
+              <div>
+                <a href="#">Acerca de</a>
+              </div>
+              <div>
+                <a href="#">Contacto</a>
+              </div>
+            </div>
+          </div>
+          <div class="navegacion-desktop">
+            <div class="navegacion-logo">
+              <a href="index.html">
+                <img
+                  src="/assets/logos/logo-black.png"
+                  alt="Logo Evening"
+                  class="img-logo-oscuro"
+                />
+              </a>
+            </div>
+            <div class="navegacion-links">
+              <div>
+                <a href="">Home</a>
+              </div>
+              <div>
+                <a href="">Acerca de</a>
+              </div>
+              <div>
+                <a href="">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
                 <div class="modal-body">
                     <div class="modal-info">
                         <div class="argentina">Argentina</div>
@@ -439,21 +524,17 @@
                         </div>
 
                         <div class="datos-reserva">Lider de la reservacion</div>
-
-                        <div class="lider">
-                            <div class="firr">
-                                <label for="fname" class="datos-reserva-sub">Nombre</label>
-                                <input type="text" id="fname" name="fname" class="spaceAround" />
-                            </div>
-                            <div class="firr">
-                                <label for="fname" class="datos-reserva-sub">Apellido:</label>
-                                <input type="text" id="fname" name="fname" class="spaceAround" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-
-                    <div class="modal-orden">
+              <div class="personas">
+                <div class="firr">
+                  <label for="fname" class="datos-reserva-sub">Adultos:</label>
+                  <input type="number" name="fname" class="first" />
+                </div>
+                <div class="firr">
+                  <label for="fname" class="datos-reserva-sub">Infantes:</label>
+                  <input type="number" name="fname" class="spaceAround" />
+                </div>
+              </div>
+                   <div class="modal-orden">
                         <div class="sobre-el-tour">Orden de reservacion</div>
                         <div class="argentina">Argentina</div>
                         <div class="buenos-aires">BUENOS AIRES</div>
@@ -463,21 +544,17 @@
                             <p>Hora de Salida: 08:00 a.m.</p>
                             <p>Duración: 6 horas</p>
                         </div>
-
-                        <div class="reserva-totales">
-                            <div>Adultos:</div>
-                            <div>2</div>
-                            <div>Infantes:</div>
-                            <div>0</div>
-                            <div>Total:</div>
-                            <div>$5000</div>
-                        </div>
-                        <button class="reservar-button">RESERVAR</button>
-                    </div>
+              <div class="lider">
+                <div class="firr">
+                  <label for="fname" class="datos-reserva-sub">Nombre</label>
+                  <input type="text" name="fname" class="spaceAround" />
+                </div>
+                <div class="firr">
+                  <label for="fname" class="datos-reserva-sub">Apellido:</label>
+                  <input type="text" name="fname" class="spaceAround" />
                 </div>
             </div>
         </div>
-
 
 
         <div class="modal reservas">
@@ -534,10 +611,10 @@
           />
         </div>
       </footer>
+      <script src="./js/details.js"></script>
       <script src="./js/app.js"></script>
       <script src="./js/modal.js"></script>
     </div>
-    <script src="/js/nav.js"></script>
-</body>
-
+    <script src="./js/nav.js"></script>
+  </body>
 </html>
