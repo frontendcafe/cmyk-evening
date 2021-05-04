@@ -16,8 +16,8 @@
     <title>Evening Tours - Onboarding</title>
 </head>
 
-<body>
-    <main>
+<body class="bg">
+    <main id="intro">
         <div class="intro-container-texto">
             <svg width="880" height="273" viewBox="0 0 880 273" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -56,12 +56,12 @@
                     </clipPath>
                 </defs>
             </svg>
-
+            <!--  <button class="button-descubre"><a href="#inicio-web">DESCUBRE MÁS</a></button> -->
 
         </div>
     </main>
 
-    <div class="container">
+    <div class="container" id="inicio-web">
         <nav>
             <div class="navegacion-container fondo-blanco">
                 <div class="navegacion-responsive">
@@ -72,11 +72,11 @@
                             </a>
                         </div>
                         <div class="navegacion-hamburguesa">
-                          <a href="javascript:void(0);"  id="toggle-menu">
-                            <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
-                            <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
-                          </a>
-                            
+                            <a href="javascript:void(0);" id="toggle-menu">
+                                <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
+                                <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
+                            </a>
+
                         </div>
                     </div>
                     <div class="navegacion-desplegable" id="nav-desplegable">
@@ -173,14 +173,14 @@
             </div>
         </header>
         <div class="paises-container">
-            <div class="paises-wrapper fondo-blanco">
+            <div class="paises-wrapper ">
                 <div class="pais" id="tours-arg">
                     <div class="pais-bandera">
                         <div>
                             <img src="/assets/icons/arg2.png" alt="Bandera Argentina" />
                         </div>
                     </div>
-                    <div class="pais-nombre" >
+                    <div class="pais-nombre">
                         <p class="texto-corto">ARG</p>
                         <p class="texto-largo">ARGENTINA</p>
                     </div>
@@ -200,9 +200,9 @@
                     <div class="pais-bandera">
                         <div><img src="/assets/icons/per.png" alt="Bandera Peru" /></div>
                     </div>
-                    <div class="pais-nombre" >
-                      <p class="texto-corto">PER</p>
-                      <p class="texto-largo">PERÚ</p>
+                    <div class="pais-nombre">
+                        <p class="texto-corto">PER</p>
+                        <p class="texto-largo">PERÚ</p>
                     </div>
                 </div>
                 <div class="pais" id="tours-chi">
@@ -212,8 +212,8 @@
                         </div>
                     </div>
                     <div class="pais-nombre">
-                      <p class="texto-corto">CHI</p>
-                      <p class="texto-largo">CHILE</p>
+                        <p class="texto-corto">CHI</p>
+                        <p class="texto-largo">CHILE</p>
                     </div>
                 </div>
                 <div class="pais" id="tours-ita">
@@ -223,13 +223,13 @@
                         </div>
                     </div>
                     <div class="pais-nombre">
-                      <p class="texto-corto">ITA</p>
-                      <p class="texto-largo">ITALIA</p>
+                        <p class="texto-corto">ITA</p>
+                        <p class="texto-largo">ITALIA</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mejores-tours-header"  id="id-tours-header">
+        <div class="mejores-tours-header" id="id-tours-header">
             <h2>Tenemos las mejores ofertas exclusivas</h2>
             <h1>¿A dónde quieres viajar hoy?</h1>
         </div>
@@ -320,7 +320,7 @@
                 </div>
             </div>
         </section>
-        <section class="equipo-container fondo-blanco" id="id-equipo">
+        <section class="equipo-container" id="id-equipo">
             <div class="equipo-wrapper">
                 <div class="equipo-presentacion">
                     <h3>Nuestro equipo</h3>
@@ -328,7 +328,7 @@
                         <p>
                             Somos un equipo de diseñadores y desarrolladores Web Front End
                             que nos estamos embarcando en nuestro primer proyecto de trabajo en
-                            equipo en el mundo de la programación. A través del proyecto CMYK 
+                            equipo en el mundo de la programación. A través del proyecto CMYK
                             del discord de FrontEndCafé nos conocimos y trabajamos en esta página
                             web de Tours.
                         </p>
@@ -407,7 +407,8 @@
                                 Malamud
                             </h4>
                             <p>Front End Developer</p>
-                            <button><a href="https://www.linkedin.com/in/astrid-malamud-738ba971/" target="_blank">CONTACTO</a> </button>
+                            <button><a href="https://www.linkedin.com/in/astrid-malamud-738ba971/"
+                                    target="_blank">CONTACTO</a> </button>
                         </div>
                     </div>
                     <div style="width: 10%" class="fondo-blanco"></div>
@@ -431,4 +432,5 @@
     <script src="/js/PaisApp.js"></script>
     
 </body>
+
 </html>

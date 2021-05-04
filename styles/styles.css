@@ -74,6 +74,16 @@ li {
   font-family: var(--main-font);
 }
 
+.bg {
+    /* The image used */
+    background-image: url("/assets/fondo.png");
+    height: 100%;
+    scroll-behavior: smooth;
+    /* Center and scale the image nicely */
+    background-position: -20px 32px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .fondo-blanco {
   background-color: white;
 }
@@ -86,16 +96,17 @@ h1 {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .mejores-tours-header {
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-  color: var(--secondary-button);
-  padding: 20px 50px 0px 50px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    color: var(--secondary-button);
+    padding: 60px 50px 30px 50px;
 }
 .mejores-tours-header h1 {
   color: var(--secondary-background);
@@ -329,7 +340,6 @@ h1 {
   div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
     display: block;
   }
-
   .cards-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -338,6 +348,7 @@ h1 {
   .mejores-tours-header {
     padding: 0 20px;
   }
+
 }
 
 @media (min-width: 1137px) {
@@ -544,9 +555,11 @@ h1 {
 }
 
 .equipo-tarjetas {
-  padding: 0 0 10% 0;
-  display: flex;
-  overflow-x: scroll;
+
+    padding: 0 0 5% 0;
+    display: flex;
+    overflow-x: scroll;
+
 }
 
 .tarjeta {
@@ -613,7 +626,6 @@ h1 {
   text-decoration: none;
   color: #ffffff;
 }
-
 /*MODAL DE RESERVAS*/
 
 .modal-container {
@@ -634,6 +646,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
   color: white;
+
 }
 .footer-container-logo {
   width: 120px;
@@ -645,126 +658,149 @@ footer {
 }
 
 .footer-container {
-  width: 80%;
-  height: 100px;
-  margin-bottom: 35px;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
+
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 /* Tablet */
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /*CATEGORIAS POR PAIS*/
-  .pais-bandera div {
-    width: 60px;
-    height: 60px;
-  }
-  .pais-bandera div img {
-    width: 40px;
-    height: 40px;
-  }
-  .footer-container {
-    flex-flow: row;
-    height: 90px;
-  }
-  .footer-container-logo {
-    width: 100px;
-  }
-  .footer-container-fe {
-    width: 40px;
-  }
-  .mejores-tours-header {
-    padding: 0 20px;
-  }
+
+    /*CATEGORIAS POR PAIS*/
+    .pais-bandera div {
+        width: 60px;
+        height: 60px;
+    }
+    .pais-bandera div img {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-container {
+        flex-flow: row;
+        height: 90px;
+    }
+    .footer-container-logo {
+        width: 100px;
+    }
+    .footer-container-fe {
+        width: 40px;
+    }
+    .mejores-tours-header {
+        padding: 60px 50px 30px 50px;
+    }
+    .bg {
+        /* The image used */
+        background-image: url("/assets/fondo.png");
+        height: 100%;
+        scroll-behavior: smooth;
+        /* Center and scale the image nicely */
+        background-position: -20px 70px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 /* Desktop */
 
 @media (min-width: 1025px) {
-  /*Navegacion*/
-  .navegacion-desplegable div {
-    display: none;
-  }
-  .navegacion-desplegable {
-    z-index: -1;
-  }
-  .navegacion-fondo-imagen {
-    background-image: url(/assets/tours/arg/01_arg.jpeg);
-    height: 735px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .navegacion-fija {
-    display: none;
-  }
-  .navegacion-desktop {
-    display: flex;
-  }
-  .img-logo-oscuro {
-    width: 150px;
-    height: 55.96px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  /*CATEGORIAS POR PAISES*/
-  .pais-bandera div {
-    width: 70px;
-    height: 70px;
-  }
-  .pais-bandera div img {
-    width: 45px;
-    height: 45px;
-  }
-  .pais {
-    width: 18%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px 0;
-  }
-  .pais-nombre {
-    padding-top: 0;
-  }
-  .pais-nombre p {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: 800;
-    font-size: 16px;
-    color: var(--secondary-background);
-  }
-  .texto-corto {
-    display: none;
-  }
-  .texto-largo {
-    display: block;
-  }
+    /*Navegacion*/
+    .navegacion-desplegable div {
+        display: none;
+    }
+    .navegacion-desplegable {
+        z-index: -1;
+    }
+    .navegacion-fondo-imagen {
+        background-image: url(/assets/tours/arg/01_arg.jpeg);
+        height: 735px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .navegacion-fija {
+        display: none;
+    }
+    .navegacion-desktop {
+        display: flex;
+    }
+    .img-logo-oscuro {
+        width: 150px;
+        height: 55.96px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /*CATEGORIAS POR PAISES*/
+    .pais-bandera div {
+        width: 70px;
+        height: 70px;
+    }
+    .pais-bandera div img {
+        width: 45px;
+        height: 45px;
+    }
+    .pais {
+        width: 18%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px 0;
+    }
+    .pais-nombre {
+        padding-top: 0;
+    }
+    .pais-nombre p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 800;
+        font-size: 16px;
+        color: var(--secondary-background);
+    }
+    .texto-corto {
+        display: none;
+    }
+    .texto-largo {
+        display: block;
+    }
 
-  .footer-container {
-    flex-flow: row;
-    height: 90px;
-  }
-  .footer-container-logo {
-    width: 100px;
-  }
-  .footer-container-fe {
-    width: 40px;
-  }
-  .mejores-tours-header {
-    padding: 0 20px;
-  }
-  /*Nuestro Equipo*/
+    .footer-container {
+        flex-flow: row;
+        height: 90px;
+    }
+    .footer-container-logo {
+        width: 100px;
+    }
+    .footer-container-fe {
+        width: 40px;
+    }
+    .mejores-tours-header {
+        padding: 60px 50px 30px 50px;
+    }
+    /*Nuestro Equipo*/
 
-  .equipo-tarjetas {
-    display: block;
-    text-align: center;
-  }
+    .equipo-tarjetas {
+        display: block;
+        text-align: center;
+    }
 
-  .tarjeta {
-    display: inline-block;
-    margin: 0 5% 5% 5%;
-  }
+    .tarjeta {
+        display: inline-block;
+        margin: 0 5% 5% 5%;
+    }
+    .bg {
+        /* The image used */
+        background-image: url("/assets/fondo.png");
+        height: 100%;
+        scroll-behavior: smooth;
+        /* Center and scale the image nicely */
+        background-position: -20px 32px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }

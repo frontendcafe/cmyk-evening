@@ -1,1183 +1,1183 @@
 [
-  {
-    "id": "1",
-    "city": {
-      "name": "Buenos Aires",
-      "country": "Argentina",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "1",
+        "city": {
+            "name": "Buenos Aires",
+            "country": "Argentina",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour centro de Buenos Aires",
+        "img": "../assets/imgs/cards/Buenos-Aires.jpeg",
+        "durationHs": 6,
+        "priceUsd": 50,
+        "startDate": "9:00",
+        "endDate": "15:00",
+        "include": ["desayuno", "almuerzo", "guia", "entradas"],
+        "description": [
+            "En este tour conocerás la perspectiva política e histórica de nuestra ciudad. Comenzaremos el recorrido en el tradicional Café Tortoni, donde se tomará el desayuno. Luego  de la merienda caminaremos por el reconocido boulevard de la Avenida de Mayo. Descubriremos su arquitectura y sus secretos hasta llegar a la Plaza de Mayo. Hablaremos acerca de los gloriosos y terribles períodos de la historia de Argentina. Luego nos dirigiremos hacia el obelisco donde se podrán tomar fotos en este monumento neural de la ciudad. Para el almuerzo nos dirigiremos a la Pizzería Guerrin. Por último, finalizaremos el tour en el teatro colón, donde tendremos una visita guiada por esta centenaria estructura con más de 100 años de historia."
+        ],
+        "stops": [
+            {
+                "name": "Cafe Tortoni",
+                "longitude": "-58.3782121",
+                "latitude": "-34.6086531",
+                "stopNumber": 0,
+                "activity": "Desayuno y visita."
+            },
+            {
+                "name": "Plaza de Mayo",
+                "longitude": "-58.3722832",
+                "latitude": "-34.6083667",
+                "stopNumber": 1,
+                "activity": "Explicacion Casa Rosada, Cabildo, Historia."
+            },
+            {
+                "name": "Obelisco",
+                "longitude": "-58.3817088",
+                "latitude": "-34.6061231",
+                "stopNumber": 2,
+                "activity": "Fotos"
+            },
+            {
+                "name": "Pizzeria Guerrin",
+                "longitude": "-58.385982",
+                "latitude": "-34.6041209",
+                "stopNumber": 3,
+                "activity": "Comida"
+            },
+            {
+                "name": "Teatro Colon",
+                "longitude": "-58.3830786",
+                "latitude": "-34.6010406",
+                "stopNumber": 4,
+                "activity": "Visita guiada"
+            }
+        ]
     },
-    "tourName": "Tour centro de Buenos Aires",
-    "img": "../assets/imgs/cards/Buenos-Aires.jpeg",
-    "durationHs": 6,
-    "priceUsd": 50,
-    "startDate": "9:00",
-    "endDate": "15:00",
-    "include": ["desayuno", "almuerzo", "guia", "entradas"],
-    "description": [
-      "En este tour conocerás la perspectiva política e histórica de nuestra ciudad. Comenzaremos el recorrido en el tradicional Café Tortoni, donde se tomará el desayuno. Luego  de la merienda caminaremos por el reconocido boulevard de la Avenida de Mayo. Descubriremos su arquitectura y sus secretos hasta llegar a la Plaza de Mayo. Hablaremos acerca de los gloriosos y terribles períodos de la historia de Argentina. Luego nos dirigiremos hacia el obelisco donde se podrán tomar fotos en este monumento neural de la ciudad. Para el almuerzo nos dirigiremos a la Pizzería Guerrin. Por último, finalizaremos el tour en el teatro colón, donde tendremos una visita guiada por esta centenaria estructura con más de 100 años de historia."
-    ],
-    "stops": [
-      {
-        "name": "Cafe Tortoni",
-        "longitude": "-58.3782121",
-        "latitude": "-34.6086531",
-        "stopNumber": 0,
-        "activity": "Desayuno y visita."
-      },
-      {
-        "name": "Plaza de Mayo",
-        "longitude": "-58.3722832",
-        "latitude": "-34.6083667",
-        "stopNumber": 1,
-        "activity": "Explicacion Casa Rosada, Cabildo, Historia."
-      },
-      {
-        "name": "Obelisco",
-        "longitude": "-58.3817088",
-        "latitude": "-34.6061231",
-        "stopNumber": 2,
-        "activity": "Fotos"
-      },
-      {
-        "name": "Pizzeria Guerrin",
-        "longitude": "-58.385982",
-        "latitude": "-34.6041209",
-        "stopNumber": 3,
-        "activity": "Comida"
-      },
-      {
-        "name": "Teatro Colon",
-        "longitude": "-58.3830786",
-        "latitude": "-34.6010406",
-        "stopNumber": 4,
-        "activity": "Visita guiada"
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "city": {
-      "name": "Bariloche",
-      "country": "Argentina",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "2",
+        "city": {
+            "name": "Bariloche",
+            "country": "Argentina",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour circuito chico bariloche",
+        "img": "../assets/imgs/cards/Bariloche.jpeg",
+        "durationHs": 9,
+        "startDate": "8:00",
+        "endDate": "17:00",
+        "priceUsd": 90,
+        "include": [
+            "desayuno",
+            "almuerzo",
+            "hotel",
+            "pick-up",
+            "transporte",
+            "guia",
+            "tickets"
+        ],
+        "description": [
+            "En este tour conocerás las zonas rurales y alejadas de Bariloche. El tour comenzará en Bellevue Bed & Breakfast, donde tomaremos desayuno. Luego, pasaremos a visitar la Parroquia San Eduardo, cuya estructura recuerda la arquitectura europea, siendo una pieza de historia que perdura en el tiempo. Luego ascenderemos 3 km en una caminata por el Cerro Llao Llao. Luego, Comeremos almuerzo en el restaurant Parrilla Alun Nehuen"
+        ],
+        "stops": [
+            {
+                "name": "Bellevue Salón de té",
+                "longitude": "-71.5127736",
+                "latitude": "-41.0487192",
+                "stopNumber": 0,
+                "activity": "Desayuno con vista."
+            },
+            {
+                "name": "Parroquia San Eduardo",
+                "longitude": "-71.527367",
+                "latitude": "-41.0547129",
+                "stopNumber": 1,
+                "activity": "Fotos"
+            },
+            {
+                "name": "Cerro Llao Llao",
+                "longitude": "-71.5522475",
+                "latitude": "-41.0480372",
+                "stopNumber": 2,
+                "activity": "Ascenso de 3km"
+            },
+            {
+                "name": "Restaurant Parrilla Alun Nehuen",
+                "longitude": "-71.5668793",
+                "latitude": "-41.0745316",
+                "stopNumber": 3,
+                "activity": "Almuerzo"
+            },
+            {
+                "name": "Cerro Campanario",
+                "longitude": "-71.4771936",
+                "latitude": "-41.0752416",
+                "stopNumber": 4,
+                "activity": "visita, fotos, cafeteria"
+            }
+        ]
     },
-    "tourName": "Tour circuito chico bariloche",
-    "img": "../assets/imgs/cards/Bariloche.jpeg",
-    "durationHs": 9,
-    "startDate": "8:00",
-    "endDate": "17:00",
-    "priceUsd": 90,
-    "include": [
-      "desayuno",
-      "almuerzo",
-      "hotel",
-      "pick-up",
-      "transporte",
-      "guia",
-      "tickets"
-    ],
-    "description": [
-      "En este tour conocerás las zonas rurales y alejadas de Bariloche. El tour comenzará en Bellevue Bed & Breakfast, donde tomaremos desayuno. Luego, pasaremos a visitar la Parroquia San Eduardo, cuya estructura recuerda la arquitectura europea, siendo una pieza de historia que perdura en el tiempo. Luego ascenderemos 3 km en una caminata por el Cerro Llao Llao. Luego, Comeremos almuerzo en el restaurant Parrilla Alun Nehuen"
-    ],
-    "stops": [
-      {
-        "name": "Bellevue Salón de té",
-        "longitude": "-71.5127736",
-        "latitude": "-41.0487192",
-        "stopNumber": 0,
-        "activity": "Desayuno con vista."
-      },
-      {
-        "name": "Parroquia San Eduardo",
-        "longitude": "-71.527367",
-        "latitude": "-41.0547129",
-        "stopNumber": 1,
-        "activity": "Fotos"
-      },
-      {
-        "name": "Cerro Llao Llao",
-        "longitude": "-71.5522475",
-        "latitude": "-41.0480372",
-        "stopNumber": 2,
-        "activity": "Ascenso de 3km"
-      },
-      {
-        "name": "Restaurant Parrilla Alun Nehuen",
-        "longitude": "-71.5668793",
-        "latitude": "-41.0745316",
-        "stopNumber": 3,
-        "activity": "Almuerzo"
-      },
-      {
-        "name": "Cerro Campanario",
-        "longitude": "-71.4771936",
-        "latitude": "-41.0752416",
-        "stopNumber": 4,
-        "activity": "visita, fotos, cafeteria"
-      }
-    ]
-  },
-  {
-    "id": "3",
-    "city": {
-      "name": "Buenos Aires",
-      "country": "Argentina",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "3",
+        "city": {
+            "name": "Buenos Aires",
+            "country": "Argentina",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Recoleta",
+        "img": "../assets/imgs/cards/recoleta.jpeg",
+        "durationHs": 4,
+        "startDate": "8:00",
+        "endDate": "12:00",
+        "priceUsd": 30,
+        "include": ["tickets", "entrada a los lugares", "guia"],
+        "description": [
+            "Conoce el Barrio de Recoleta en este tour de medio día por las calles de una de las zonas más famosas de la Ciudad de Buenos Aires. Camina por el famoso Cementerio de Recoleta, visita la feria de Plaza Francia y conoce edificios emblemáticos como la Facultad de Derecho. No te pierdas esta oportunidad de conocer los bellos parques de Barrio Norte. "
+        ],
+        "stops": [
+            {
+                "name": "Cementerio Recoleta",
+                "longitude": "-58.3934409",
+                "latitude": "-34.5874834",
+                "stopNumber": 0,
+                "activity": "paseo, visita guiada, fotos"
+            },
+            {
+                "name": "Centro Cultural Recoleta",
+                "longitude": "-58.3915051",
+                "latitude": "-34.586117",
+                "stopNumber": 1,
+                "activity": "Lugar histórico y explicación"
+            },
+            {
+                "name": "Plaza Francia",
+                "longitude": "-58.3915051",
+                "latitude": "-34.586117",
+                "stopNumber": 2,
+                "activity": "Paseo, feira, caminata, fotos"
+            },
+            {
+                "name": "Museo Bellas Artes",
+                "longitude": "-58.3915051",
+                "latitude": "-34.586117",
+                "stopNumber": 3,
+                "activity": "Visita guiada al museo"
+            },
+            {
+                "name": "Facultad de Derecho y Floraris Genética",
+                "longitude": "-58.3903506",
+                "latitude": "-34.5835581",
+                "stopNumber": 4,
+                "activity": "Paseo, fotos y explicación"
+            }
+        ]
     },
-    "tourName": "Tour Recoleta",
-    "img": "../assets/imgs/cards/recoleta.jpeg",
-    "durationHs": 4,
-    "startDate": "8:00",
-    "endDate": "12:00",
-    "priceUsd": 30,
-    "include": ["tickets", "entrada a los lugares", "guia"],
-    "description": [
-      "Conoce el Barrio de Recoleta en este tour de medio día por las calles de una de las zonas más famosas de la Ciudad de Buenos Aires. Camina por el famoso Cementerio de Recoleta, visita la feria de Plaza Francia y conoce edificios emblemáticos como la Facultad de Derecho. No te pierdas esta oportunidad de conocer los bellos parques de Barrio Norte. "
-    ],
-    "stops": [
-      {
-        "name": "Cementerio Recoleta",
-        "longitude": "-58.3934409",
-        "latitude": "-34.5874834",
-        "stopNumber": 0,
-        "activity": "paseo, visita guiada, fotos"
-      },
-      {
-        "name": "Centro Cultural Recoleta",
-        "longitude": "-58.3915051",
-        "latitude": "-34.586117",
-        "stopNumber": 1,
-        "activity": "Lugar histórico y explicación"
-      },
-      {
-        "name": "Plaza Francia",
-        "longitude": "-58.3915051",
-        "latitude": "-34.586117",
-        "stopNumber": 2,
-        "activity": "Paseo, feira, caminata, fotos"
-      },
-      {
-        "name": "Museo Bellas Artes",
-        "longitude": "-58.3915051",
-        "latitude": "-34.586117",
-        "stopNumber": 3,
-        "activity": "Visita guiada al museo"
-      },
-      {
-        "name": "Facultad de Derecho y Floraris Genética",
-        "longitude": "-58.3903506",
-        "latitude": "-34.5835581",
-        "stopNumber": 4,
-        "activity": "Paseo, fotos y explicación"
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "city": {
-      "name": "Buenos Aires",
-      "country": "Argentina",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "4",
+        "city": {
+            "name": "Buenos Aires",
+            "country": "Argentina",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Tigre, Delta, San Isidro",
+        "img": "../assets/imgs/cards/delta.jpeg",
+        "durationHs": 6,
+        "startDate": "8:00",
+        "endDate": "14:00",
+        "priceUsd": 70,
+        "include": [
+            "hotel pick up y drop off",
+            "tickets",
+            "almuerzo",
+            "guia",
+            "transporte"
+        ],
+        "description": [
+            "Escapate de la ciudad con un tour en el Delta del Tigre y San Isidro desde la Ciudad de buenos Aires, con el pick-up y drop-off incluído desde tu hotel. Descrubrí el centro de San Isidro con sus calles de piedra, y disfruta de un paseo en la comodidad de una lancha por los canales y las islas que conforman el Delta del Tigre. También estarán incluídas bebidas durante el paseo y un almuerzo de típicas empanadas argentinas."
+        ],
+        "stops": [
+            {
+                "name": "Delta Tigre",
+                "longitude": "-58.559068",
+                "latitude": "-34.4338117",
+                "stopNumber": 0,
+                "activity": "Paseo en lancha por el delta del tigre y bebidas"
+            },
+            {
+                "name": "Vivanco",
+                "longitude": "-58.5783074",
+                "latitude": "-34.4187588",
+                "stopNumber": 1,
+                "activity": "Almuerzo"
+            },
+            {
+                "name": "Estación fluvial",
+                "longitude": "-58.5809337",
+                "latitude": "-34.4212495",
+                "stopNumber": 2,
+                "activity": "Paseo, fotos y descanso"
+            },
+            {
+                "name": "Puerto de frutos",
+                "longitude": "-58.5732693",
+                "latitude": "-34.4198956",
+                "stopNumber": 3,
+                "activity": "Paseo, fotos y explicación"
+            },
+            {
+                "name": "Catedral de San Isidro",
+                "longitude": "-58.5093398",
+                "latitude": "-34.4671466",
+                "stopNumber": 4,
+                "activity": "Paseo, fotos, visita guiada"
+            }
+        ]
     },
-    "tourName": "Tour Tigre, Delta, San Isidro",
-    "img": "../assets/imgs/cards/delta.jpeg",
-    "durationHs": 6,
-    "startDate": "8:00",
-    "endDate": "14:00",
-    "priceUsd": 70,
-    "include": [
-      "hotel pick up y drop off",
-      "tickets",
-      "almuerzo",
-      "guia",
-      "transporte"
-    ],
-    "description": [
-      "Escapate de la ciudad con un tour en el Delta del Tigre y San Isidro desde la Ciudad de buenos Aires, con el pick-up y drop-off incluído desde tu hotel. Descrubrí el centro de San Isidro con sus calles de piedra, y disfruta de un paseo en la comodidad de una lancha por los canales y las islas que conforman el Delta del Tigre. También estarán incluídas bebidas durante el paseo y un almuerzo de típicas empanadas argentinas."
-    ],
-    "stops": [
-      {
-        "name": "Delta Tigre",
-        "longitude": "-58.559068",
-        "latitude": "-34.4338117",
-        "stopNumber": 0,
-        "activity": "Paseo en lancha por el delta del tigre y bebidas"
-      },
-      {
-        "name": "Vivanco",
-        "longitude": "-58.5783074",
-        "latitude": "-34.4187588",
-        "stopNumber": 1,
-        "activity": "Almuerzo"
-      },
-      {
-        "name": "Estación fluvial",
-        "longitude": "-58.5809337",
-        "latitude": "-34.4212495",
-        "stopNumber": 2,
-        "activity": "Paseo, fotos y descanso"
-      },
-      {
-        "name": "Puerto de frutos",
-        "longitude": "-58.5732693",
-        "latitude": "-34.4198956",
-        "stopNumber": 3,
-        "activity": "Paseo, fotos y explicación"
-      },
-      {
-        "name": "Catedral de San Isidro",
-        "longitude": "-58.5093398",
-        "latitude": "-34.4671466",
-        "stopNumber": 4,
-        "activity": "Paseo, fotos, visita guiada"
-      }
-    ]
-  },
-  {
-    "id": "5",
-    "city": {
-      "name": "Santiago de Chile",
-      "country": "Chile",
-      "longitude": "-70.68001761321298",
-      "latitude": "-33.44745926403001"
+    {
+        "id": "5",
+        "city": {
+            "name": "Santiago de Chile",
+            "country": "Chile",
+            "longitude": "-70.68001761321298",
+            "latitude": "-33.44745926403001"
+        },
+        "tourName": "Tour centro Santiago de Chile",
+        "img": "../assets/imgs/cards/Santiago-de-Chile.jpeg",
+        "durationHs": 5,
+        "startDate": "8:00",
+        "endDate": "13:00",
+        "priceUsd": 50,
+        "include": ["almuerzo", "guia"],
+        "description": [
+            "Familiarícese con los lugares más preciados de la capital chilena en un recorrido de 4 horas por Santiago en un lujoso autocar. De su guía, recibirá una interesante introducción a Santiago mientras visita lugares de interés como la Catedral Metropolitana de Santiago, el Cerro Santa Lucía y el Palacio de La Moneda. Absorba el encanto bohemio del barrio de Bellavista y opte por explorar el distrito financiero de la ciudad, apodado 'Sanhattan', debido a su gran cantidad de rascacielos. La recogida y devolución en el hotel está incluida en este tour."
+        ],
+        "stops": [
+            {
+                "name": "Cerro San Cristobal",
+                "longitude": "-70.6243379",
+                "latitude": "-33.4241119",
+                "stopNumber": 0,
+                "activity": "Vistas, fotos, historia"
+            },
+            {
+                "name": "Castillo Hidalgo y Cerro Santa Lucia",
+                "longitude": "-70.6454776",
+                "latitude": "-33.4395932",
+                "stopNumber": 1,
+                "activity": "Lugar histórico y explicación"
+            },
+            {
+                "name": "Plaza de armas",
+                "longitude": "-70.6505406",
+                "latitude": "-33.437948",
+                "stopNumber": 2,
+                "activity": "Explicación casa de armas"
+            },
+            {
+                "name": "Palacio de La Moneda",
+                "longitude": "-70.6534893",
+                "latitude": "-33.4421452",
+                "stopNumber": 3,
+                "activity": "Explicación la moneda"
+            },
+            {
+                "name": "Barrio Lastarria",
+                "longitude": "-70.6431754",
+                "latitude": "-33.4378622",
+                "stopNumber": 4,
+                "activity": "Paseo y almuerzo"
+            }
+        ]
     },
-    "tourName": "Tour centro Santiago de Chile",
-    "img": "../assets/imgs/cards/Santiago-de-Chile.jpeg",
-    "durationHs": 5,
-    "startDate": "8:00",
-    "endDate": "13:00",
-    "priceUsd": 50,
-    "include": ["almuerzo", "guia"],
-    "description": [
-      "Familiarícese con los lugares más preciados de la capital chilena en un recorrido de 4 horas por Santiago en un lujoso autocar. De su guía, recibirá una interesante introducción a Santiago mientras visita lugares de interés como la Catedral Metropolitana de Santiago, el Cerro Santa Lucía y el Palacio de La Moneda. Absorba el encanto bohemio del barrio de Bellavista y opte por explorar el distrito financiero de la ciudad, apodado 'Sanhattan', debido a su gran cantidad de rascacielos. La recogida y devolución en el hotel está incluida en este tour."
-    ],
-    "stops": [
-      {
-        "name": "Cerro San Cristobal",
-        "longitude": "-70.6243379",
-        "latitude": "-33.4241119",
-        "stopNumber": 0,
-        "activity": "Vistas, fotos, historia"
-      },
-      {
-        "name": "Castillo Hidalgo y Cerro Santa Lucia",
-        "longitude": "-70.6454776",
-        "latitude": "-33.4395932",
-        "stopNumber": 1,
-        "activity": "Lugar histórico y explicación"
-      },
-      {
-        "name": "Plaza de armas",
-        "longitude": "-70.6505406",
-        "latitude": "-33.437948",
-        "stopNumber": 2,
-        "activity": "Explicación casa de armas"
-      },
-      {
-        "name": "Palacio de La Moneda",
-        "longitude": "-70.6534893",
-        "latitude": "-33.4421452",
-        "stopNumber": 3,
-        "activity": "Explicación la moneda"
-      },
-      {
-        "name": "Barrio Lastarria",
-        "longitude": "-70.6431754",
-        "latitude": "-33.4378622",
-        "stopNumber": 4,
-        "activity": "Paseo y almuerzo"
-      }
-    ]
-  },
-  {
-    "id": "6",
-    "city": {
-      "name": "Valparaiso",
-      "country": "Chile",
-      "longitude": "-71.6285581",
-      "latitude": "-33.0501633"
+    {
+        "id": "6",
+        "city": {
+            "name": "Valparaiso",
+            "country": "Chile",
+            "longitude": "-71.6285581",
+            "latitude": "-33.0501633"
+        },
+        "tourName": "Tour Valparaiso y Viña del Mar",
+        "img": "../assets/imgs/cards/Valparaiso.jpeg",
+        "durationHs": 6,
+        "startDate": "8:00",
+        "endDate": "14:00",
+        "priceUsd": 70,
+        "include": [
+            "hotel",
+            "pick up y drop off",
+            "almuerzo",
+            "transporte",
+            "entradas"
+        ],
+        "description": [
+            "Este tour lo lleva a dos de las ciudades más queridas de Chile, Viña del Mar y Valparaíso. Conocida como la 'Ciudad Jardín' por sus extensas áreas verdes, Viña del Mar tiene impresionantes vistas de la costa y un gran 'reloj' hecho íntegramente de flores. Valparaíso es un sitio del Patrimonio Mundial de la UNESCO célebre por sus edificios coloridos, paisajes montañosos y 'ascensores' funiculares únicos. Visite lo mejor de ambas ciudades en esta visita guiada panorámica. Piérdete en los encantos florales de la 'Ciudad Jardín' de Chile Camina por las coloridas calles de un sitio declarado Patrimonio de la Humanidad por la UNESCO El guía profesional lo lleva a los principales lugares de interés y comparte la historia local."
+        ],
+        "stops": [
+            {
+                "name": "La Sebastiana, Museo de Pablo Neruda",
+                "longitude": "-71.6285581",
+                "latitude": "-33.0501633",
+                "stopNumber": 0,
+                "activity": "Visita al museo"
+            },
+            {
+                "name": "Plaza Sotomayor",
+                "longitude": "-71.631236",
+                "latitude": "-33.0386135",
+                "stopNumber": 1,
+                "activity": "Historia, vistas y paseo"
+            },
+            {
+                "name": "Paseo Yugoslavo y ascensor del Peral",
+                "longitude": "-71.6297506",
+                "latitude": "-33.039906",
+                "stopNumber": 2,
+                "activity": "Paseo, arquitectura, vistas y fotos"
+            },
+            {
+                "name": "Cerro Concepcion y Catedral",
+                "longitude": "-71.628255",
+                "latitude": "-33.0427061",
+                "stopNumber": 3,
+                "activity": "Paseo y visita a la Catedral"
+            },
+            {
+                "name": "Playa las salinas",
+                "longitude": "-71.5537292",
+                "latitude": "-33.0064915",
+                "stopNumber": 4,
+                "activity": "Almuerzo y paseo por la playa"
+            }
+        ]
     },
-    "tourName": "Tour Valparaiso y Viña del Mar",
-    "img": "../assets/imgs/cards/Valparaiso.jpeg",
-    "durationHs": 6,
-    "startDate": "8:00",
-    "endDate": "14:00",
-    "priceUsd": 70,
-    "include": [
-      "hotel",
-      "pick up y drop off",
-      "almuerzo",
-      "transporte",
-      "entradas"
-    ],
-    "description": [
-      "Este tour lo lleva a dos de las ciudades más queridas de Chile, Viña del Mar y Valparaíso. Conocida como la 'Ciudad Jardín' por sus extensas áreas verdes, Viña del Mar tiene impresionantes vistas de la costa y un gran 'reloj' hecho íntegramente de flores. Valparaíso es un sitio del Patrimonio Mundial de la UNESCO célebre por sus edificios coloridos, paisajes montañosos y 'ascensores' funiculares únicos. Visite lo mejor de ambas ciudades en esta visita guiada panorámica. Piérdete en los encantos florales de la 'Ciudad Jardín' de Chile Camina por las coloridas calles de un sitio declarado Patrimonio de la Humanidad por la UNESCO El guía profesional lo lleva a los principales lugares de interés y comparte la historia local."
-    ],
-    "stops": [
-      {
-        "name": "La Sebastiana, Museo de Pablo Neruda",
-        "longitude": "-71.6285581",
-        "latitude": "-33.0501633",
-        "stopNumber": 0,
-        "activity": "Visita al museo"
-      },
-      {
-        "name": "Plaza Sotomayor",
-        "longitude": "-71.631236",
-        "latitude": "-33.0386135",
-        "stopNumber": 1,
-        "activity": "Historia, vistas y paseo"
-      },
-      {
-        "name": "Paseo Yugoslavo y ascensor del Peral",
-        "longitude": "-71.6297506",
-        "latitude": "-33.039906",
-        "stopNumber": 2,
-        "activity": "Paseo, arquitectura, vistas y fotos"
-      },
-      {
-        "name": "Cerro Concepcion y Catedral",
-        "longitude": "-71.628255",
-        "latitude": "-33.0427061",
-        "stopNumber": 3,
-        "activity": "Paseo y visita a la Catedral"
-      },
-      {
-        "name": "Playa las salinas",
-        "longitude": "-71.5537292",
-        "latitude": "-33.0064915",
-        "stopNumber": 4,
-        "activity": "Almuerzo y paseo por la playa"
-      }
-    ]
-  },
-  {
-    "id": "7",
-    "city": {
-      "name": "La Serena",
-      "country": "Chile",
-      "longitude": "-71.279467",
-      "latitude": "-29.9058497"
+    {
+        "id": "7",
+        "city": {
+            "name": "La Serena",
+            "country": "Chile",
+            "longitude": "-71.279467",
+            "latitude": "-29.9058497"
+        },
+        "tourName": "Tour la Serena",
+        "img": "../assets/imgs/cards/La-Serena.jpeg",
+        "durationHs": 5,
+        "startDate": "8:00",
+        "endDate": "13:00",
+        "priceUsd": 100,
+        "include": [
+            "hotel",
+            "pick up y drop off",
+            "desayuno",
+            "transporte",
+            "entradas",
+            "orden de compra de $50"
+        ],
+        "description": [
+            "Visite la casa del famoso Pisco Sour de Chile en este tour de día completo en grupos pequeños por el Valle de Elqui desde La Serena, incluida la recogida en el hotel. Descubre los secretos cósmicos del Valle de Cochiguaz; recorrer una planta de producción de pisco; y deléitese con una degustación de pisco dirigida por expertos. Después de disfrutar de un almuerzo tradicional (incluido) en un restaurante local, pase un tiempo explorando Vicuña, la ciudad natal de la poetisa ganadora del Premio Nobel Gabriela Mistral."
+        ],
+        "stops": [
+            {
+                "name": "Playa y Faro Monumental",
+                "longitude": "-71.265808",
+                "latitude": "-29.9060042",
+                "stopNumber": 0,
+                "activity": "Paseo por la Av. del Mar y faro Monumental"
+            },
+            {
+                "name": "Jardín Japonés",
+                "longitude": "-71.2567096",
+                "latitude": "-29.900477",
+                "stopNumber": 1,
+                "activity": "Visita al Parque y Jardín Japonés"
+            },
+            {
+                "name": "Plaza de la Ciudadanía",
+                "longitude": "-71.2567096",
+                "latitude": "-29.900477",
+                "stopNumber": 2,
+                "activity": "Recorrida e Historias"
+            },
+            {
+                "name": "Museo Arqueológico",
+                "longitude": "-71.2567096",
+                "latitude": "-29.900477",
+                "stopNumber": 3,
+                "activity": "Visita al museo"
+            },
+            {
+                "name": "Mallplaza la Serena",
+                "longitude": "-71.2552133",
+                "latitude": "-29.9125228",
+                "stopNumber": 4,
+                "activity": "Recorrida de compras"
+            }
+        ]
     },
-    "tourName": "Tour la Serena",
-    "img": "../assets/imgs/cards/La-Serena.jpeg",
-    "durationHs": 5,
-    "startDate": "8:00",
-    "endDate": "13:00",
-    "priceUsd": 100,
-    "include": [
-      "hotel",
-      "pick up y drop off",
-      "desayuno",
-      "transporte",
-      "entradas",
-      "orden de compra de $50"
-    ],
-    "description": [
-      "Visite la casa del famoso Pisco Sour de Chile en este tour de día completo en grupos pequeños por el Valle de Elqui desde La Serena, incluida la recogida en el hotel. Descubre los secretos cósmicos del Valle de Cochiguaz; recorrer una planta de producción de pisco; y deléitese con una degustación de pisco dirigida por expertos. Después de disfrutar de un almuerzo tradicional (incluido) en un restaurante local, pase un tiempo explorando Vicuña, la ciudad natal de la poetisa ganadora del Premio Nobel Gabriela Mistral."
-    ],
-    "stops": [
-      {
-        "name": "Playa y Faro Monumental",
-        "longitude": "-71.265808",
-        "latitude": "-29.9060042",
-        "stopNumber": 0,
-        "activity": "Paseo por la Av. del Mar y faro Monumental"
-      },
-      {
-        "name": "Jardín Japonés",
-        "longitude": "-71.2567096",
-        "latitude": "-29.900477",
-        "stopNumber": 1,
-        "activity": "Visita al Parque y Jardín Japonés"
-      },
-      {
-        "name": "Plaza de la Ciudadanía",
-        "longitude": "-71.2567096",
-        "latitude": "-29.900477",
-        "stopNumber": 2,
-        "activity": "Recorrida e Historias"
-      },
-      {
-        "name": "Museo Arqueológico",
-        "longitude": "-71.2567096",
-        "latitude": "-29.900477",
-        "stopNumber": 3,
-        "activity": "Visita al museo"
-      },
-      {
-        "name": "Mallplaza la Serena",
-        "longitude": "-71.2552133",
-        "latitude": "-29.9125228",
-        "stopNumber": 4,
-        "activity": "Recorrida de compras"
-      }
-    ]
-  },
-  {
-    "id": "8",
-    "city": {
-      "name": "Maipo",
-      "country": "Chile",
-      "longitude": "-70.7852043",
-      "latitude": "-33.7305642"
+    {
+        "id": "8",
+        "city": {
+            "name": "Maipo",
+            "country": "Chile",
+            "longitude": "-70.7852043",
+            "latitude": "-33.7305642"
+        },
+        "tourName": "Bodega Concha y Toro",
+        "img": "../assets/imgs/cards/Maipo.jpeg",
+        "durationHs": 4,
+        "startDate": "8:00",
+        "endDate": "12:00",
+        "priceUsd": 64,
+        "include": [
+            "pick up y drop off",
+            "Cata de vinos",
+            "cata de quesos",
+            "4 catas de vinos de marcas premium"
+        ],
+        "description": [
+            "Agregue un poco de diversión adicional a su experiencia de degustación en la famosa bodega Concha y Toro gracias a esta oferta premium de 4 horas con vinos y bocadillos de alta gama. Recorra los terrenos bellamente cuidados de la bodega, incluido su 'Jardín de variedades' y el viñedo 'Viejo Pirque'. Luego, disfrute de una degustación de tres cosechas seguidas de cuatro muestras premium adicionales acompañadas de queso. Realice un recorrido premium por la bodega Concha y Toro con degustaciones adicionales de vinos y quesos de alta gama. Explore los aspectos más destacados de la bodega como el 'Jardín de variedades' y una arquitectura sorprendente. Echa un vistazo a la bodega de la famosa marca 'Casillero del Diablo' de la bodega Incluye tres degustaciones seguidas de cuatro muestras de vino premium adicionales acompañadas de queso."
+        ],
+        "stops": [
+            {
+                "name": "Concha y Toro",
+                "longitude": "-70.7852043",
+                "latitude": "-33.7305642",
+                "stopNumber": 0,
+                "activity": "Caminata por los jardines de la residencia exterior de verano de la familia Concha y Toro"
+            },
+            {
+                "name": "Variety Garden",
+                "longitude": "-70.8604427",
+                "latitude": "-33.7363626",
+                "stopNumber": 1,
+                "activity": "Visita a un lugar con 26 variedades de uvas para vinificación"
+            },
+            {
+                "name": "Viñedo Viejo Pirque",
+                "longitude": "-70.6137535",
+                "latitude": "-33.7129416",
+                "stopNumber": 2,
+                "activity": "Vista panorámica del valle del Maipo desde las terrazas de los viñedos"
+            },
+            {
+                "name": "Visita a las bodegas",
+                "longitude": "-70.7884926",
+                "latitude": "-33.718536",
+                "stopNumber": 3,
+                "activity": "Paseo"
+            },
+            {
+                "name": "Visita a las bodegas",
+                "longitude": "-70.732294",
+                "latitude": "-33.7750952",
+                "stopNumber": 4,
+                "activity": "Cata de vinos. Degustación exclusiva de cuatro variedades de vinos"
+            }
+        ]
     },
-    "tourName": "Bodega Concha y Toro",
-    "img": "../assets/imgs/cards/Maipo.jpeg",
-    "durationHs": 4,
-    "startDate": "8:00",
-    "endDate": "12:00",
-    "priceUsd": 64,
-    "include": [
-      "pick up y drop off",
-      "Cata de vinos",
-      "cata de quesos",
-      "4 catas de vinos de marcas premium"
-    ],
-    "description": [
-      "Agregue un poco de diversión adicional a su experiencia de degustación en la famosa bodega Concha y Toro gracias a esta oferta premium de 4 horas con vinos y bocadillos de alta gama. Recorra los terrenos bellamente cuidados de la bodega, incluido su 'Jardín de variedades' y el viñedo 'Viejo Pirque'. Luego, disfrute de una degustación de tres cosechas seguidas de cuatro muestras premium adicionales acompañadas de queso. Realice un recorrido premium por la bodega Concha y Toro con degustaciones adicionales de vinos y quesos de alta gama. Explore los aspectos más destacados de la bodega como el 'Jardín de variedades' y una arquitectura sorprendente. Echa un vistazo a la bodega de la famosa marca 'Casillero del Diablo' de la bodega Incluye tres degustaciones seguidas de cuatro muestras de vino premium adicionales acompañadas de queso."
-    ],
-    "stops": [
-      {
-        "name": "Concha y Toro",
-        "longitude": "-70.7852043",
-        "latitude": "-33.7305642",
-        "stopNumber": 0,
-        "activity": "Caminata por los jardines de la residencia exterior de verano de la familia Concha y Toro"
-      },
-      {
-        "name": "Variety Garden",
-        "longitude": "-70.8604427",
-        "latitude": "-33.7363626",
-        "stopNumber": 1,
-        "activity": "Visita a un lugar con 26 variedades de uvas para vinificación"
-      },
-      {
-        "name": "Viñedo Viejo Pirque",
-        "longitude": "-70.6137535",
-        "latitude": "-33.7129416",
-        "stopNumber": 2,
-        "activity": "Vista panorámica del valle del Maipo desde las terrazas de los viñedos"
-      },
-      {
-        "name": "Visita a las bodegas",
-        "longitude": "-70.7884926",
-        "latitude": "-33.718536",
-        "stopNumber": 3,
-        "activity": "Paseo"
-      },
-      {
-        "name": "Visita a las bodegas",
-        "longitude": "-70.732294",
-        "latitude": "-33.7750952",
-        "stopNumber": 4,
-        "activity": "Cata de vinos. Degustación exclusiva de cuatro variedades de vinos"
-      }
-    ]
-  },
-  {
-    "id": "9",
-    "city": {
-      "name": "CDMX",
-      "country": "México",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "9",
+        "city": {
+            "name": "CDMX",
+            "country": "México",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Coyoacan CDMX",
+        "img": "../assets/imgs/cards/Ciudad-de-México.jpeg",
+        "durationHs": 5,
+        "startDate": "10:00",
+        "endDate": "15:00",
+        "priceUsd": 50,
+        "include": ["café", "almuerzo", "transporte", "entradas"],
+        "description": [
+            "En este tour de medio día por el emblemático barrio de Coyoacan en el sur de la Ciudad de México tendrás la oportunidad de recorrer sus hermosas calles de piedras acompañado de un guía local que te contará sobre la historia y cultura del lugar. Recorrerán juntos el Museo Frida Kahlo dónde podrán ver como vivía la artista y muchas de sus obras, podrán comer antojos tradicionales en un mercado local y tomar café en una famosa cafetería del barrio. Terminaremos el paseo en la Universidad Nacional de México, donde recorreremos el predio, veremos el estadio Olímpico y el famoso mural de Diego Rivera."
+        ],
+        "stops": [
+            {
+                "name": "Café Jarocho",
+                "longitude": "-99.1632789",
+                "latitude": "19.3500854",
+                "stopNumber": 0,
+                "activity": "Encuentro, cafetería"
+            },
+            {
+                "name": "Museo Frida Kahlo",
+                "longitude": "-99.1624636",
+                "latitude": "19.3551806",
+                "stopNumber": 1,
+                "activity": "Visita guiada"
+            },
+            {
+                "name": "Coyoacan plaza y barrio",
+                "longitude": "-99.1622286",
+                "latitude": "19.3496089",
+                "stopNumber": 2,
+                "activity": "Paseo histórico, feria, visita guiada"
+            },
+            {
+                "name": "Mercado antojitos mexicanos",
+                "longitude": "-99.1617337",
+                "latitude": "19.3495988",
+                "stopNumber": 3,
+                "activity": "Almuerzo"
+            },
+            {
+                "name": "UNAM",
+                "longitude": "-99.1851584",
+                "latitude": "19.3216475",
+                "stopNumber": 4,
+                "activity": "Paseo por la universidad"
+            }
+        ]
     },
-    "tourName": "Tour Coyoacan CDMX",
-    "img": "../assets/imgs/cards/Ciudad-de-México.jpeg",
-    "durationHs": 5,
-    "startDate": "10:00",
-    "endDate": "15:00",
-    "priceUsd": 50,
-    "include": ["café", "almuerzo", "transporte", "entradas"],
-    "description": [
-      "En este tour de medio día por el emblemático barrio de Coyoacan en el sur de la Ciudad de México tendrás la oportunidad de recorrer sus hermosas calles de piedras acompañado de un guía local que te contará sobre la historia y cultura del lugar. Recorrerán juntos el Museo Frida Kahlo dónde podrán ver como vivía la artista y muchas de sus obras, podrán comer antojos tradicionales en un mercado local y tomar café en una famosa cafetería del barrio. Terminaremos el paseo en la Universidad Nacional de México, donde recorreremos el predio, veremos el estadio Olímpico y el famoso mural de Diego Rivera."
-    ],
-    "stops": [
-      {
-        "name": "Café Jarocho",
-        "longitude": "-99.1632789",
-        "latitude": "19.3500854",
-        "stopNumber": 0,
-        "activity": "Encuentro, cafetería"
-      },
-      {
-        "name": "Museo Frida Kahlo",
-        "longitude": "-99.1624636",
-        "latitude": "19.3551806",
-        "stopNumber": 1,
-        "activity": "Visita guiada"
-      },
-      {
-        "name": "Coyoacan plaza y barrio",
-        "longitude": "-99.1622286",
-        "latitude": "19.3496089",
-        "stopNumber": 2,
-        "activity": "Paseo histórico, feria, visita guiada"
-      },
-      {
-        "name": "Mercado antojitos mexicanos",
-        "longitude": "-99.1617337",
-        "latitude": "19.3495988",
-        "stopNumber": 3,
-        "activity": "Almuerzo"
-      },
-      {
-        "name": "UNAM",
-        "longitude": "-99.1851584",
-        "latitude": "19.3216475",
-        "stopNumber": 4,
-        "activity": "Paseo por la universidad"
-      }
-    ]
-  },
-  {
-    "id": "10",
-    "city": {
-      "name": "Tequila",
-      "country": "México",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "10",
+        "city": {
+            "name": "Tequila",
+            "country": "México",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Pueblo Tequila",
+        "img": "../assets/imgs/cards/Tequila.jpeg",
+        "durationHs": 7,
+        "startDate": "8:00",
+        "endDate": "15:00",
+        "priceUsd": 80,
+        "include": [
+            "pick up y drop off en guadalajara",
+            "almuerzo",
+            "tickets",
+            "degustaciones"
+        ],
+        "description": [
+            "Tour de día completo desde el centro de Guadalajara al 'Pueblo Mágico' de Tequila. Primero iremos al sitio arqueológico de Guachimontes, donde se hará una visita guiada a las ruinas con las explicaciones sobre la historia y la cultura en la zona. Luego iremos a visitar la destilería 'Tequila Tres Mujere' donde nos explicarán el proceso de destilación del tequila y haremos una degustación. Luego tendremos tiempo en la plaza principal para pasear por el pueblo y almorzar. Continuaremos el tour realizando una visita a la Fábrica La Rojeña, donde nos mostrarán el proceso de producción del tequila desde las plantaciones de agave . Por último pararemos por Los Cantaritos El Güero, donde podrán comprar canteros artesanales y bebidas, antes de volver al Centro de Guadalajara."
+        ],
+        "stops": [
+            {
+                "name": "Guachimontones",
+                "longitude": "-103.8371516",
+                "latitude": "20.6984358",
+                "stopNumber": 0,
+                "activity": "Lugar arquelógico, visita guiada"
+            },
+            {
+                "name": "Tequila Tres Mujeres",
+                "longitude": "-103.7009879",
+                "latitude": "20.7963911",
+                "stopNumber": 1,
+                "activity": "Visita de destilería, visita guiada"
+            },
+            {
+                "name": "Plaza principal Tequila",
+                "longitude": "-103.8390397",
+                "latitude": "20.8849396",
+                "stopNumber": 2,
+                "activity": "Paseo, explicación y almuerzo"
+            },
+            {
+                "name": "Fábrica la Rojeña",
+                "longitude": "-103.8398751",
+                "latitude": "20.8850465",
+                "stopNumber": 3,
+                "activity": "Visita guiada y degustación"
+            },
+            {
+                "name": "Cantaritos del Güero",
+                "longitude": "-103.7642837",
+                "latitude": "20.8559662",
+                "stopNumber": 4,
+                "activity": "Visita"
+            }
+        ]
     },
-    "tourName": "Tour Pueblo Tequila",
-    "img": "../assets/imgs/cards/Tequila.jpeg",
-    "durationHs": 7,
-    "startDate": "8:00",
-    "endDate": "15:00",
-    "priceUsd": 80,
-    "include": [
-      "pick up y drop off en guadalajara",
-      "almuerzo",
-      "tickets",
-      "degustaciones"
-    ],
-    "description": [
-      "Tour de día completo desde el centro de Guadalajara al 'Pueblo Mágico' de Tequila. Primero iremos al sitio arqueológico de Guachimontes, donde se hará una visita guiada a las ruinas con las explicaciones sobre la historia y la cultura en la zona. Luego iremos a visitar la destilería 'Tequila Tres Mujere' donde nos explicarán el proceso de destilación del tequila y haremos una degustación. Luego tendremos tiempo en la plaza principal para pasear por el pueblo y almorzar. Continuaremos el tour realizando una visita a la Fábrica La Rojeña, donde nos mostrarán el proceso de producción del tequila desde las plantaciones de agave . Por último pararemos por Los Cantaritos El Güero, donde podrán comprar canteros artesanales y bebidas, antes de volver al Centro de Guadalajara."
-    ],
-    "stops": [
-      {
-        "name": "Guachimontones",
-        "longitude": "-103.8371516",
-        "latitude": "20.6984358",
-        "stopNumber": 0,
-        "activity": "Lugar arquelógico, visita guiada"
-      },
-      {
-        "name": "Tequila Tres Mujeres",
-        "longitude": "-103.7009879",
-        "latitude": "20.7963911",
-        "stopNumber": 1,
-        "activity": "Visita de destilería, visita guiada"
-      },
-      {
-        "name": "Plaza principal Tequila",
-        "longitude": "-103.8390397",
-        "latitude": "20.8849396",
-        "stopNumber": 2,
-        "activity": "Paseo, explicación y almuerzo"
-      },
-      {
-        "name": "Fábrica la Rojeña",
-        "longitude": "-103.8398751",
-        "latitude": "20.8850465",
-        "stopNumber": 3,
-        "activity": "Visita guiada y degustación"
-      },
-      {
-        "name": "Cantaritos del Güero",
-        "longitude": "-103.7642837",
-        "latitude": "20.8559662",
-        "stopNumber": 4,
-        "activity": "Visita"
-      }
-    ]
-  },
-  {
-    "id": "11",
-    "city": {
-      "name": "Ciudad de México",
-      "country": "México",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "11",
+        "city": {
+            "name": "Ciudad de México",
+            "country": "México",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Teotihuacan y centro de CDMX",
+        "img": "../assets/imgs/cards/CDMX.jpeg",
+        "durationHs": 9,
+        "startDate": "8:00",
+        "endDate": "17:00",
+        "priceUsd": 80,
+        "include": [
+            "pick up y drop off en guadalajara",
+            "almuerzo",
+            "entradas",
+            "transporte",
+            "guia"
+        ],
+        "description": [
+            "Tour de un día por todas las zonas arqueológicas más imporotante en Ciudad de México y sus alrededores. Comenzaremos en la puerta de tu hotel en Ciudad de México para ir a la Zona Arqueológica de Teotihuacan, donde realizaremos una visita con un guía capacitado que nos ayudará a recorrer las ruinas, subir a las pirámides y  conocer como vivían ahí los Aztecas en la época precolombina. Luego iremos al Sitio Arqueológico Tlatelolco, en el centro de CDMX, donde haremos una visita guiada por las ruinas y el museo. Haremos una pausa para comer los tradicionales tacos y luego, continuaremos nuestro paseo por el centro de la Ciudad de México, con una visita al Palacio de Bellas Artes y un paseo por la Alameda Central. Al finalizar volverems a tu hotel. "
+        ],
+        "stops": [
+            {
+                "name": "Zona Arequeológica Teotihuacan",
+                "longitude": "-98.8510886",
+                "latitude": "19.6837076",
+                "stopNumber": 0,
+                "activity": "Visita guiada a la zona arqueológica, ruinas, pirámides con explicación"
+            },
+            {
+                "name": "Tlatelolco, sitio Arqueológico",
+                "longitude": "-99.1413812",
+                "latitude": "19.452851",
+                "stopNumber": 1,
+                "activity": "Visita guiada a la zona arqueológica museo y explicación"
+            },
+            {
+                "name": "El charco de las Ranas",
+                "longitude": "-99.1245584",
+                "latitude": "19.4655567",
+                "stopNumber": 2,
+                "activity": "Alumerzo en taquería"
+            },
+            {
+                "name": "Palacio Bellas Artes",
+                "longitude": "-99.1412",
+                "latitude": "19.4352",
+                "stopNumber": 3,
+                "activity": "Visita guiada"
+            },
+            {
+                "name": "Alameda Central",
+                "longitude": "-99.1412",
+                "latitude": "19.4352",
+                "stopNumber": 4,
+                "activity": "Visita a la plaza principal, explicación, pase y fotos"
+            }
+        ]
     },
-    "tourName": "Tour Teotihuacan y centro de CDMX",
-    "img": "../assets/imgs/cards/CDMX.jpeg",
-    "durationHs": 9,
-    "startDate": "8:00",
-    "endDate": "17:00",
-    "priceUsd": 80,
-    "include": [
-      "pick up y drop off en guadalajara",
-      "almuerzo",
-      "entradas",
-      "transporte",
-      "guia"
-    ],
-    "description": [
-      "Tour de un día por todas las zonas arqueológicas más imporotante en Ciudad de México y sus alrededores. Comenzaremos en la puerta de tu hotel en Ciudad de México para ir a la Zona Arqueológica de Teotihuacan, donde realizaremos una visita con un guía capacitado que nos ayudará a recorrer las ruinas, subir a las pirámides y  conocer como vivían ahí los Aztecas en la época precolombina. Luego iremos al Sitio Arqueológico Tlatelolco, en el centro de CDMX, donde haremos una visita guiada por las ruinas y el museo. Haremos una pausa para comer los tradicionales tacos y luego, continuaremos nuestro paseo por el centro de la Ciudad de México, con una visita al Palacio de Bellas Artes y un paseo por la Alameda Central. Al finalizar volverems a tu hotel. "
-    ],
-    "stops": [
-      {
-        "name": "Zona Arequeológica Teotihuacan",
-        "longitude": "-98.8510886",
-        "latitude": "19.6837076",
-        "stopNumber": 0,
-        "activity": "Visita guiada a la zona arqueológica, ruinas, pirámides con explicación"
-      },
-      {
-        "name": "Tlatelolco, sitio Arqueológico",
-        "longitude": "-99.1413812",
-        "latitude": "19.452851",
-        "stopNumber": 1,
-        "activity": "Visita guiada a la zona arqueológica museo y explicación"
-      },
-      {
-        "name": "El charco de las Ranas",
-        "longitude": "-99.1245584",
-        "latitude": "19.4655567",
-        "stopNumber": 2,
-        "activity": "Alumerzo en taquería"
-      },
-      {
-        "name": "Palacio Bellas Artes",
-        "longitude": "-99.1412",
-        "latitude": "19.4352",
-        "stopNumber": 3,
-        "activity": "Visita guiada"
-      },
-      {
-        "name": "Alameda Central",
-        "longitude": "-99.1412",
-        "latitude": "19.4352",
-        "stopNumber": 4,
-        "activity": "Visita a la plaza principal, explicación, pase y fotos"
-      }
-    ]
-  },
-  {
-    "id": "12",
-    "city": {
-      "name": "Cancún",
-      "country": "México",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "12",
+        "city": {
+            "name": "Cancún",
+            "country": "México",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Bacalar y Cenotes",
+        "img": "../assets/imgs/cards/Cancún.jpeg",
+        "durationHs": 12,
+        "startDate": "8:00",
+        "endDate": "20:00",
+        "priceUsd": 130,
+        "include": [
+            "pick up y drop off en Cancún",
+            "almuerzo",
+            "desayuno",
+            "guia",
+            "transporte",
+            "entradas"
+        ],
+        "description": [
+            "Tour desde Cancún o Tulúm a Bacalar y sus cenotes. Comenzaremos recogiendolos por sus hoteles y después de un traslado de 2 o 3 horas, llegaremos al Cenote Azul, donde podrán nadar en el cenote y tendremos un desayuno con comida típica local. Luego iremos al Cenote Cocalitos, donde podrán aprovechar los beneficios naturales del agua y la arena local y llegaremos a la Laguna de los 7 Colores en Bacalar. Haremos un paseo en lancha por la laguna y habrá tiempo para bañarse. Por último, iremos al Fuerte San Felipe de Bacalar en el centro de Bacalar, recorreremos el pueblo y tendremos tiempo libre antes de volver hacia los hoteles. "
+        ],
+        "stops": [
+            {
+                "name": "Cenote Azul, Bacalar",
+                "longitude": "-88.4111255",
+                "latitude": "18.6475952",
+                "stopNumber": 0,
+                "activity": "Desayuno, andar en el cenote, fotos"
+            },
+            {
+                "name": "Cenote Cocalitos",
+                "longitude": "-88.4102797",
+                "latitude": "18.6494825",
+                "stopNumber": 1,
+                "activity": "Spa natural, explicación tiempo para entrar al agua"
+            },
+            {
+                "name": "Laguna de los 7 colores",
+                "longitude": "-88.3802018",
+                "latitude": "18.6841291",
+                "stopNumber": 2,
+                "activity": "Paseo en lancha, visita al canal de los piratas, tiempo para estar en el agua"
+            },
+            {
+                "name": "Fuerte San Felipe de Bacalar",
+                "longitude": "-88.3860812",
+                "latitude": "18.6719679",
+                "stopNumber": 3,
+                "activity": "Visita guiada al centro de Bacalar, paseo y fotos"
+            },
+            {
+                "name": "Bacalar",
+                "longitude": "-88.3887929",
+                "latitude": "18.6758302",
+                "stopNumber": 4,
+                "activity": "Tiempo libre, almuerzo"
+            }
+        ]
     },
-    "tourName": "Tour Bacalar y Cenotes",
-    "img": "../assets/imgs/cards/Cancún.jpeg",
-    "durationHs": 12,
-    "startDate": "8:00",
-    "endDate": "20:00",
-    "priceUsd": 130,
-    "include": [
-      "pick up y drop off en Cancún",
-      "almuerzo",
-      "desayuno",
-      "guia",
-      "transporte",
-      "entradas"
-    ],
-    "description": [
-      "Tour desde Cancún o Tulúm a Bacalar y sus cenotes. Comenzaremos recogiendolos por sus hoteles y después de un traslado de 2 o 3 horas, llegaremos al Cenote Azul, donde podrán nadar en el cenote y tendremos un desayuno con comida típica local. Luego iremos al Cenote Cocalitos, donde podrán aprovechar los beneficios naturales del agua y la arena local y llegaremos a la Laguna de los 7 Colores en Bacalar. Haremos un paseo en lancha por la laguna y habrá tiempo para bañarse. Por último, iremos al Fuerte San Felipe de Bacalar en el centro de Bacalar, recorreremos el pueblo y tendremos tiempo libre antes de volver hacia los hoteles. "
-    ],
-    "stops": [
-      {
-        "name": "Cenote Azul, Bacalar",
-        "longitude": "-88.4111255",
-        "latitude": "18.6475952",
-        "stopNumber": 0,
-        "activity": "Desayuno, andar en el cenote, fotos"
-      },
-      {
-        "name": "Cenote Cocalitos",
-        "longitude": "-88.4102797",
-        "latitude": "18.6494825",
-        "stopNumber": 1,
-        "activity": "Spa natural, explicación tiempo para entrar al agua"
-      },
-      {
-        "name": "Laguna de los 7 colores",
-        "longitude": "-88.3802018",
-        "latitude": "18.6841291",
-        "stopNumber": 2,
-        "activity": "Paseo en lancha, visita al canal de los piratas, tiempo para estar en el agua"
-      },
-      {
-        "name": "Fuerte San Felipe de Bacalar",
-        "longitude": "-88.3860812",
-        "latitude": "18.6719679",
-        "stopNumber": 3,
-        "activity": "Visita guiada al centro de Bacalar, paseo y fotos"
-      },
-      {
-        "name": "Bacalar",
-        "longitude": "-88.3887929",
-        "latitude": "18.6758302",
-        "stopNumber": 4,
-        "activity": "Tiempo libre, almuerzo"
-      }
-    ]
-  },
-  {
-    "id": "13",
-    "city": {
-      "name": "Lima",
-      "country": "Perú",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "13",
+        "city": {
+            "name": "Lima",
+            "country": "Perú",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Lima",
+        "img": "../assets/imgs/cards/Lima.jpeg",
+        "durationHs": 9,
+        "startDate": "8:00",
+        "endDate": "17:00",
+        "priceUsd": 150,
+        "include": ["pick up & drop off", "desayuno", "almuerzo", "tickets"],
+        "description": [
+            "Tour de día completo por la ciudad de Lima. Comenzamos en el Parque las Aguas para desayunar, con tiempo para tomar fotografías y comprar souvenirs. Procederemos al Cercado de Lima,  área histórica donde tendremos un paseo guiado con explicaciones, antes de seguir a Costa Verde, donde habrá la opción de realizar parapente y se dará tiempo de almuerzo. Luego, a bordo de una embarcación a bote podremos recorrer la costa y visitar el Salto Del Fraile, antes de ir hacia las Islas Palomino donde podremos tomar fotograafías y conocer su historia"
+        ],
+        "stops": [
+            {
+                "name": "Parque de las Aguas",
+                "longitude": "-76.9520417",
+                "latitude": "-12.0245811",
+                "stopNumber": 0,
+                "activity": "Fotos, souvenires, desayuno"
+            },
+            {
+                "name": "Cercado de Lima",
+                "longitude": "-77.0502566",
+                "latitude": "-12.0210867",
+                "stopNumber": 1,
+                "activity": "Fotos, historia de la ciudad"
+            },
+            {
+                "name": "Costa verde",
+                "longitude": "-77.0707861",
+                "latitude": "-12.100878",
+                "stopNumber": 2,
+                "activity": "Paseo turístico, fotod, almuerzo parapente"
+            },
+            {
+                "name": "Salto del Fraile",
+                "longitude": "-77.0384779",
+                "latitude": "-12.1705179",
+                "stopNumber": 3,
+                "activity": "visita, fotos, embarcación a bote"
+            },
+            {
+                "name": "Islas Palomino",
+                "longitude": "-77.2364081",
+                "latitude": "-12.1305719",
+                "stopNumber": 4,
+                "activity": "Embarcación, fotos, historia de las islas"
+            }
+        ]
     },
-    "tourName": "Tour Lima",
-    "img": "../assets/imgs/cards/Lima.jpeg",
-    "durationHs": 9,
-    "startDate": "8:00",
-    "endDate": "17:00",
-    "priceUsd": 150,
-    "include": ["pick up & drop off", "desayuno", "almuerzo", "tickets"],
-    "description": [
-      "Tour de día completo por la ciudad de Lima. Comenzamos en el Parque las Aguas para desayunar, con tiempo para tomar fotografías y comprar souvenirs. Procederemos al Cercado de Lima,  área histórica donde tendremos un paseo guiado con explicaciones, antes de seguir a Costa Verde, donde habrá la opción de realizar parapente y se dará tiempo de almuerzo. Luego, a bordo de una embarcación a bote podremos recorrer la costa y visitar el Salto Del Fraile, antes de ir hacia las Islas Palomino donde podremos tomar fotograafías y conocer su historia"
-    ],
-    "stops": [
-      {
-        "name": "Parque de las Aguas",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "Fotos, souvenires, desayuno"
-      },
-      {
-        "name": "Cercado de Lima",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Fotos, historia de la ciudad"
-      },
-      {
-        "name": "Costa verde",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "Paseo turístico, fotod, almuerzo parapente"
-      },
-      {
-        "name": "Salto del Fraile",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "visita, fotos, embarcación a bote"
-      },
-      {
-        "name": "Islas Palomino",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Embarcación, fotos, historia de las islas"
-      }
-    ]
-  },
-  {
-    "id": "14",
-    "city": {
-      "name": "Arquipa",
-      "country": "Perú",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "14",
+        "city": {
+            "name": "Arequipa",
+            "country": "Perú",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Arequipa",
+        "img": "../assets/imgs/cards/plaza-armas.jpg",
+        "durationHs": 6,
+        "startDate": "8:00",
+        "endDate": "14:00",
+        "priceUsd": 60,
+        "include": [
+            "pick up & drop off",
+            "desayuno",
+            "almuerzo",
+            "tickets",
+            "entradas",
+            "montaje a caballo"
+        ],
+        "description": [
+            "Descubre esta centenaria ciudad ubicada al sur de Perú. Fundada por un grupo de colones, fue una de las primeras del país. Empezaremos el tour en el centro histórico. Este lugar está construído, en la mayor parte, por bloques de sillar. El monasterio de Santa Catalina es descrito como una ciudad pequeña, ya que quienes la habitan son monjas que, por decisión propia, están impedidas de salir del recinto. Luego, iremos al mirador de Yanahuara, que está ubicado a pocos kilómetros del centro. Desde este lugar se puede apreciar la campiña arequipeña y el volcán Misti además que se puede comprar comida típica de la ciudad, como queso helado. El recorrido continuará por la Villa de Cayma, en donde se hará un recorrido por el lugar. Después, viajaremos hacia las afueras de la ciudad, a una zona rural llamada Sabandía, donde vivió Jacobo Hunter, un personaje ilustre de la historia arequipeña. En este lugar se podrá montar a caballo por la campiña"
+        ],
+        "stops": [
+            {
+                "name": "Plaza de Armas",
+                "longitude": "-71.5390996",
+                "latitude": "-16.3988032",
+                "stopNumber": 0,
+                "activity": "Fotos, desayuno, visita"
+            },
+            {
+                "name": "Monasterio de Santa Catalina",
+                "longitude": "-71.5389848",
+                "latitude": "-16.3952777",
+                "stopNumber": 1,
+                "activity": "Recorrido, comida, souvenirs"
+            },
+            {
+                "name": "Mirador de Yanahuara",
+                "longitude": "-71.5426591",
+                "latitude": "-16.3874126",
+                "stopNumber": 2,
+                "activity": "Visita, fotos, picadillos de comida típica"
+            },
+            {
+                "name": "Villa de Cayma",
+                "longitude": "-71.546277",
+                "latitude": "-16.3817444",
+                "stopNumber": 3,
+                "activity": "Recorrido, almuerzo, visita guiada"
+            },
+            {
+                "name": "Sabandía",
+                "longitude": "-71.4995798",
+                "latitude": "-16.4567451",
+                "stopNumber": 4,
+                "activity": "Visita, montar a caballo, recorrer el lugar"
+            }
+        ]
     },
-    "tourName": "Tour Arequipa",
-    "img": "../assets/imgs/cards/plaza-armas.jpg",
-    "durationHs": 6,
-    "startDate": "8:00",
-    "endDate": "14:00",
-    "priceUsd": 60,
-    "include": [
-      "pick up & drop off",
-      "desayuno",
-      "almuerzo",
-      "tickets",
-      "entradas",
-      "montaje a caballo"
-    ],
-    "description": [
-      "Descubre esta centenaria ciudad ubicada al sur de Perú. Fundada por un grupo de colones, fue una de las primeras del país. Empezaremos el tour en el centro histórico. Este lugar está construído, en la mayor parte, por bloques de sillar. El monasterio de Santa Catalina es descrito como una ciudad pequeña, ya que quienes la habitan son monjas que, por decisión propia, están impedidas de salir del recinto. Luego, iremos al mirador de Yanahuara, que está ubicado a pocos kilómetros del centro. Desde este lugar se puede apreciar la campiña arequipeña y el volcán Misti además que se puede comprar comida típica de la ciudad, como queso helado. El recorrido continuará por la Villa de Cayma, en donde se hará un recorrido por el lugar. Después, viajaremos hacia las afueras de la ciudad, a una zona rural llamada Sabandía, donde vivió Jacobo Hunter, un personaje ilustre de la historia arequipeña. En este lugar se podrá montar a caballo por la campiña"
-    ],
-    "stops": [
-      {
-        "name": "Plaza de Armas",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "Fotos, desayuno, visita"
-      },
-      {
-        "name": "Monasterio de Santa Catalina",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Recorrido, comida, souvenirs"
-      },
-      {
-        "name": "Mirador de Yanahuara",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "Visita, fotos, picadillos de comida típica"
-      },
-      {
-        "name": "Villa de Cayma",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "Recorrido, almuerzo, visita guiada"
-      },
-      {
-        "name": "Sabandía",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Visita, montar a caballo, recorrer el lugar"
-      }
-    ]
-  },
-  {
-    "id": "15",
-    "city": {
-      "name": "Cusco",
-      "country": "Perú",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "15",
+        "city": {
+            "name": "Cusco",
+            "country": "Perú",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Machu Picchu",
+        "img": "../assets/imgs/cards/Cusco.jpeg",
+        "durationHs": 12,
+        "startDate": "8:00",
+        "endDate": "20:00",
+        "priceUsd": 600,
+        "include": ["entrada al lugar", "transporte"],
+        "description": [
+            "Tour de día completo por la ciudad de Lima. Comenzamos en el Parque las Aguas para desayunar, con tiempo para tomar fotografías y comprar souvenirs. Procederemos al Cercado de Lima,  área histórica donde tendremos un paseo guiado con explicaciones, antes de seguir a Costa Verde, donde habrá la opción de realizar parapente y se dará tiempo de almuerzo. Luego, a bordo de una embarcación a bote podremos recorrer la costa y visitar el Salto Del Fraile, antes de ir hacia las Islas Palomino donde podremos tomar fotograafías y conocer su historia"
+        ],
+        "stops": [
+            {
+                "name": "Cusco",
+                "longitude": "-72.0094607",
+                "latitude": "-13.5298426",
+                "stopNumber": 0,
+                "activity": "viaje en tren"
+            },
+            {
+                "name": "Aguas Calientes",
+                "longitude": "-72.5268513",
+                "latitude": "-13.154632",
+                "stopNumber": 1,
+                "activity": "Vista panorámica"
+            },
+            {
+                "name": "Santuario Arqueológico de Machu Picchu",
+                "longitude": "",
+                "latitude": "",
+                "stopNumber": 2,
+                "activity": "Tour sobre historia y arquitectura, fotos"
+            },
+            {
+                "name": "Machu picchu",
+                "longitude": "-72.5471569",
+                "latitude": "-13.163136",
+                "stopNumber": 3,
+                "activity": "visita, fotos"
+            },
+            {
+                "name": "Cusco",
+                "longitude": "-72.0094607",
+                "latitude": "-13.5298426",
+                "stopNumber": 4,
+                "activity": "Regreso viaje en tren, almuerzo"
+            }
+        ]
     },
-    "tourName": "Tour Machu Picchu",
-    "img": "../assets/imgs/cards/Cusco.jpeg",
-    "durationHs": 12,
-    "startDate": "8:00",
-    "endDate": "20:00",
-    "priceUsd": 600,
-    "include": ["entrada al lugar", "transporte"],
-    "description": [
-      "Tour de día completo por la ciudad de Lima. Comenzamos en el Parque las Aguas para desayunar, con tiempo para tomar fotografías y comprar souvenirs. Procederemos al Cercado de Lima,  área histórica donde tendremos un paseo guiado con explicaciones, antes de seguir a Costa Verde, donde habrá la opción de realizar parapente y se dará tiempo de almuerzo. Luego, a bordo de una embarcación a bote podremos recorrer la costa y visitar el Salto Del Fraile, antes de ir hacia las Islas Palomino donde podremos tomar fotograafías y conocer su historia"
-    ],
-    "stops": [
-      {
-        "name": "Cusco",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "viaje en tren"
-      },
-      {
-        "name": "Aguas Calientes",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Vista panorámica"
-      },
-      {
-        "name": "Santuario Arqueológico de Machu Picchu",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "Tour sobre historia y arquitectura, fotos"
-      },
-      {
-        "name": "Machu picchu",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "visita, fotos"
-      },
-      {
-        "name": "Cusco",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Regreso viaje en tren, almuerzo"
-      }
-    ]
-  },
-  {
-    "id": "16",
-    "city": {
-      "name": "Arquipa",
-      "country": "Perú",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "16",
+        "city": {
+            "name": "Chivay",
+            "country": "Perú",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Cañón del Colca",
+        "img": "../assets/imgs/cards/canion-colca.jpg",
+        "durationHs": 12,
+        "startDate": "8:00",
+        "endDate": "20:00",
+        "priceUsd": 120,
+        "include": [
+            "pick up & drop off",
+            "desayuno",
+            "almuerzo",
+            "transporte",
+            "guia"
+        ],
+        "description": [
+            "Ubicada arriba de los 3000 msn, el cañón del colca es uno de cañones más profundos del mundo. Está ubicado a pocos kilómetros de la ciudad de Chivay. Empezaremos la travesía en dicha ciudad luego de tomar desayuno. Luego, viajaremos hasta las lagunas de las sirenas, donde podrán tomar fotos de este asombroso paisaje. Seguiremos el camino directo al mirador del cañón donde podrán ver la vegetación y los animales que ahí habitan, como cóndores. Después, iremos a tomar almuerzo en el restaurante tradicional que se encuentra cerca al mirador. En este lugar se podrá degustar de platos típicos como pachamanca, cuy chactao, entre otros. Por último, regresaremos hacia la ciudad de Chivay donde desembarcaremos en el hotel."
+        ],
+        "stops": [
+            {
+                "name": "Chivay",
+                "longitude": "-71.6067797",
+                "latitude": "-15.63803",
+                "stopNumber": 0,
+                "activity": "desayuno, transporte, fotos"
+            },
+            {
+                "name": "Lagunas de las sirenas",
+                "longitude": "-76.227304",
+                "latitude": "-6.7143077",
+                "stopNumber": 1,
+                "activity": "Fotos, visita guiada"
+            },
+            {
+                "name": "Mirador del cañón",
+                "longitude": "-77.8614876",
+                "latitude": "-6.175875",
+                "stopNumber": 2,
+                "activity": "Fotos, explicación"
+            },
+            {
+                "name": "Colca Restaurant",
+                "longitude": "-71.6038388",
+                "latitude": "-15.6414938",
+                "stopNumber": 3,
+                "activity": "Almuerzo"
+            },
+            {
+                "name": "Chivay",
+                "longitude": "-71.6067797",
+                "latitude": "-15.63803",
+                "stopNumber": 4,
+                "activity": "Fin de la actividad"
+            }
+        ]
     },
-    "tourName": "Tour Cañón del Colca",
-    "img": "../assets/imgs/cards/canion-colca.jpg",
-    "durationHs": 12,
-    "startDate": "8:00",
-    "endDate": "20:00",
-    "priceUsd": 120,
-    "include": [
-      "pick up & drop off",
-      "desayuno",
-      "almuerzo",
-      "transporte",
-      "guia"
-    ],
-    "description": [
-      "Ubicada arriba de los 3000 msn, el cañón del colca es uno de cañones más profundos del mundo. Está ubicado a pocos kilómetros de la ciudad de Chivay. Empezaremos la travesía en dicha ciudad luego de tomar desayuno. Luego, viajaremos hasta las lagunas de las sirenas, donde podrán tomar fotos de este asombroso paisaje. Seguiremos el camino directo al mirador del cañón donde podrán ver la vegetación y los animales que ahí habitan, como cóndores. Después, iremos a tomar almuerzo en el restaurante tradicional que se encuentra cerca al mirador. En este lugar se podrá degustar de platos típicos como pachamanca, cuy chactao, entre otros. Por último, regresaremos hacia la ciudad de Chivay donde desembarcaremos en el hotel."
-    ],
-    "stops": [
-      {
-        "name": "Chivay",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "desayuno, transporte, fotos"
-      },
-      {
-        "name": "Lagunas de las sirenas",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Fotos, visita guiada"
-      },
-      {
-        "name": "Mirador del cañón",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "Fotos, explicación"
-      },
-      {
-        "name": "Colca Restaurant",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "Almuerzo"
-      },
-      {
-        "name": "Chivay",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Fin de la actividad"
-      }
-    ]
-  },
-  {
-    "id": "17",
-    "city": {
-      "name": "Vaticano",
-      "country": "Italia",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "17",
+        "city": {
+            "name": "Vaticano",
+            "country": "Italia",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour Roma: Vaticano y Coliseo",
+        "img": "../assets/imgs/cards/Vaticano.jpeg",
+        "durationHs": 7,
+        "startDate": "8:00",
+        "endDate": "15:00",
+        "priceUsd": 180,
+        "include": ["transporte", "guia", "entradas"],
+        "description": [
+            "Tour de día completo en la ciudad de Roma. Comenzaremos el día en el Vaticano, donde podremos ingresar sin hacer filas para realizar una visita guiada y recorrer el Museo Vaticano, seguido de una visita a la Capilla Sixtina para apreciar la famosa pintura de Michelangelo. Luego iremos al Coliseo para realizar la visita guiada sin necesidad de hacer filas, y al finalizar habrá tiempo libre para almorzar. Nos reencontraremos para ir a la Basilica de San Pedro y terminaremos en Palatine Hill y el Foro Romano, dónde escucharemos las explicaciones históricas del lugar"
+        ],
+        "stops": [
+            {
+                "name": "Vaticano y Museo Vaticano",
+                "longitude": "12.4516528",
+                "latitude": "41.9064305",
+                "stopNumber": 0,
+                "activity": "Visita guiada al museo con acceso rápido sin fila"
+            },
+            {
+                "name": "Capilla Sixtina",
+                "longitude": "12.4522895",
+                "latitude": "41.9029508",
+                "stopNumber": 1,
+                "activity": "Visita guiada por el museo de arte, ver la obra de Micheangelo"
+            },
+            {
+                "name": "Coliseo",
+                "longitude": "12.4900369",
+                "latitude": "41.8902142",
+                "stopNumber": 2,
+                "activity": "Visita guiada al coliseo con explicación, fotos y tiempo libre para almuerzo"
+            },
+            {
+                "name": "Basílica de San Pedro",
+                "longitude": "12.4517427",
+                "latitude": "41.9021707",
+                "stopNumber": 3,
+                "activity": "Visita guiada, fotos y explicación"
+            },
+            {
+                "name": "Palatine Hill y Foro Romano",
+                "longitude": "12.47869",
+                "latitude": "41.8894187",
+                "stopNumber": 4,
+                "activity": "Visita guiada, historia, explicación y fotos"
+            }
+        ]
     },
-    "tourName": "Tour Roma: Vaticano y Coliseo",
-    "img": "../assets/imgs/cards/Vaticano.jpeg",
-    "durationHs": 7,
-    "startDate": "8:00",
-    "endDate": "15:00",
-    "priceUsd": 180,
-    "include": ["transporte", "guia", "entradas"],
-    "description": [
-      "Tour de día completo en la ciudad de Roma. Comenzaremos el día en el Vaticano, donde podremos ingresar sin hacer filas para realizar una visita guiada y recorrer el Museo Vaticano, seguido de una visita a la Capilla Sixtina para apreciar la famosa pintura de Michelangelo. Luego iremos al Coliseo para realizar la visita guiada sin necesidad de hacer filas, y al finalizar habrá tiempo libre para almorzar. Nos reencontraremos para ir a la Basilica de San Pedro y terminaremos en Palatine Hill y el Foro Romano, dónde escucharemos las explicaciones históricas del lugar"
-    ],
-    "stops": [
-      {
-        "name": "Vaticano y Museo Vaticano",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "Visita guiada al museo con acceso rápido sin fila"
-      },
-      {
-        "name": "Capilla Sixtina",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Visita guiada por el museo de arte, ver la obra de Micheangelo"
-      },
-      {
-        "name": "Coliseo",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "Visita guiada al coliseo con explicación, fotos y tiempo libre para almuerzo"
-      },
-      {
-        "name": "Basílica de San Pedro",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "Visita guiada, fotos y explicación"
-      },
-      {
-        "name": "Palatine Hill y Foro Romano",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Visita guiada, historia, explicación y fotos"
-      }
-    ]
-  },
-  {
-    "id": "18",
-    "city": {
-      "name": "Milán",
-      "country": "Italia",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "18",
+        "city": {
+            "name": "Milán",
+            "country": "Italia",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Milán, Italia",
+        "img": "../assets/imgs/cards/Milán.jpeg",
+        "durationHs": 7,
+        "startDate": "8:00",
+        "endDate": "15:00",
+        "priceUsd": 180,
+        "include": ["guia", "entradas sin cola"],
+        "description": [
+            "En este tour de día completo por la ciudad de Milan comenzaremos en la Iglesia Santa Maria de laa Grazie, donde podremos ver la obra de arte 'La última cena', continuaremos el paseo en el Castello Sforezco donde haremos una visita guiada al castillo medieval. Visitaremos el teatro de ópera La Scala antes de dirigirnos a la Via Montenapoleon, donde caminaremos por el distrito de moda y tendremos tiempo libre para comer. Por último, entraremos sin hacer filas al Duomo Di Milano, donde podremos apreciar la catedrál y escuchar la explicación. "
+        ],
+        "stops": [
+            {
+                "name": "Santa María de la Grazie",
+                "longitude": "9.1687681",
+                "latitude": "45.4659667",
+                "stopNumber": 0,
+                "activity": "Visita a la iglesa para ver la obra 'la última cena'"
+            },
+            {
+                "name": "Castello Sforezco",
+                "longitude": "9.1771385",
+                "latitude": "45.4704799",
+                "stopNumber": 1,
+                "activity": "Visita guiada del castillo medieval con explicación histórica y fotos"
+            },
+            {
+                "name": "La Scala Teatro",
+                "longitude": "9.1873572",
+                "latitude": "45.4674058",
+                "stopNumber": 2,
+                "activity": "explicación, visita guiada y fotos"
+            },
+            {
+                "name": "Via Montenapoleon",
+                "longitude": "9.1929482",
+                "latitude": "45.468341",
+                "stopNumber": 3,
+                "activity": "Visita al distrito de moda, tiempo para tomar almuerzo"
+            },
+            {
+                "name": "Duomo di Milano",
+                "longitude": "9.1893669",
+                "latitude": "45.4641672",
+                "stopNumber": 4,
+                "activity": "Visita guiada de la catedral con entrada sin cola y explicación con fotos"
+            }
+        ]
     },
-    "tourName": "Milán, Italia",
-    "img": "../assets/imgs/cards/Milán.jpeg",
-    "durationHs": 7,
-    "startDate": "8:00",
-    "endDate": "15:00",
-    "priceUsd": 180,
-    "include": ["guia", "entradas sin cola"],
-    "description": [
-      "En este tour de día completo por la ciudad de Milan comenzaremos en la Iglesia Santa Maria de laa Grazie, donde podremos ver la obra de arte 'La última cena', continuaremos el paseo en el Castello Sforezco donde haremos una visita guiada al castillo medieval. Visitaremos el teatro de ópera La Scala antes de dirigirnos a la Via Montenapoleon, donde caminaremos por el distrito de moda y tendremos tiempo libre para comer. Por último, entraremos sin hacer filas al Duomo Di Milano, donde podremos apreciar la catedrál y escuchar la explicación. "
-    ],
-    "stops": [
-      {
-        "name": "Santa María de la Grazie",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "Visita a la iglesa para ver la obra 'la última cena'"
-      },
-      {
-        "name": "Castello Sforezco",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Visita guiada del castillo medieval con explicación histórica y fotos"
-      },
-      {
-        "name": "La Scala Teatro",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "explicación, visita guiada y fotos"
-      },
-      {
-        "name": "Via Montenapoleon",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "Visita al distrito de moda, tiempo para tomar almuerzo"
-      },
-      {
-        "name": "Duomo di Milano",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Visita guiada de la catedral con entrada sin cola y explicación con fotos"
-      }
-    ]
-  },
-  {
-    "id": "19",
-    "city": {
-      "name": "Varenna",
-      "country": "Italia",
-      "longitude": "",
-      "latitude": ""
+    {
+        "id": "19",
+        "city": {
+            "name": "Varenna",
+            "country": "Italia",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour lado di Como, Bellagio, Varenana y Tremezzo",
+        "img": "../assets/imgs/cards/Varenna.jpeg",
+        "durationHs": 8,
+        "startDate": "8:00",
+        "endDate": "16:00",
+        "priceUsd": 4000,
+        "include": ["pick up & drop off", "guia", "fotos"],
+        "description": [
+            "En este Tour de día completo por Lago Di Como, vamos a recorrer en crucero el lago partiendo desde Lago Di Como, y habiéndo recorrido su centro, catedral y Duomo. Durante el paseo en crucero podrán relajarse y disfrutar de las hermosas vistas del lago y las montañas que lo rodean. Haremos paradas en tres de los pueblos que se encuentran sobre el lago: Varenna, Bellagio y Tremezzo. En cada uno tendrán una explicación por parte del guía, al igual que tiempo libre para recorrer el pueblo por su cuenta y detener a comer o tomar algo. Volveremos a Lago Di Como entrada la tarde."
+        ],
+        "stops": [
+            {
+                "name": "Catedral de Santa María Assunta duomo di como",
+                "longitude": "9.0812725",
+                "latitude": "45.8117672",
+                "stopNumber": 0,
+                "activity": "Visita guiada al centro de Como, explicación, paseo y fotos"
+            },
+            {
+                "name": "Lago di Como",
+                "longitude": "9.0874639",
+                "latitude": "45.991983",
+                "stopNumber": 1,
+                "activity": "Paseo en crucero por el lago"
+            },
+            {
+                "name": "Varenna",
+                "longitude": "9.2709808",
+                "latitude": "45.9887372",
+                "stopNumber": 2,
+                "activity": "Parada en el pueblo, tiempo para recoger"
+            },
+            {
+                "name": "Bellagio",
+                "longitude": "9.2119387",
+                "latitude": "45.9566175",
+                "stopNumber": 3,
+                "activity": "visita guiada por el pueblo, explicación, tiepo libre para almorzar"
+            },
+            {
+                "name": "Tremezzo",
+                "longitude": "9.2047973",
+                "latitude": "45.9823331",
+                "stopNumber": 4,
+                "activity": "Parada en el pueblo, tiempo para recorrer el lugar"
+            }
+        ]
     },
-    "tourName": "Tour lado di Como, Bellagio, Varenana y Tremezzo",
-    "img": "../assets/imgs/cards/Varenna.jpeg",
-    "durationHs": 8,
-    "startDate": "8:00",
-    "endDate": "16:00",
-    "priceUsd": 4000,
-    "include": ["pick up & drop off", "guia", "fotos"],
-    "description": [
-      "En este Tour de día completo por Lago Di Como, vamos a recorrer en crucero el lago partiendo desde Lago Di Como, y habiéndo recorrido su centro, catedral y Duomo. Durante el paseo en crucero podrán relajarse y disfrutar de las hermosas vistas del lago y las montañas que lo rodean. Haremos paradas en tres de los pueblos que se encuentran sobre el lago: Varenna, Bellagio y Tremezzo. En cada uno tendrán una explicación por parte del guía, al igual que tiempo libre para recorrer el pueblo por su cuenta y detener a comer o tomar algo. Volveremos a Lago Di Como entrada la tarde."
-    ],
-    "stops": [
-      {
-        "name": "Catedral de Santa María Assunta duomo di como",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "Visita guiada al centro de Como, explicación, paseo y fotos"
-      },
-      {
-        "name": "Lago di Como",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Paseo en crucero por el lago"
-      },
-      {
-        "name": "Varenna",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "Parada en el pueblo, tiempo para recoger"
-      },
-      {
-        "name": "Bellagio",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "visita guiada por el pueblo, explicación, tiepo libre para almorzar"
-      },
-      {
-        "name": "Tremezzo",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Parada en el pueblo, tiempo para recorrer el lugar"
-      }
-    ]
-  },
-  {
-    "id": "20",
-    "city": {
-      "name": "Florencia",
-      "country": "Italia",
-      "longitude": "",
-      "latitude": ""
-    },
-    "tourName": "Tour área Metropolitana de Florencia",
-    "img": "../assets/imgs/cards/Florencia.jpeg",
-    "durationHs": 8,
-    "startDate": "8:00",
-    "endDate": "16:00",
-    "priceUsd": 275,
-    "include": ["transporte", "almuerzo", "merienda"],
-    "description": [""],
-    "stops": [
-      {
-        "name": "Plaza de Armas",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 0,
-        "activity": "Fotos, desayuno, visita"
-      },
-      {
-        "name": "Monasterio de Santa Catalina",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 1,
-        "activity": "Recorrido, comida, souvenirs"
-      },
-      {
-        "name": "Mirador de Yanahuara",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 2,
-        "activity": "Visita, fotos, picadillos de comida típica"
-      },
-      {
-        "name": "Villa de Cayma",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 3,
-        "activity": "Recorrido, almuerzo, visita guiada"
-      },
-      {
-        "name": "Sabandía",
-        "longitude": "",
-        "latitude": "",
-        "stopNumber": 4,
-        "activity": "Visita, montar a caballo, recorrer el lugar"
-      }
-    ]
-  }
+    {
+        "id": "20",
+        "city": {
+            "name": "Florencia",
+            "country": "Italia",
+            "longitude": "",
+            "latitude": ""
+        },
+        "tourName": "Tour área Metropolitana de Florencia",
+        "img": "../assets/imgs/cards/Florencia.jpeg",
+        "durationHs": 8,
+        "startDate": "8:00",
+        "endDate": "16:00",
+        "priceUsd": 275,
+        "include": ["transporte", "almuerzo", "merienda"],
+        "description": [""],
+        "stops": [
+            {
+                "name": "Greve in Chianti",
+                "longitude": "11.3095078",
+                "latitude": "43.5854036",
+                "stopNumber": 0,
+                "activity": "Paseos por la Ciudad, Fotos, Desayuno"
+            },
+            {
+                "name": "Villa Le Corti",
+                "longitude": "11.1935958",
+                "latitude": "43.6498416",
+                "stopNumber": 1,
+                "activity": "Prueba De Vinos, Con Carnes Curadas Y Aceites De Oliva "
+            },
+            {
+                "name": "Localita Rignano",
+                "longitude": "11.445772",
+                "latitude": "43.7249131",
+                "stopNumber": 2,
+                "activity": "Paseo en Viñedo"
+            },
+            {
+                "name": "Lamole Di Lamole",
+                "longitude": "",
+                "latitude": "",
+                "stopNumber": 3,
+                "activity": "Recorrido, almuerzo, visita guiada"
+            },
+            {
+                "name": "Piazza della Santa Croce",
+                "longitude": "11.2611805",
+                "latitude": "43.7687372",
+                "stopNumber": 4,
+                "activity": "Café Y Visita A La Ciudad"
+            }
+        ]
+    }
 ]
