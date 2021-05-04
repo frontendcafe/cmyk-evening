@@ -214,13 +214,14 @@ div .third-title {
 }
 
 .map-container {
-    max-width: 45%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    border-radius: 21px;
-    box-shadow: var(--border-shadow);
-    border: var(--border);
+  max-width: 45%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 21px;
+  box-shadow: var(--border-shadow);
+  border: var(--border);
+  
 }
 
 .itinerario-container span {
@@ -290,6 +291,7 @@ div .third-title {
         width: 100%;
         height: 300px;
     }
+    
 }
 
 /* Desktop */
@@ -504,6 +506,374 @@ div .third-title {
         outline: none;
         cursor: pointer;
     }
+/* calendar */ 
+
+.calendar-container{
+  width: 432px;
+  height: 603px;
+  box-shadow: var(--border-shadow);
+  border-radius: 27px;
+}
+
+.fecha-salida{
+color: var(--primary-text);
+font-size: 24px;
+font-weight: bold;
+padding-right: 150px;
+padding-top: 20px;
+}
+
+.precio-reserva{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+
+.container-calendar {
+  display: flex;
+  justify-content: center;
+  width: 366px;
+  height: 331px;
+  max-width: 100%;
+  
+  margin: auto;
+  width: 50%;
+ 
+}
+
+
+.calendar-border{
+  border-bottom: 1px solid #aaa;
+  margin: 30px 40px;
+}
+
+.date h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #33302C;
+}
+.prev{
+  
+  padding-left: 15px;
+}
+
+.next{
+
+  padding-right: 15px;
+}
+
+
+.month {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.month i {
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #33302C;
+
+}
+
+.weekdays div {
+  font-weight: 800;
+  width: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  color: #33302C;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days div {
+  width: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 15px;
+  color:#aaa; 
+}
+
+
+
+.days div:hover {
+color:black;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0;
+
+}
+
+ 
+.calendar-border{
+  border-bottom: 1px solid #aaa;
+  margin: 30px 40px;
+  width: 300px;
+
+}
+  .precio-persona{
+    font-weight: 700;
+  color: #120C38;
+  padding: 30px;
+  font-style: bold;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-header {
+    padding: 16px 150px 30px 30px;
+  }
+  
+  .modal-header h3 {
+    font-weight: 800;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) var(--h3-font-size);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 1156px;
+    max-width: 100%;  
+  
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-body {
+    display: flex;
+  }
+  .divider {
+    width: 1px;
+    background: #000000;
+  }
+  
+  .modal-info {
+    padding-right: 10px;
+    flex: 0 0 60%;
+    padding-left: 30px;
+  }
+  .modal-orden {
+    padding-left: 20px;
+  }
+  
+  .personas {
+    display: flex;
+  }
+  
+  .lider {
+    display: flex;
+  }
+  label {
+    display: block;
+  }
+  .reserva-totales {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-left: 20px;
+  }
+  
+  .firr {
+    padding-right: 40px;
+  }
+  .reserva-totales div {
+    flex: 0 0 50%;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: bold;
+    padding: 5px 20px;
+  
+  }
+  
+  
+  .argentina {
+    font-weight: 400;
+    color: var(--primary-text);
+    font-size: 24px;
+  }
+  .buenos-aires {
+    color: var(--primary-text);
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .sobre-el-tour {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-text);
+  }
+  
+  .datos-reserva {
+    font-weight: 700;
+    font-size: 24px;
+    color: #120c38;
+    margin-top: 40px;
+  }
+  
+  .datos-reserva-sub {
+    font-weight: 700;
+    font-size: 24px;
+    color: #120c38;
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+  
+  .reservar-tour {
+    font-size: var(--h3-font-size);
+    
+  }
+  .modal-body input {
+    border-radius: 37px;
+    border: 1px solid var(--active-button);
+    height: 55px;
+    width: 259px;
+  }
+  
+  .reservar-button {
+    border-radius: 37px;
+    background-color: var(--active-button);
+    font-size: 16px;
+    color: white;
+    outline: none;
+    border: none;
+    width: 348px;
+    height: 55px;
+
+    
+  }
+  
+  .padding-buton{
+    padding-bottom: 20px;
+  }
+  .modal-content-confirmada {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 758px;
+    max-width: 100%;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: var(--border-shadow);
+  }
+  
+  .img-cropped {
+    width: 293px;
+    height: 381px;
+    overflow: hidden;
+    border: 5px solid black;
+  }
+  
+  .info-reserva-confirmada {
+    padding: 0px 40px 75px;
+  }
+  
+  .total{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .data-tour {
+    display: block;
+  }
+  
+  .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+  
+  .total-precio{
+    font-size: 30px;
+    font-weight: 700;
+    color: #120C38;
+    font-style: bold;
+  
+  }
+  
+  .calendar-container{
+    width: 432px;
+    height: 603px;
+    box-shadow: var(--border-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+
+  .fecha{
+    padding-right: 250px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: #120C38;
+  }
+
+
+  .precio-persona{
+    font-weight: 700;
+  color: #120C38;
+  padding-top: 20px;
+  font-style: bold;
+  }
+  
+  
+  
+  
 
     .modal-content-confirmada {
         background-color: #fefefe;
@@ -609,6 +979,11 @@ div .third-title {
         color: orangered;
         font-weight: var(--h4-font-weight);
         margin-bottom: 10px;
+    }
+
+    .formulario {
+        width: 40vw;
+        height: 300px;
     }
 }
 
