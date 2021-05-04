@@ -11,7 +11,47 @@
  main svg{
     width: 100%;
 }
+.intro-container-texto{
+display:flex;
+flex-flow:column;
+}
+.intro-container-texto a{
+    color:white;
+    text-decoration: none;
+}
+ .button-descubre {
+        font-family: var(--main-font);
+        background-color: var(--active-button);
+        font-size: var(--buttons-text-font-size);
+        font-weight: var(--buttons-text-font-weight);
+        width: 277px;
+        height: 55px;
+        border-radius: 37px;
+        border: none;
+        line-height: 22px;
+        color: #ffffff;
+        margin: 0 auto;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+    }
 
+
+
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
 
 @-webkit-keyframes slide-top {
     0% {
@@ -23,6 +63,7 @@
         transform: translateY(0);
     }
 }
+
 
 .svg-elem-1 {
     animation: slide-top 1s cubic-bezier(0.35, 0.50, 0.70, 0.94) 1.5s both;
