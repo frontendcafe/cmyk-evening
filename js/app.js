@@ -151,9 +151,9 @@ function displayAllCards(e) {
 
 //   });
 // }
-
+/*
 allTours.addEventListener('click', displayAllCards);
-window.addEventListener('resize', displayCards);
+window.addEventListener('resize', displayCards);*/
 // arg.addEventListener('click', function(){
 //   displayCardsByCountry('Argentina')
 // });
