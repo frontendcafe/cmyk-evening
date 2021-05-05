@@ -2,6 +2,7 @@ const apiURL = '../data/tour_destinos.json';
 
 let resultsArray = [];
 
+const cardsSection = document.querySelector('#cards-section');
 const allTours = document.querySelector('#allTours');
 const bestTours = document.querySelector('.third-title');
 const arg = document.querySelector('#tours-arg');

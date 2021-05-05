@@ -1,11 +1,21 @@
-// function addTourToDom(tour) {
-//   descriptionSection.innerHTML = `<p>Hola Mundo!</p>`;
-// }
-const cardsSection = document.querySelector('#cards-section');
+// const cardsSection = document.querySelector('#cards-section');
+const cardsSectionDetails = document.querySelector('#cards-section');
 const descriptionSection = document.getElementById('tour-details');
-const data = JSON.parse(localStorage.getItem('data'));
+
+const tours = JSON.parse(localStorage.getItem('data'));
+
+const country = document.querySelector('.city-country');
+const city = document.querySelector('.city-name');
+const text = document.getElementById('text-tour');
+const startHour = document.querySelector('.time-out');
+const durationTour = document.querySelector('.durationHs');
+const include = document.querySelector('.include');
+const exitName = document.querySelector('.exit-name');
+const arriveName = document.querySelector('.arrive-name');
+const imageTour = document.getElementById('img-tour');
 
 function getTourById(id) {
+  console.log('hola');
   window.location.assign(`/details.html?id=${id}`);
   console.log('hola');
   // const tourSelected = resultsArray.find(tour => (tour.id === id));
@@ -14,14 +24,32 @@ function getTourById(id) {
   console.log(descriptionSection);
 }
 
-console.log(window.location.pathname);
+function addTourToDom(tour) {
+  console.log(tour);
+  country.innerText = `${tour.city.country}`;
+  city.innerText = `${tour.city.name}`;
+  text.innerText = `${tour.description}`;
+  startHour.innerText = `Hora de salida: ${tour.startDate} hrs.`;
+  durationTour.innerText = `Duración: ${tour.durationHs} horas`;
+  include.innerText = `${tour.include.join(', ')}`;
+  exitName.innerText = `${tour.stops[0].name}`;
+  arriveName.innerText = `${tour.stops[tour.stops.length - 1].name}`;
 
-if (window.location.pathname === '/details.html') {
-  console.log(data);
-  console.log(descriptionSection);
+  imageTour.style.backgroundImage = `url(${tour.img}`;
 }
 
-cardsSection.addEventListener('click', e => {
+if (window.location.pathname === '/details.html') {
+  const search = window.location.search;
+  console.log(search);
+  const urlParams = new URLSearchParams(search);
+  const id = urlParams.get('id');
+  console.log(id);
+
+  const tourSelected = tours.find(tour => tour.id === id);
+  addTourToDom(tourSelected);
+}
+
+cardsSectionDetails.addEventListener('click', e => {
   const tourInfo = e.path.find(item => {
     if (item.classList) {
       return item.classList.contains('tour-card');
@@ -29,6 +57,8 @@ cardsSection.addEventListener('click', e => {
       return false;
     }
   });
+
+  console.log('tour',tourInfo)
 
   if (tourInfo) {
     const tourID = tourInfo.getAttribute('data-tourID');
