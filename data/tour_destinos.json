@@ -4,8 +4,8 @@
         "city": {
             "name": "Buenos Aires",
             "country": "Argentina",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-58.5733832",
+            "latitude": "-34.6157437"
         },
         "tourName": "Tour centro de Buenos Aires",
         "img": "../assets/imgs/cards/Buenos-Aires.jpeg",
@@ -60,8 +60,8 @@
         "city": {
             "name": "Bariloche",
             "country": "Argentina",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-71.4099543",
+            "latitude": "-41.1283316"
         },
         "tourName": "Tour circuito chico bariloche",
         "img": "../assets/imgs/cards/Bariloche.jpeg",
@@ -124,8 +124,8 @@
         "city": {
             "name": "Buenos Aires",
             "country": "Argentina",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-58.5733832",
+            "latitude": "-34.6157437"
         },
         "tourName": "Tour Recoleta",
         "img": "../assets/imgs/cards/recoleta.jpeg",
@@ -180,8 +180,8 @@
         "city": {
             "name": "Buenos Aires",
             "country": "Argentina",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-58.5933547",
+            "latitude": "-34.4268129"
         },
         "tourName": "Tour Tigre, Delta, San Isidro",
         "img": "../assets/imgs/cards/delta.jpeg",
@@ -484,8 +484,8 @@
         "city": {
             "name": "CDMX",
             "country": "México",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-99.2836984",
+            "latitude": "19.39068"
         },
         "tourName": "Tour Coyoacan CDMX",
         "img": "../assets/imgs/cards/Ciudad-de-México.jpeg",
@@ -540,8 +540,8 @@
         "city": {
             "name": "Tequila",
             "country": "México",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-103.8440795",
+            "latitude": "20.8811927"
         },
         "tourName": "Tour Pueblo Tequila",
         "img": "../assets/imgs/cards/Tequila.jpeg",
@@ -601,8 +601,8 @@
         "city": {
             "name": "Ciudad de México",
             "country": "México",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-99.2836984",
+            "latitude": "19.39068"
         },
         "tourName": "Tour Teotihuacan y centro de CDMX",
         "img": "../assets/imgs/cards/CDMX.jpeg",
@@ -663,8 +663,8 @@
         "city": {
             "name": "Cancún",
             "country": "México",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-88.405147",
+            "latitude": "18.7147758"
         },
         "tourName": "Tour Bacalar y Cenotes",
         "img": "../assets/imgs/cards/Cancún.jpeg",
@@ -726,8 +726,8 @@
         "city": {
             "name": "Lima",
             "country": "Perú",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-77.1278653",
+            "latitude": "-12.0266034"
         },
         "tourName": "Tour Lima",
         "img": "../assets/imgs/cards/Lima.jpeg",
@@ -782,8 +782,8 @@
         "city": {
             "name": "Arequipa",
             "country": "Perú",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-71.5565211",
+            "latitude": "-16.4040516"
         },
         "tourName": "Tour Arequipa",
         "img": "../assets/imgs/cards/plaza-armas.jpg",
@@ -845,8 +845,8 @@
         "city": {
             "name": "Cusco",
             "country": "Perú",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-72.0092895",
+            "latitude": "-13.5300096"
         },
         "tourName": "Tour Machu Picchu",
         "img": "../assets/imgs/cards/Cusco.jpeg",
@@ -901,8 +901,8 @@
         "city": {
             "name": "Chivay",
             "country": "Perú",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "-71.625126",
+            "latitude": "-15.6375134"
         },
         "tourName": "Tour Cañón del Colca",
         "img": "../assets/imgs/cards/canion-colca.jpg",
@@ -963,8 +963,8 @@
         "city": {
             "name": "Vaticano",
             "country": "Italia",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "12.4476838",
+            "latitude": "41.9038163"
         },
         "tourName": "Tour Roma: Vaticano y Coliseo",
         "img": "../assets/imgs/cards/Vaticano.jpeg",
@@ -1019,8 +1019,8 @@
         "city": {
             "name": "Milán",
             "country": "Italia",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "9.1076926",
+            "latitude": "45.4627124"
         },
         "tourName": "Milán, Italia",
         "img": "../assets/imgs/cards/Milán.jpeg",
@@ -1075,8 +1075,8 @@
         "city": {
             "name": "Varenna",
             "country": "Italia",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "9.0718961",
+            "latitude": "45.925454"
         },
         "tourName": "Tour lado di Como, Bellagio, Varenana y Tremezzo",
         "img": "../assets/imgs/cards/Varenna.jpeg",
@@ -1131,8 +1131,8 @@
         "city": {
             "name": "Florencia",
             "country": "Italia",
-            "longitude": "",
-            "latitude": ""
+            "longitude": "11.2533256",
+            "latitude": "43.6712668"
         },
         "tourName": "Tour área Metropolitana de Florencia",
         "img": "../assets/imgs/cards/Florencia.jpeg",
@@ -1141,7 +1141,7 @@
         "endDate": "16:00",
         "priceUsd": 275,
         "include": ["transporte", "almuerzo", "merienda"],
-        "description": [""],
+        "description": ["Tour de día completo en la Ciudad Metropolitana de Florencia. Comenzaremos en Greve in Chianti, al sur de Florencia, donde realizaremos un paseo guiado por el pueblo medieval. Luego nos dirigiremos a la Localita Rignano para visitar un viñedo y aprender sobre las plantaciones de uvas en la zona para la producción de vinos, antes de ir a Lamole Di Lamole para realizar un paseo off-road por granjas rústicas y visitar una vinoteca. Por último, iremos a la Basilica Santa Croce, en  el centro de Florencia, donde tendremos una visita guiada sobre la historia de la ciudad."],
         "stops": [
             {
                 "name": "Greve in Chianti",
