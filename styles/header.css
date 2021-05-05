@@ -1,0 +1,184 @@
+/** @format */
+header {
+    max-width: 1200px;
+    height: 400px;
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    z-index: 1;
+}
+header h1 {
+    font-size: 44px;
+    color: var(--secondary-background);
+    font-weight: var(--h2-font-weight);
+}
+header img {
+    width: 100%;
+    max-width: 700px;
+}
+.header-texto {
+    color: var(--secondary-button);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.header-imagen {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 5;
+}
+.slideshow {
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    display: flex;
+    transition: 0.84s;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0 20px;
+    z-index: -1;
+}
+
+.active {
+    transform: translate(-100%);
+    z-index: 10;
+}
+
+.last-slide {
+    transform: translate(-200%);
+    z-index: -10;
+}
+
+/*.
+slides are different color to show as different slides for training purposes;
+images can be used instead
+*/
+
+.slide:nth-child(1),
+.slide:nth-child(2),
+.slide:nth-child(3),
+.slide:nth-child(4),
+.slide:nth-child(5) {
+    background-color: white;
+}
+
+.controls {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+.controls div {
+    width: 10%;
+    position: absolute;
+    height: 100%;
+    font-size: 46px;
+    cursor: pointer;
+    color: var(--secondary-button);
+    display: flex;
+    transition: 0.27s;
+}
+
+.controls div:hover {
+    opacity: 40%;
+}
+
+i {
+    font-style: normal;
+    margin: auto 0;
+    width: 100%;
+    padding: 12%;
+}
+
+.controls .left {
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.controls .right {
+    right: 0;
+    text-align: right;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+@media (min-width: 564px) and (max-width: 769px) {
+    header img {
+        width: 70%;
+        display: flex;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
+/* Tablet */
+
+@media (min-width: 769px) {
+    .slide {
+        flex-flow: row;
+    }
+    header img {
+        width: 100%;
+        max-width: 700px;
+    }
+    .header-texto {
+        color: var(--secondary-button);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+        padding: 5%;
+    }
+    .controls div {
+        height: 100%;
+    }
+    header {
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+}
+/* Desktop */
+
+@media (min-width: 1025px) {
+    .slide {
+        flex-flow: row;
+    }
+    .header-texto {
+        color: var(--secondary-button);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        padding: 10%;
+    }
+    .controls div {
+        height: 100%;
+    }
+    header {
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+}

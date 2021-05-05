@@ -1,0 +1,927 @@
+/** @format */
+
+div .third-title {
+    line-height: 1;
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    .cards-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+}
+/* detalles de los tours */
+.container-descripcion-tour {
+    font: var(--primary-text);
+    color: rgb(48, 42, 81);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin: 40px;
+}
+
+.descripcion-container {
+    font-size: var(--body-font-size);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.descripcion {
+    width: 65%;
+}
+.reserva-form {
+    width: 35%;
+    box-shadow: var(--border-shadow);
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.informacion-tour {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px;
+    gap: 1em;
+}
+
+.city-country {
+    font-size: var(--subtitle-body-font-size);
+}
+
+.city-name {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+}
+
+#sobre-el-tour {
+    font-size: var(--subtitle-body-font-size);
+    font-weight: var(--h4-font-weight);
+    margin: 5px 0 10px 0;
+}
+
+.subtitulo {
+    color: orangered;
+    font-weight: var(--h4-font-weight);
+    margin-bottom: 10px;
+}
+
+/* fin de los detalles del tour */
+/* detalles de los tours */
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+}
+
+/* fin de los detalles del tour */
+
+/* registro */
+
+.formulario {
+    width: 100%;
+    border: 1px solid red;
+}
+
+/*itinerario*/
+
+.itinerario-container,
+.itinerario-info,
+.itinerario-container-inicio,
+.timeline-icono-morado,
+.itinerario-container-paradas,
+.map-container,
+.map-iframe-container,
+.span-icon,
+.map-container {
+    display: flex;
+}
+
+.itinerario-container,
+.timeline-icono-morado,
+.span-icon,
+.map-iframe-container,
+.map-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.itinerario-container {
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 0;
+}
+
+.itinerario-info h3 {
+    font-size: var(--footer-font-size);
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.itinerario-container-inicio {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itinerario-icono-morado {
+    height: 42px;
+    width: 40px;
+    background-image: url(/assets/icons/icon-pin.png);
+    background-size: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itinerario-text {
+    width: 100%;
+    padding-left: 14px;
+    padding-bottom: 16px;
+}
+
+.itinerario-container-paradas {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 25px 0px;
+}
+.span-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.itinerario-container-line {
+    height: 80px;
+    background-image: url(/assets/icons/line.png);
+    background-repeat: repeat-y;
+    background-position: 50%;
+    z-index: -1;
+}
+
+.map-container {
+    max-width: 45%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+    box-shadow: var(--border-shadow);
+    border: var(--border);
+}
+
+.itinerario-container span {
+    background: black;
+    color: white;
+}
+
+@media (min-width: 769px) and (max-width: 1136px) {
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .information-tour {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px;
+        gap: 1em;
+    }
+
+    .city-country {
+        font-size: var(--subtitle-body-font-size);
+    }
+
+    .city-name {
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+    }
+
+    #sobre-el-tour {
+        font-size: var(--subtitle-body-font-size);
+        font-weight: var(--h4-font-weight);
+        margin: 5px 0 10px 0;
+    }
+
+    .description-travel {
+        display: flex;
+    }
+
+    .details {
+        width: 100%;
+        font-size: var(--body-font-size);
+        font-weight: var(--body-regular-font-weight);
+    }
+
+    .subtitle {
+        color: orangered;
+        font-weight: var(--h4-font-weight);
+        margin-bottom: 10px;
+    }
+
+    .formulario {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1136px) {
+    .itinerario-info {
+        width: 400px;
+    }
+
+    .itinerario-container {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .map-iframe-container {
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
+    .itinerario-info {
+        width: 400px;
+    }
+
+    .itinerario-container {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .map-iframe-container {
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .map-container {
+        width: 770px;
+        height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 21px;
+        box-shadow: var(--border-shadow);
+        border: var(--border);
+    }
+    /* calendar */
+    .calendar-container {
+    }
+    .calendar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        color: var(--primary-text);
+    }
+    .reserva-form h3 {
+        align-self: flex-start;
+        font-weight: 700;
+    }
+    .precio-persona {
+        border-top: 1px solid #f5f5f5;
+        text-align: center;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-header {
+        padding: 16px 150px 30px 30px;
+    }
+
+    .modal-header h3 {
+        font-weight: 800;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) var(--h3-font-size);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 1156px;
+        max-width: 100%;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .modal-body {
+        display: flex;
+    }
+    .divider {
+        width: 1px;
+        background: #000000;
+    }
+
+    .modal-info {
+        padding-right: 10px;
+        flex: 0 0 60%;
+        padding-left: 30px;
+    }
+    .modal-orden {
+        padding-left: 20px;
+    }
+
+    .personas {
+        display: flex;
+    }
+
+    .lider {
+        display: flex;
+    }
+    label {
+        display: block;
+    }
+    .reserva-totales {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 120px;
+        padding-left: 20px;
+    }
+
+    .firr {
+        padding-right: 40px;
+    }
+    .reserva-totales div {
+        flex: 0 0 50%;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: bold;
+        padding: 5px 20px;
+    }
+
+    .argentina {
+        font-weight: 400;
+        color: var(--primary-text);
+        font-size: 24px;
+    }
+    .buenos-aires {
+        color: var(--primary-text);
+        font-weight: 800;
+        font-size: 36px;
+    }
+    .sobre-el-tour {
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--primary-text);
+    }
+
+    .datos-reserva {
+        font-weight: 700;
+        font-size: 24px;
+        color: #120c38;
+        margin-top: 40px;
+    }
+
+    .datos-reserva-sub {
+        font-weight: 700;
+        font-size: 24px;
+        color: #120c38;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+
+    .reservar-tour {
+        font-size: var(--h3-font-size);
+    }
+    .modal-body input {
+        border-radius: 37px;
+        border: 1px solid var(--active-button);
+        height: 55px;
+        width: 259px;
+    }
+
+    .reservar-button {
+        font-family: var(--main-font);
+        background-color: var(--active-button);
+        font-size: var(--buttons-text-font-size);
+        font-weight: var(--buttons-text-font-weight);
+        width: 277px;
+        height: 55px;
+        border-radius: 37px;
+        border: none;
+        line-height: 22px;
+        color: #ffffff;
+        margin: 15px 0 20px 0;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+    }
+    /* calendar */
+
+    .calendar-container {
+        width: 432px;
+        height: 603px;
+        box-shadow: var(--border-shadow);
+        border-radius: 27px;
+    }
+
+    .fecha-salida {
+        color: var(--primary-text);
+        font-size: 24px;
+        font-weight: bold;
+        padding-right: 150px;
+        padding-top: 20px;
+    }
+
+    .precio-reserva {
+        font-weight: 900;
+    }
+
+    .container-calendar {
+        display: flex;
+        justify-content: center;
+        width: 366px;
+        height: 331px;
+        max-width: 100%;
+
+        margin: auto;
+        width: 50%;
+    }
+
+    .calendar-border {
+        border-bottom: 1px solid #aaa;
+        margin: 30px 40px;
+    }
+
+    .date h3 {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--primary-text);
+    }
+    .prev {
+        padding-left: 15px;
+    }
+
+    .next {
+        padding-right: 15px;
+    }
+
+    .month {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .month i {
+        cursor: pointer;
+    }
+
+    .month h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .month p {
+        font-size: 1.6rem;
+    }
+
+    .weekdays {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        color: #33302c;
+        font-weight: 200;
+    }
+
+    .weekdays div {
+        font-weight: 800;
+        width: 53px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.8;
+        color: #33302c;
+    }
+
+    .days {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .days div {
+        width: 53px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        font-size: 15px;
+        color: #aaa;
+        font-weight: 200;
+    }
+
+    .days div:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .prev-date,
+    .next-date {
+        opacity: 0;
+    }
+
+    .calendar-border {
+        margin: 30px 40px;
+        width: 300px;
+    }
+    .precio-persona {
+        font-weight: 700;
+        color: #120c38;
+        font-style: bold;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-header {
+        padding: 16px 150px 30px 30px;
+    }
+
+    .modal-header h3 {
+        font-weight: 800;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) var(--h3-font-size);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 1156px;
+        max-width: 100%;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .modal-body {
+        display: flex;
+    }
+    .divider {
+        width: 1px;
+        background: #000000;
+    }
+
+    .modal-info {
+        padding-right: 10px;
+        flex: 0 0 60%;
+        padding-left: 30px;
+    }
+    .modal-orden {
+        padding-left: 20px;
+    }
+
+    .personas {
+        display: flex;
+    }
+
+    .lider {
+        display: flex;
+    }
+    label {
+        display: block;
+    }
+    .reserva-totales {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 120px;
+        padding-left: 20px;
+    }
+
+    .firr {
+        padding-right: 40px;
+    }
+    .reserva-totales div {
+        flex: 0 0 50%;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: bold;
+        padding: 5px 20px;
+    }
+
+    .argentina {
+        font-weight: 400;
+        color: var(--primary-text);
+        font-size: 24px;
+    }
+    .buenos-aires {
+        color: var(--primary-text);
+        font-weight: 800;
+        font-size: 36px;
+    }
+    .sobre-el-tour {
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--primary-text);
+    }
+
+    .datos-reserva {
+        font-weight: 700;
+        font-size: 24px;
+        color: #120c38;
+        margin-top: 40px;
+    }
+
+    .datos-reserva-sub {
+        font-weight: 700;
+        font-size: 24px;
+        color: #120c38;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+
+    .reservar-tour {
+        font-size: var(--h3-font-size);
+    }
+    .modal-body input {
+        border-radius: 37px;
+        border: 1px solid var(--active-button);
+        height: 55px;
+        width: 259px;
+    }
+
+    .reservar-button {
+        border-radius: 37px;
+        background-color: var(--active-button);
+        font-size: 16px;
+        color: white;
+        outline: none;
+        border: none;
+        width: 348px;
+        height: 55px;
+    }
+
+    .modal-content-confirmada {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        width: 758px;
+        max-width: 100%;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: var(--border-shadow);
+    }
+
+    .img-cropped {
+        width: 293px;
+        height: 381px;
+        overflow: hidden;
+        border: 5px solid black;
+    }
+
+    .info-reserva-confirmada {
+        padding: 0px 40px 75px;
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .data-tour {
+        display: block;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    .total-precio {
+        font-size: 30px;
+        font-weight: 700;
+        color: #120c38;
+        font-style: bold;
+    }
+
+    .fecha {
+        padding-right: 250px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        color: #120c38;
+    }
+
+    .precio-persona {
+        font-weight: 700;
+        color: #120c38;
+        padding-top: 20px;
+        font-style: bold;
+    }
+
+    .modal-content-confirmada {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        width: 758px;
+        max-width: 100%;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: var(--border-shadow);
+    }
+
+    .img-cropped {
+        width: 293px;
+        height: 381px;
+        overflow: hidden;
+        border: 5px solid black;
+    }
+
+    .info-reserva-confirmada {
+        padding: 0px 40px 75px;
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .data-tour {
+        display: block;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    .total-precio {
+        font-size: 30px;
+        font-weight: 700;
+        color: #120c38;
+        font-style: bold;
+    }
+
+    .fecha {
+        padding-right: 250px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        color: #120c38;
+    }
+
+    .precio-persona {
+        font-weight: 700;
+        color: #120c38;
+        padding-top: 20px;
+        font-style: bold;
+    }
+
+    /* detalles del tour */
+
+    .description {
+        display: flex;
+        margin: auto;
+        width: 90%;
+    }
+
+    .information-tour {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px;
+        gap: 1em;
+    }
+
+    .city-country {
+        font-size: var(--subtitle-body-font-size);
+    }
+
+    .city-name {
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+    }
+
+    #sobre-el-tour {
+        font-size: var(--subtitle-body-font-size);
+        font-weight: var(--h4-font-weight);
+        margin: 5px 0 10px 0;
+    }
+
+    .description-travel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .details {
+        width: 60vw;
+        font-size: var(--body-font-size);
+        font-weight: var(--body-regular-font-weight);
+    }
+    .subtitle {
+        color: orangered;
+        font-weight: var(--h4-font-weight);
+        margin-bottom: 10px;
+    }
+
+    .formulario {
+        width: 40vw;
+        height: 300px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) and (max-width: 1136px) {
+    div .tour-card-4 {
+        display: block;
+    }
+
+    .cards-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1137px) {
+    div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
+        display: block;
+    }
+}
+/*MODAL DE RESERVAS*/
+
+.modal-container {
+    display: none;
+}
