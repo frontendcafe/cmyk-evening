@@ -13,6 +13,7 @@ const include = document.querySelector('.include');
 const exitName = document.querySelector('.exit-name');
 const arriveName = document.querySelector('.arrive-name');
 const imageTour = document.getElementById('img-tour');
+const  arrayParadas = document.getElementsByClassName('tour-parada');
 
 function getTourById(id) {
   console.log('hola');
@@ -47,6 +48,8 @@ if (window.location.pathname === '/details.html') {
 
   const tourSelected = tours.find(tour => tour.id === id);
   addTourToDom(tourSelected);
+  addStopsTour(tourSelected);
+
 }
 
 cardsSectionDetails.addEventListener('click', e => {
@@ -104,3 +107,15 @@ cardsSectionDetails.addEventListener('click', e => {
 //     </div>
 //   </div>
 // ;
+
+/* Funcion que escribe en el dom en cada div con calss tour-parada el nombre de la parada del  tour
+pasado por parametro */
+function addStopsTour(tour){
+  console.log('NO FUNUCIONAAAAA')
+  // var algo = resultsArray[2].stops[2].name;
+  console.log(tour);
+  for (let i = 0; i < 5; i++) {
+      arrayParadas[i].innerText = tour.stops[i].name;
+  }
+}
+
