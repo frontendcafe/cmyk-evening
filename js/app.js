@@ -5,11 +5,11 @@ let resultsArray = [];
 const cardsSection = document.querySelector('#cards-section');
 const allTours = document.querySelector('#allTours');
 const bestTours = document.querySelector('.third-title');
-const arg =  document.querySelector('#tours-arg');
-const mex =  document.querySelector('#tours-mex');
-const per =  document.querySelector('#tours-per');
-const chi =  document.querySelector('#tours-chi');
-const ita =  document.querySelector('#tours-ita');
+const arg = document.querySelector('#tours-arg');
+const mex = document.querySelector('#tours-mex');
+const per = document.querySelector('#tours-per');
+const chi = document.querySelector('#tours-chi');
+const ita = document.querySelector('#tours-ita');
 
 const mobile = 3;
 const tablet = 4;
@@ -20,6 +20,7 @@ async function getInfoTours() {
   try {
     const response = await fetch(apiURL);
     resultsArray = await response.json();
+    localStorage.setItem('data', JSON.stringify(resultsArray));
 
     displayCards();
   } catch (error) {
@@ -68,11 +69,12 @@ function displayCards() {
     const tourName = resultsArray[value].tourName;
     const price = resultsArray[value].priceUsd;
     const imgFile = resultsArray[value].img;
+    const tourID = resultsArray[value].id;
 
-    console.log(city);
+    console.log(tourID);
 
     cardsSection.innerHTML += `
-      <div class="tour-card tour-card-${num + 1}" 
+      <div class="tour-card tour-card-${num + 1}" data-tourID="${tourID}"
         style="background:#fff url(${imgFile}) no-repeat center;">
         <div class="card-content">
           <div class="first-content">
@@ -125,7 +127,6 @@ function displayAllCards(e) {
 //     allTours.classList.remove('invisible');
 //   }
 
-
 //   cardsSection.innerHTML = '';
 //   console.log(resultsArray);
 //   resultsArray.forEach((tour, i) => {
@@ -133,7 +134,7 @@ function displayAllCards(e) {
 //     if(tour.city.country.toLowerCase() === pais.toLowerCase()){
 //       console.log(tour.city.name);
 //       cardsSection.innerHTML += `
-//       <div class="tour-card tour-card-${i + 1}" 
+//       <div class="tour-card tour-card-${i + 1}"
 //         style="background:#fff url(${tour.img}) no-repeat center;">
 //         <div class="card-content">
 //           <div class="first-content">
@@ -151,10 +152,6 @@ function displayAllCards(e) {
 
 //   });
 // }
-// CONSULTAR SI PODEMOS INTEGRAR LOS TOURS DE UNA MISMA CIUDAD EN UN SOLO OBJETO?
-// LA SECCIÓN EN SI NO ES MUY DINAMICA YA QUE REQUIERE DE ESTAR ACTUALIZANDO LA PÁGINA CADA VEZ QUE SE CAMBIA DE TAMAÑO DEL VW PARA QUE MUESTRE LAS CANTIDADES DE CARDS CORRESPONDIENTES SEGÚN EL RESPONSIVE
-// PS: IGUAL EL PROBLEMA SON LAS IMAGENES Y CREO QUE CAMBIANDO EL NOMBRE DE DICHAS IMAGENES Y PONIENDO UNA DISTINTA POR CADA TOUR SE PUEDE SOLUCIONAR
-
 
 allTours.addEventListener('click', displayAllCards);
 window.addEventListener('resize', displayCards);
@@ -175,3 +172,84 @@ window.addEventListener('resize', displayCards);
 // });
 getInfoTours();
 
+//CALENDARIO 
+
+const date = new Date();
+
+const renderCalendar = () => {
+  date.setDate(1);
+
+  const monthDays = document.querySelector(".days");
+
+  const lastDay = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDate();
+
+  const prevLastDay = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    0
+  ).getDate();
+
+  const firstDayIndex = date.getDay();
+
+  const lastDayIndex = new Date(date.getMonth() + 1, 0).getDay();
+
+  const nextDays = 7 - lastDayIndex - 1;
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  let addYear = date.getFullYear();
+
+  document.querySelector(".date h3").innerHTML =
+    months[date.getMonth()] + " " + addYear;
+
+  let days = "";
+
+  for (let x = firstDayIndex; x > 0; x--) {
+    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+  }
+
+  for (let i = 1; i <= lastDay; i++) {
+    if (
+      i === new Date().getDate() &&
+      date.getMonth() === new Date().getMonth()
+    ) {
+      days += `<div class="today">${i}</div>`;
+    } else {
+      days += `<div>${i}</div>`;
+    }
+  }
+
+  for (let j = 1; j <= nextDays; j++) {
+    days += `<div class="next-date">${j}</div>`;
+    monthDays.innerHTML = days;
+  }
+};
+
+document.querySelector(".prev").addEventListener("click", () => {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+});
+
+renderCalendar();

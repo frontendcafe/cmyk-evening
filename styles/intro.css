@@ -6,11 +6,59 @@
     justify-content: center;
     margin: 0 auto;
     height: 100vh;
+     scroll-behavior: smooth;
 }
 
  main svg{
     width: 100%;
 }
+
+#intro{
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+  position: relative;
+    
+    
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+    position: absolute;     
+  }
+}
+
+.intro-container-texto{
+display:flex;
+flex-flow:column;
+}
+.intro-container-texto a{
+    color:white;
+    text-decoration: none;
+}
+/*  .button-descubre {
+        font-family: var(--main-font);
+        background-color: var(--active-button);
+        font-size: var(--buttons-text-font-size);
+        font-weight: var(--buttons-text-font-weight);
+        width: 277px;
+        height: 55px;
+        border-radius: 37px;
+        border: none;
+        line-height: 22px;
+        color: #ffffff;
+        margin: 0 auto;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+    }
+ */
+
+
 
 
 @-webkit-keyframes slide-top {
@@ -24,8 +72,9 @@
     }
 }
 
+
 .svg-elem-1 {
-    animation: slide-top 1s cubic-bezier(0.35, 0.50, 0.70, 0.94) 1.5s both;
+    animation: slide-top 1s cubic-bezier(0.25, 0.50, 0.70, 0.94) 1.5s both;
 }
 
 @-webkit-keyframes animate-svg-fill-2 {
