@@ -175,6 +175,9 @@ div .third-title {
     border: var(--border);
 }
 
+
+
+
 .itinerario-container span {
     background: black;
     color: white;
@@ -200,8 +203,12 @@ div .third-title {
     height: 49px;
     max-width: 80%;
     border-radius: 27px;
-    border-color: #fe6142;
-    
+    text-align: center;
+    border: 2px solid #fe6142;
+}
+
+.input-calendar-desktop{
+    padding-left: 80px;
 }
 .flex-calendar h2{
     color: var(--primary-text);
@@ -234,6 +241,7 @@ div .third-title {
     margin: 15px 0 20px 0;
     text-decoration: none;
     outline: none;
+    max-width: 70%;
     cursor: pointer;
 }
 
@@ -253,7 +261,6 @@ div .third-title {
     width: 293px;
     height: 381px;
     overflow: hidden;
-    border: 5px solid black;
     display: none;
 }
 
@@ -272,8 +279,9 @@ div .third-title {
 
 .close-btn {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 0px;
+    right: 10px;
+    display: none;
 }
 
 .total-precio {
@@ -296,6 +304,7 @@ div .third-title {
     padding-top: 20px;
     font-style: bold;
 }
+
 
 @media (min-width: 769px) and (max-width: 1136px) {
     .map-container {
@@ -398,6 +407,7 @@ div .third-title {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    display: none;
 }
 
 .close:hover,
@@ -406,8 +416,7 @@ div .third-title {
     text-decoration: none;
     cursor: pointer;
 }
-.modal-body {
-}
+
 
 
 .modal-info {
@@ -795,6 +804,9 @@ label {
         height: 55px;
         width: 259px;
     }
+.input-reserva-desktop{
+  padding-left: 110px;
+}
 
     .reservar-button {
         border-radius: 37px;
@@ -812,7 +824,7 @@ label {
         width: 293px;
         height: 381px;
         overflow: hidden;
-        border: 5px solid black;
+        display: block;
     }
 
     .info-reserva-confirmada {
@@ -853,6 +865,7 @@ label {
         color: #120c38;
         padding-top: 20px;
         font-style: bold;
+        padding-left: 120px;
     }
 
     .modal-content-confirmada {
@@ -864,13 +877,6 @@ label {
         border-radius: 25px;
         position: relative;
         box-shadow: var(--border-shadow);
-    }
-
-    .img-cropped {
-        width: 293px;
-        height: 381px;
-        overflow: hidden;
-        border: 5px solid black;
     }
 
     .info-reserva-confirmada {
@@ -890,6 +896,9 @@ label {
         position: absolute;
         top: 20px;
         right: 40px;
+    }
+    .close{
+        display: block;
     }
 
     .total-precio {
@@ -1000,6 +1009,7 @@ label {
 
     .precio-reserva {
         font-weight: 900;
+        font-size: ;
     }
 
     .container-calendar {
@@ -1087,18 +1097,21 @@ label {
         align-items: center;
         margin-top: 15px;
         font-size: 15px;
-        color: #aaa;
         font-weight: 200;
     }
 
-    .days div:hover {
-        color: black;
-        cursor: pointer;
-    }
-
+ 
     .prev-date,
     .next-date {
         opacity: 0;
+    }
+
+    .calendar-desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .calendar-border {
@@ -1137,7 +1150,6 @@ label {
     display: none;
     }
 }
-
 
 
 /*MODAL DE RESERVAS*/

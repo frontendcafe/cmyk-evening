@@ -88,28 +88,25 @@
             <div class="city-name">Buenos Aires</div>
 
             <div class="responsive-calendar">
-                <br>
+              <br />
               <h3 class="">&emsp;Salida:</h3>
-              <br>
+              <br />
               <div class="flex-calendar">
-              <input
-                type="date"
-                id="start"
-                name="trip-start"
-                value="2021-05-05"
-                class ="input-date-calendar"
-               
-              />
-              <br>
-              <br>
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2021-05-05"
+                  class="input-date-calendar1"
+                />
+                <br />
+                <br />
 
-              <h2>Precio desde:</h2>
-              <h2>$500</h2>
-              <button class="reservar-button myBtn1">RESERVAR</button>
+                <h2>Precio desde:</h2>
+                <h2>$500</h2>
+                <button class="reservar-button myBtn1">RESERVAR</button>
+              </div>
             </div>
-            </div>
-
-
 
             <div class="description-travel">
               <div class="details">
@@ -152,33 +149,44 @@
             <h3>Fecha de Salida:</h3>
             <div class="formulario-container">
               <!-- calendario  -->
+
               <div class="calendar">
+                <!---->
                 <div class="month">
-                  <i class="prev"> &laquo;</i>
+                  <i class="prev"></i>
                   <div class="date">
                     <h3><b class="date-year"></b></h3>
                   </div>
-                  <i class="next">&raquo;</i>
+                  <i class="next"></i>
                 </div>
               </div>
 
               <div class="weekdays">
-                <div>SU</div>
-                <div>MO</div>
-                <div>TU</div>
-                <div>WE</div>
-                <div>TH</div>
-                <div>FR</div>
-                <div>SA</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
               </div>
-              <div class="days"></div>
-            </div>
-            <h3 class="precio-persona">
-              &emsp; Precio por persona:&emsp;&emsp;
-              <span class="precio-reserva">$5000</span>
-            </h3>
+                <div class="input-calendar-desktop">
+                  <input
+                    type="date"
+                    name="trip-start"
+                    value="2021-05-05"
+                    class="input-date-calendar"
+                  />
+                </div>
+                <div class="days"></div>
+              </div>
 
-            <button class="reservar-button myBtn">RESERVAR</button>
+              <h3 class="precio-persona">
+                &emsp; Precio por persona:&emsp;&emsp;
+              </h3>
+              <div><h2 class="precio-reserva">$5000</h2></div>
+
+              <div class="input-reserva-desktop"><button class="reservar-button myBtn">RESERVAR</button></div>
           </div>
         </div>
       </div>
@@ -393,6 +401,7 @@
           <div class="modal-header">
             <span class="close">&times;</span>
             <h3 class="reservar-tour">Reservar Tour</h3>
+            <img source="01_arg.jpeg" />
           </div>
 
           <div class="modal-body">
@@ -401,7 +410,7 @@
               <div class="buenos-aires">BUENOS AIRES</div>
               <div class="sobre-el-tour">Sobre el Tour</div>
               <div class="tour-info">
-                <p>Fecha del Tour : 15/04/2021</p>
+                <p id="fecha-tour">Fecha del Tour:</p>
                 <p>Hora de Salida: 08:00 a.m.</p>
                 <p>Duración: 6 horas</p>
               </div>
@@ -411,7 +420,12 @@
               <div class="personas">
                 <div class="firr">
                   <label for="fname" class="datos-reserva-sub">Adultos:</label>
-                  <input type="number" id="fname" name="fname" class="first" />
+                  <input
+                    type="number"
+                    id="fname"
+                    name="fname"
+                    class="adultos-input"
+                  />
                 </div>
                 <div class="firr">
                   <label for="fname" class="datos-reserva-sub">Infantes:</label>
@@ -419,7 +433,7 @@
                     type="number"
                     id="fname"
                     name="fname"
-                    class="spaceAround"
+                    class="spaceAround infantes-input"
                   />
                 </div>
               </div>
@@ -451,21 +465,24 @@
 
             <div class="modal-orden">
               <div class="sobre-el-tour">Orden de reservacion</div>
-              <div class ="borrar-orden">
-              <div class="argentina">Argentina</div>
-              <div class="buenos-aires">BUENOS AIRES</div>
-              <div class="sobre-el-tour">Sobre el Tour</div>
-              <div class="tour-info">
-                <p>Fecha del Tour : 15/04/2021</p>
-                <p>Hora de Salida: 08:00 a.m.</p>
-                <p>Duración: 6 horas</p>
+              <div class="borrar-orden">
+                <div class="argentina">Argentina</div>
+                <div class="buenos-aires">BUENOS AIRES</div>
+                <div class="sobre-el-tour">Sobre el Tour</div>
+                <div class="tour-info">
+                  <p id="fecha-tour1">Fecha del Tour:</p>
+                  <p>Hora de Salida: 08:00 a.m.</p>
+                  <p>Duración: 6 horas</p>
+                </div>
               </div>
-            </div>
               <div class="reserva-totales">
-                <div>Adultos:</div>
-                <div>2</div>
-                <div>Infantes:</div>
-                <div>0</div>
+                <div class="adultos-numero" id="adultos-numero2">
+                  Adultos: 0
+                  <div></div>
+                </div>
+                <div></div>
+                <div id="infantes-numero">Infantes: 0</div>
+                <div></div>
                 <div>Total:</div>
                 <div>$5000</div>
               </div>
@@ -498,11 +515,11 @@
               <div class="sobre-el-tour">Sobre el Tour</div>
               <br />
               <div class="tour-info">
-                <p>Fecha del Tour : 15/04/2021</p>
+                <p id="fecha-tour2">Fecha del Tour:</p>
                 <p>Hora de Salida: 08:00 a.m.</p>
                 <p>Duración: 6 horas</p>
-                <p>Adultos: 2</p>
-                <p>Infantes: 0</p>
+                <p class="adultos-numero" id="adultos-numero">Adultos:</p>
+                <p id="infantes-numero2"></p>
               </div>
               <br />
 
@@ -511,7 +528,7 @@
               </div>
             </div>
 
-            <div class="img-cropped">agregar img</div>
+            <div class="img-cropped"><img src="marginalia.jpg" /></div>
           </div>
         </div>
       </div>
