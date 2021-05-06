@@ -2,6 +2,7 @@ const apiURL = '../data/tour_destinos.json';
 
 let resultsArray = [];
 
+const cardsSection = document.querySelector('#cards-section');
 const allTours = document.querySelector('#allTours');
 const bestTours = document.querySelector('.third-title');
 const arg = document.querySelector('#tours-arg');
@@ -101,7 +102,7 @@ function displayAllCards(e) {
   console.log(resultsArray);
   resultsArray.forEach((tour, i) => {
     cardsSection.innerHTML += `
-      <div class="tour-card tour-card-${i + 1}" 
+      <div class="tour-card tour-card-${i + 1}" data-tourID="${tour.id}"
         style="background:#fff url(${tour.img}) no-repeat center;">
         <div class="card-content">
           <div class="first-content">
@@ -171,14 +172,14 @@ window.addEventListener('resize', displayCards);*/
 // });
 getInfoTours();
 
-//CALENDARIO 
+//CALENDARIO
 
 const date = new Date();
 
 const renderCalendar = () => {
   date.setDate(1);
 
-  const monthDays = document.querySelector(".days");
+  const monthDays = document.querySelector('.days');
 
   const lastDay = new Date(
     date.getFullYear(),
@@ -199,26 +200,26 @@ const renderCalendar = () => {
   const nextDays = 7 - lastDayIndex - 1;
 
   const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ];
 
   let addYear = date.getFullYear();
 
-  document.querySelector(".date h3").innerHTML =
-    months[date.getMonth()] + " " + addYear;
+  document.querySelector('.date h3').innerHTML =
+    months[date.getMonth()] + ' ' + addYear;
 
-  let days = "";
+  let days = '';
 
   for (let x = firstDayIndex; x > 0; x--) {
     days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
@@ -241,12 +242,12 @@ const renderCalendar = () => {
   }
 };
 
-document.querySelector(".prev").addEventListener("click", () => {
+document.querySelector('.prev').addEventListener('click', () => {
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
 });
 
-document.querySelector(".next").addEventListener("click", () => {
+document.querySelector('.next').addEventListener('click', () => {
   date.setMonth(date.getMonth() + 1);
   renderCalendar();
 });
