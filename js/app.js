@@ -231,7 +231,7 @@ const renderCalendar = () => {
     ) {
       days += `<div class="today">${i}</div>`;
     } else {
-      days += `<div>${i}</div>`;
+      days += `<div tabindex="0">${i}</div>`;
     }
   }
 
@@ -251,4 +251,51 @@ document.querySelector(".next").addEventListener("click", () => {
   renderCalendar();
 });
 
-renderCalendar();
+
+document
+  .querySelector(".input-date-calendar")
+  .addEventListener("input", (event) => {
+    document.getElementById("fecha-tour").innerHTML += event.target.value;
+    document.getElementById("fecha-tour1").innerHTML += event.target.value;
+    document.getElementById("fecha-tour2").innerHTML += event.target.value;
+  });
+
+document
+  .querySelector(".input-date-calendar1")
+  .addEventListener("input", (event) => {
+    document.getElementById("fecha-tour").innerHTML += event.target.value;
+    document.getElementById("fecha-tour1").innerHTML += event.target.value;
+    document.getElementById("fecha-tour2").innerHTML += event.target.value;
+  });
+
+/*
+document.querySelector(".adultos-input").addEventListener("input", (event) => {
+  document.getElementsByClassName("adultos-numero").innerText += event.target.value;
+ 
+  console.log(document.getElementsByClassName("adultos-numero"));
+  console.log(event.target.value);
+});
+
+/**/
+
+document.querySelector(".adultos-input").addEventListener("input", (event) => {
+  document.getElementById("adultos-numero").innerText =
+    "Adultos:  " + +event.target.value;
+  document.getElementById("adultos-numero2").innerText =
+    "Adultos: " + event.target.value;
+
+  console.log(event.target.value);
+});
+
+document.querySelector(".infantes-input").addEventListener("input", (event) => {
+  document.getElementById("infantes-numero").innerText =
+    "infantes:  " + +event.target.value;
+  document.getElementById("infantes-numero2").innerText =
+    "Infantes: " + event.target.value;
+
+  console.log(event.target.value);
+});
+
+
+
+//renderCalendar();
