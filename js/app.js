@@ -152,9 +152,9 @@ function displayAllCards(e) {
 
 //   });
 // }
-
+/*
 allTours.addEventListener('click', displayAllCards);
-window.addEventListener('resize', displayCards);
+window.addEventListener('resize', displayCards);*/
 // arg.addEventListener('click', function(){
 //   displayCardsByCountry('Argentina')
 // });
@@ -173,7 +173,7 @@ window.addEventListener('resize', displayCards);
 getInfoTours();
 
 //CALENDARIO
-
+/*
 const date = new Date();
 
 const renderCalendar = () => {
@@ -232,7 +232,7 @@ const renderCalendar = () => {
     ) {
       days += `<div class="today">${i}</div>`;
     } else {
-      days += `<div>${i}</div>`;
+      days += `<div tabindex="0">${i}</div>`;
     }
   }
 
@@ -241,7 +241,7 @@ const renderCalendar = () => {
     monthDays.innerHTML = days;
   }
 };
-
+/*
 document.querySelector('.prev').addEventListener('click', () => {
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
@@ -251,5 +251,61 @@ document.querySelector('.next').addEventListener('click', () => {
   date.setMonth(date.getMonth() + 1);
   renderCalendar();
 });
+*/
 
-renderCalendar();
+document
+  .querySelector(".input-date-calendar")
+  .addEventListener("input", (event) => {
+    document.getElementById("fecha-tour").innerHTML += event.target.value;
+    document.getElementById("fecha-tour1").innerHTML += event.target.value;
+    document.getElementById("fecha-tour2").innerHTML += event.target.value;
+  });
+
+document
+  .querySelector(".input-date-calendar1")
+  .addEventListener("input", (event) => {
+    document.getElementById("fecha-tour").innerHTML += event.target.value;
+    document.getElementById("fecha-tour1").innerHTML += event.target.value;
+    document.getElementById("fecha-tour2").innerHTML += event.target.value;
+  });
+
+/*
+document.querySelector(".adultos-input").addEventListener("input", (event) => {
+  document.getElementsByClassName("adultos-numero").innerText += event.target.value;
+ 
+  console.log(document.getElementsByClassName("adultos-numero"));
+  console.log(event.target.value);
+});
+
+/**/
+
+document.querySelector(".adultos-input").addEventListener("input", (event) => {
+  document.getElementById("adultos-numero").innerText =
+    "Adultos:  " + +event.target.value;
+  document.getElementById("adultos-numero2").innerText =
+    "Adultos: " + event.target.value;
+
+  console.log(event.target.value);
+});
+
+document.querySelector(".infantes-input").addEventListener("input", (event) => {
+  document.getElementById("infantes-numero").innerText =
+    "infantes:  " + +event.target.value;
+  document.getElementById("infantes-numero2").innerText =
+    "Infantes: " + event.target.value;
+
+  console.log(event.target.value);
+});
+
+
+for (let i = 0; i < 5; i++) {
+  document.querySelectorAll(".argentina")[
+    i
+  ].innerText = document.querySelectorAll(".city-country")[0].innerText;
+
+  document.querySelectorAll(".buenos-aires")[
+    i
+  ].innerText = document.querySelectorAll(".city-name")[0].innerText;
+}
+
+

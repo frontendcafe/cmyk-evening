@@ -419,6 +419,7 @@ h1 {
     background-image: url(/assets/tours/arg/01_arg.jpeg);
     height: 614px;
     background-size: cover;
+    background-position: center;
 }
 
 /* CATEGORIAS POR PAISES */
