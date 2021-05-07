@@ -173,7 +173,7 @@ window.addEventListener('resize', displayCards);*/
 getInfoTours();
 
 //CALENDARIO
-
+/*
 const date = new Date();
 
 const renderCalendar = () => {
@@ -241,7 +241,7 @@ const renderCalendar = () => {
     monthDays.innerHTML = days;
   }
 };
-
+/*
 document.querySelector('.prev').addEventListener('click', () => {
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
@@ -251,7 +251,7 @@ document.querySelector('.next').addEventListener('click', () => {
   date.setMonth(date.getMonth() + 1);
   renderCalendar();
 });
-
+*/
 
 document
   .querySelector(".input-date-calendar")
@@ -298,5 +298,14 @@ document.querySelector(".infantes-input").addEventListener("input", (event) => {
 });
 
 
+for (let i = 0; i < 5; i++) {
+  document.querySelectorAll(".argentina")[
+    i
+  ].innerText = document.querySelectorAll(".city-country")[0].innerText;
 
-//renderCalendar();
+  document.querySelectorAll(".buenos-aires")[
+    i
+  ].innerText = document.querySelectorAll(".city-name")[0].innerText;
+}
+
+

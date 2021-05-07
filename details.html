@@ -68,33 +68,34 @@
 
         <!-- detalles de los tours -->
 
-        <div class="responsive-calendar">
-          <br />
-          <h3 class="">&emsp;Salida:</h3>
-          <br />
-          <div class="flex-calendar">
-            <input
-              type="date"
-              id="start"
-              name="trip-start"
-              value="2021-05-05"
-              class="input-date-calendar1"
-            />
-            <br />
-            <br />
-
-            <h2>Precio desde:</h2>
-            <h2>$500</h2>
-            <button class="reservar-button myBtn1">RESERVAR</button>
-          </div>
-        </div>
+   <div class="responsive-calendar">
+                  <br />
+                  <h3 class="">&emsp;Salida:</h3>
+                  <br />
+                  <div class="flex-calendar">
+                    <input
+                      type="date"
+                      id="start"
+                      name="trip-start"
+                      value="2021-05-05"
+                      class="input-date-calendar1"
+                    />
+                    <br />
+                    <br />
+    
+                    <h2>Precio desde:</h2>
+                    <h2>$500</h2>
+                    <button class="reservar-button myBtn1">RESERVAR</button>
+                  </div>
+                </div>
 
 
 
         <div class="container-descripcion-tour">
             <div class="descripcion-container">
                 <div class="descripcion">
-                    <div class="city-country"></div>
+                    <div class="city-country" ></div>
+                    
                     <div class="city-name"></div>
                     <div class="description-travel">
                         <div class="details">
@@ -323,6 +324,7 @@
           <div class="modal-body">
             <div class="modal-info">
               <div class="argentina">Argentina</div>
+
               <div class="buenos-aires">BUENOS AIRES</div>
               <div class="sobre-el-tour">Sobre el Tour</div>
               <div class="tour-info">
@@ -432,8 +434,8 @@
               <br />
               <div class="tour-info">
                 <p id="fecha-tour2">Fecha del Tour:</p>
-                <p>Hora de Salida: 08:00 a.m.</p>
-                <p>Duración: 6 horas</p>
+                <p class="hora-salida">Hora de Salida: 08:00 a.m.</p>
+                <div class="duracion">Duración: 6 horas</div>
                 <p class="adultos-numero" id="adultos-numero">Adultos:</p>
                 <p id="infantes-numero2"></p>
               </div>
@@ -477,7 +479,7 @@
     async
   ></script>
     <script src="/js/map.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" defer></script>
     <script  src="./js/details.js"></script>
     <script src="./js/modal.js"></script>
     <script src="/js/nav.js"></script>
@@ -486,3 +488,8 @@
 </body>
 
 </html>
+
+
+
+
+
