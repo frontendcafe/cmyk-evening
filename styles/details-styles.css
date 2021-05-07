@@ -1,8 +1,9 @@
 /** @format */
 
-input[type="date"],[type="number"],[type="text"]
-{
-    font-size:24px;
+input[type="date"],
+[type="number"],
+[type="text"] {
+    font-size: 24px;
     color: var(--primary-text);
     font-weight: 600;
 }
@@ -24,9 +25,9 @@ div .third-title {
     font: var(--primary-text);
     color: rgb(48, 42, 81);
     display: flex;
+    flex-flow: column;
     align-items: flex-end;
     justify-content: space-between;
-
     margin: 40px;
 }
 
@@ -77,8 +78,8 @@ div .third-title {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 50px;
     width: 90%;
+    padding: 0 20px;
 }
 
 /* fin de los detalles del tour */
@@ -87,7 +88,6 @@ div .third-title {
 
 .formulario {
     width: 100%;
-    border: 1px solid red;
 }
 
 /*itinerario*/
@@ -176,28 +176,22 @@ div .third-title {
     box-shadow: var(--border-shadow);
     border: var(--border);
 }
-#mapa{
+#mapa {
     height: 100%;
     width: 100%;
 }
-
-
-
 
 .itinerario-container span {
     background: black;
     color: white;
 }
 
-
-.reserva-form{
+.reserva-form {
     display: none;
 }
 
-
-.responsive-calendar{
-    width: 384px;
-    height: 328px;
+.responsive-calendar {
+    width: 100%;
     max-width: 100%;
     box-shadow: var(--border-shadow);
     border-radius: 27px;
@@ -205,10 +199,11 @@ div .third-title {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    padding-bottom: 10px;
+    margin-bottom: 40px;
 }
-.input-date-calendar{
+
+.input-date-calendar {
     width: 328px;
     height: 49px;
     max-width: 80%;
@@ -217,24 +212,25 @@ div .third-title {
     border: 2px solid #fe6142;
 }
 
-.input-calendar-desktop{
-    padding-left: 80px;
+.input-calendar-desktop {
+    text-align: center;
+    outline: none;
 }
-.flex-calendar h2{
+
+.flex-calendar h2 {
     color: var(--primary-text);
     font-weight: bold;
 }
-.flex-calendar h3{
+.flex-calendar h3 {
     color: var(--primary-text);
     font-weight: bold;
 }
-.flex-calendar{
+.flex-calendar {
     display: flex;
     justify-items: center;
     flex-direction: column;
     align-items: center;
-
-
+    width: 90vw;
 }
 
 .reservar-button {
@@ -254,7 +250,6 @@ div .third-title {
     max-width: 70%;
     cursor: pointer;
 }
-
 
 .modal-content-confirmada {
     background-color: #fefefe;
@@ -314,7 +309,6 @@ div .third-title {
     padding-top: 20px;
     font-style: bold;
 }
-
 
 @media (min-width: 769px) and (max-width: 1136px) {
     .map-container {
@@ -380,7 +374,6 @@ div .third-title {
     }
 }
 
-
 .modal {
     display: none;
     position: fixed;
@@ -392,10 +385,6 @@ div .third-title {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-header {
-    padding: 16px 150px 30px 30px;
 }
 
 .modal-header h3 {
@@ -410,6 +399,7 @@ div .third-title {
     border: 1px solid #888;
     width: 1156px;
     max-width: 100%;
+    border-radius: 25px;
 }
 
 .close {
@@ -427,20 +417,17 @@ div .third-title {
     cursor: pointer;
 }
 
-
-
 .modal-info {
     padding-right: 10px;
     flex: 0 0 60%;
     padding-left: 30px;
 }
 
-
 label {
     display: block;
 }
 
-.borrar-orden{
+.borrar-orden {
     display: none;
 }
 .firr {
@@ -485,15 +472,13 @@ label {
     padding-top: 30px;
 }
 
-
 .modal-body input {
     border-radius: 37px;
-    border: 1px solid var(--active-button);
+    border: 2px solid var(--active-button);
     height: 55px;
     width: 259px;
+    text-align: center;
 }
-
-
 
 /* Desktop */
 @media (min-width: 1136px) {
@@ -538,10 +523,8 @@ label {
         box-shadow: var(--border-shadow);
         border: var(--border);
     }
- 
- 
+
     .precio-persona {
-        border-top: 1px solid #f5f5f5;
         text-align: center;
     }
 
@@ -557,9 +540,8 @@ label {
         background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.4);
     }
-
     .modal-header {
-        padding: 16px 150px 30px 30px;
+        padding: 20px;
     }
 
     .modal-header h3 {
@@ -574,6 +556,7 @@ label {
         border: 1px solid #888;
         width: 1156px;
         max-width: 100%;
+        border-radius: 25px;
     }
 
     .close {
@@ -604,6 +587,7 @@ label {
     }
     .modal-orden {
         padding-left: 20px;
+        text-align: left;
     }
 
     .personas {
@@ -627,7 +611,7 @@ label {
         padding-right: 40px;
     }
 
-    .borrar-orden{
+    .borrar-orden {
         display: block;
     }
     .reserva-totales div {
@@ -674,12 +658,11 @@ label {
     }
     .modal-body input {
         border-radius: 37px;
-        border: 1px solid var(--active-button);
+        border: 2px solid var(--active-button);
         height: 55px;
         width: 259px;
+        text-align: center;
     }
-
-
 
     .modal {
         display: none;
@@ -695,7 +678,11 @@ label {
     }
 
     .modal-header {
-        padding: 16px 150px 30px 30px;
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .modal-header h3 {
@@ -710,11 +697,11 @@ label {
         border: 1px solid #888;
         width: 1156px;
         max-width: 100%;
+        border-radius: 25px;
     }
 
     .close {
         color: #aaa;
-        float: right;
         font-size: 28px;
         font-weight: bold;
     }
@@ -730,7 +717,7 @@ label {
     }
     .divider {
         width: 1px;
-        background: #000000;
+        background: #bbbbbb;
     }
 
     .modal-info {
@@ -741,7 +728,6 @@ label {
     .modal-orden {
         padding-left: 20px;
     }
-
 
     .lider {
         display: flex;
@@ -803,13 +789,14 @@ label {
     }
     .modal-body input {
         border-radius: 37px;
-        border: 1px solid var(--active-button);
+        border: 2px solid var(--active-button);
         height: 55px;
         width: 259px;
+        text-align: center;
     }
-.input-reserva-desktop{
-  padding-left: 110px;
-}
+    .input-reserva-desktop {
+        padding-left: 110px;
+    }
 
     .reservar-button {
         border-radius: 37px;
@@ -821,7 +808,6 @@ label {
         width: 348px;
         height: 55px;
     }
-
 
     .img-cropped {
         width: 293px;
@@ -868,7 +854,8 @@ label {
         color: #120c38;
         padding-top: 20px;
         font-style: bold;
-        padding-left: 120px;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .modal-content-confirmada {
@@ -900,7 +887,7 @@ label {
         top: 20px;
         right: 40px;
     }
-    .close{
+    .close {
         display: block;
     }
 
@@ -978,7 +965,6 @@ label {
     }
 }
 
-
 /* Desktop */
 @media (min-width: 769px) and (max-width: 1136px) {
     div .tour-card-4 {
@@ -992,15 +978,11 @@ label {
     }
 }
 
-
-
 /***************************************************/
 @media (min-width: 1137px) {
     div:is(.tour-card-4, .tour-card-5, .tour-card-6) {
         display: block;
     }
-    
-
 
     .fecha-salida {
         color: var(--primary-text);
@@ -1103,18 +1085,16 @@ label {
         font-weight: 200;
     }
 
- 
     .prev-date,
     .next-date {
         opacity: 0;
     }
 
-    .calendar-desktop{
+    .calendar-desktop {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .calendar-border {
@@ -1133,14 +1113,14 @@ label {
         padding: 20px 0;
         color: var(--primary-text);
     }
-    
+
     .reserva-form h3 {
         align-self: flex-start;
         font-weight: 700;
     }
 
     .reserva-form {
-        width: 35%;
+        width: 350px;
         box-shadow: var(--border-shadow);
         border-radius: 17px;
         display: flex;
@@ -1149,14 +1129,48 @@ label {
         flex-direction: column;
         padding: 20px;
     }
-    .responsive-calendar{
-    display: none;
+    .responsive-calendar {
+        display: none;
     }
 }
-
 
 /*MODAL DE RESERVAS*/
 
 .modal-container {
     display: none;
+}
+.reservar-button-big {
+    font-family: var(--main-font);
+    background-color: var(--active-button);
+    font-size: var(--buttons-text-font-size);
+    font-weight: var(--buttons-text-font-weight);
+    width: 80%;
+    height: 55px;
+    border-radius: 37px;
+    border: none;
+    line-height: 22px;
+    color: #ffffff;
+    margin: 15px 0 20px 0;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.cien {
+    padding: 10px;
+    width: 100%;
+}
+.bold h3 {
+    font-weight: 900;
+    font-size: 20px;
+}
+.fecha-responsive {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.reservar-tour-reserva {
+    font-size: 24px;
+    font-weight: 800;
+    padding: 20px;
 }

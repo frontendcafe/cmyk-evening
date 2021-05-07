@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="./styles/details-styles.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-
     <title>Evening Tours - Detalles</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-details">
         <div class="navegacion-container navegacion-fondo-imagen" id="img-tour">
             <div class="navegacion-responsive">
                 <div class="navegacion-fija fondo-blanco">
@@ -65,431 +64,375 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- detalles de los tours -->
+    <div class="container-descripcion-tour">
+        <div class="responsive-calendar reserva-form ">
+            <br />
+            <p class="fecha-responsive">Fecha de Salida:</p>
+            <br />
+            <div class="flex-calendar bold">
+                <input type="date" id="start" name="trip-start" value="2021-05-05" class="input-date-calendar cien" />
+                <br />
+                <br />
 
-        <!-- detalles de los tours -->
-
-   <div class="responsive-calendar">
-                  <br />
-                  <h3 class="">&emsp;Salida:</h3>
-                  <br />
-                  <div class="flex-calendar">
-                    <input
-                      type="date"
-                      id="start"
-                      name="trip-start"
-                      value="2021-05-05"
-                      class="input-date-calendar1"
-                    />
-                    <br />
-                    <br />
-    
-                    <h2>Precio desde:</h2>
-                    <h2>$500</h2>
-                    <button class="reservar-button myBtn1">RESERVAR</button>
-                  </div>
-                </div>
-
-
-
-        <div class="container-descripcion-tour">
-            <div class="descripcion-container">
-                <div class="descripcion">
-                    <div class="city-country" ></div>
-                    
-                    <div class="city-name"></div>
-                    <div class="description-travel">
-                        <div class="details">
-                            <p id="sobre-el-tour">Sobre el tour</p>
-                            <p id="text-tour">
-                            </p>
-                            <div class="information-tour">
-                                <div class="information">
-                                    <p class="subtitle">Informacion antes del Tour</p>
-                                    <p class="time-out"></p>
-                                    <p class="durationHs"></p>
-                                    <p>Confirmación Instantánea</p>
-                                </div>
-                                <div class="information">
-                                    <p class="subtitle">Detalles de Salida</p>
-                                    <p class="stop-name exit-name"></p>
-                                </div>
-                                <div class="information">
-                                    <p class="subtitle">Incluye</p>
-                                    <p class="include"></p>
-                                </div>
-                                <div class="information">
-                                    <p class="subtitle">Detalles de Llegada</p>
-                                    <p class="arrive-name"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-             
-
-
-                <div class="reserva-form">
-                    <h3>Fecha de Salida:</h3>
-                    <div class="formulario-container">
-                        <!-- calendario  -->
-                        <div class="calendar">
-                          
-                            <!---->
-                            <div class="month">
-                              <i class="prev"></i>
-                              <div class="date">
-                                <h3><b class="date-year"></b></h3>
-                              </div>
-                              <i class="next"></i>
-                            </div>
-                          </div>
-            
-                          <div class="weekdays">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                          </div>
-                            <div class="input-calendar-desktop">
-                              <input
-                                type="date"
-                                name="trip-start"
-                                value="2021-05-05"
-                                class="input-date-calendar"
-                              />
-                            </div>
-                            <div class="days"></div>
-                          </div>
-            
-                          <h3 class="precio-persona">
-                            &emsp; Precio por persona:&emsp;&emsp;
-                          </h3>
-                          <div><h2 class="precio-reserva">$5000</h2></div>
-            
-                          <div class="input-reserva-desktop"><button class="reservar-button myBtn">RESERVAR</button></div>
-                      </div>
-                    </div>
-                  </div>
+                <h2>Precio por persona:</h2>
+                <h3>$5000</h3>
+                <button class="reservar-button-big myBtn1">RESERVAR</button>
+            </div>
         </div>
-        <section class="itinerario-container">
-          <div class="itinerario-info">
+
+        <div class="descripcion-container">
+            <div class="descripcion">
+                <div class="city-country"></div>
+
+                <div class="city-name"></div>
+                <div class="description-travel">
+                    <div class="details">
+                        <p id="sobre-el-tour">Sobre el tour</p>
+                        <p id="text-tour"></p>
+                        <div class="information-tour">
+                            <div class="information">
+                                <p class="subtitle">
+                                    Informacion antes del Tour
+                                </p>
+                                <p class="time-out"></p>
+                                <p class="durationHs"></p>
+                                <p>Confirmación Instantánea</p>
+                            </div>
+                            <div class="information">
+                                <p class="subtitle">Detalles de Salida</p>
+                                <p class="stop-name exit-name"></p>
+                            </div>
+                            <div class="information">
+                                <p class="subtitle">Incluye</p>
+                                <p class="include"></p>
+                            </div>
+                            <div class="information">
+                                <p class="subtitle">Detalles de Llegada</p>
+                                <p class="arrive-name"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reserva-form">
+                <h3>Fecha de Salida:</h3>
+                <div class="formulario-container">
+                    <!-- calendario  -->
+                    <div class="calendar">
+                        <!---->
+                        <div class="month">
+                            <i class="prev"></i>
+                            <div class="date">
+                                <h3><b class="date-year"></b></h3>
+                            </div>
+                            <i class="next"></i>
+                        </div>
+                    </div>
+
+                    <div class="weekdays">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="input-calendar-desktop">
+                        <input type="date" name="trip-start" value="2021-05-05" class="input-date-calendar cien" />
+                    </div>
+                    <div class="days"></div>
+                </div>
+
+                <h3 class="precio-persona">
+                    &emsp; Precio por persona:&emsp;&emsp;
+                </h3>
+                <div>
+                    <h2 class="precio-reserva">$5000</h2>
+                </div>
+
+                <div class="input-reserva-desktop">
+                    <button class="reservar-button myBtn">RESERVAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="itinerario-container">
+        <div class="itinerario-info">
             <ul>
-              <h3>Itinerario</h3>
-              <ol>
-                <div class="itinerario-container-inicio">
-                  <div class="itinerario-icono-morado"></div>
-                  <div class="itinerario-text">
-                    Inicio
-                    <div class="tour-parada"></div>
-                  </div>
-                </div>
-              </ol>
-              <ol>
+                <h3>Itinerario</h3>
+                <ol>
+                    <div class="itinerario-container-inicio">
+                        <div class="itinerario-icono-morado"></div>
+                        <div class="itinerario-text">
+                            Inicio
+                            <div class="tour-parada"></div>
+                        </div>
+                    </div>
+                </ol>
+                <ol>
+                    <div class="itinerario-container-paradas">
+                        <div class="itinerario-container-line">
+                            <span class="span-icon">1</span>
+                        </div>
+                        <div class="itinerario-text">
+                            Parada 1
+                            <div class="tour-parada"></div>
+                        </div>
+                    </div>
+                </ol>
+                <ol>
+                    <div class="itinerario-container-paradas">
+                        <div class="itinerario-container-line">
+                            <span class="span-icon">2</span>
+                        </div>
+                        <div class="itinerario-text">
+                            Parada 2
+                            <div class="tour-parada"></div>
+                        </div>
+                    </div>
+                </ol>
                 <div class="itinerario-container-paradas">
-                  <div class="itinerario-container-line">
-                    <span class="span-icon">1</span>
-                  </div>
-                  <div class="itinerario-text">
-                    Parada 1
-                    <div class="tour-parada"></div>
-                  </div>
+                    <div class="itinerario-container-line">
+                        <span class="span-icon">3</span>
+                    </div>
+                    <div class="itinerario-text">
+                        Parada 3
+                        <div class="tour-parada"></div>
+                    </div>
                 </div>
-              </ol>
-              <ol>
-                <div class="itinerario-container-paradas">
-                  <div class="itinerario-container-line">
-                    <span class="span-icon">2</span>
-                  </div>
-                  <div class="itinerario-text">
-                    Parada 2
-                    <div class="tour-parada"></div>
-                  </div>
-                </div>
-              </ol>
-              <div class="itinerario-container-paradas">
-                <div class="itinerario-container-line">
-                  <span class="span-icon">3</span>
-                </div>
-                <div class="itinerario-text">
-                  Parada 3
-                  <div class="tour-parada"></div>
-                </div>
-              </div>
-              <ol>
-                <div class="itinerario-container-paradas">
-                  <div class="">
-                    <span class="span-icon">4</span>
-                  </div>
-                  <div class="itinerario-text">
-                    Parada 4
-                    <div class="tour-parada"></div>
-                  </div>
-                </div>
-              </ol>
+                <ol>
+                    <div class="itinerario-container-paradas">
+                        <div class="">
+                            <span class="span-icon">4</span>
+                        </div>
+                        <div class="itinerario-text">
+                            Parada 4
+                            <div class="tour-parada"></div>
+                        </div>
+                    </div>
+                </ol>
             </ul>
-          </div>
-            <div class="map-iframe-container">
-                <div class="map-container" id="mapa-paradas">
-                  <div id="mapa"></div>
-                </div>
+        </div>
+        <div class="map-iframe-container">
+            <div class="map-container" id="mapa-paradas">
+                <div id="mapa"></div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Section "Te puede interesar" -->
-        <section class="mejores-tours" id="section-tours">
-            <div class="container-title">
-                <h3 class="third-title">También te puede interesar</h3>
-                <a href="#" class="btn-text" id="allTours">Ver Todos</a>
-                <svg class="arrow-next" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                        <path
-                            d="M10.6659 9.00002L4.72175 2.93151C4.45672 2.66108 4.45943 2.22838 4.72716 1.95795L5.78996 0.895151C6.06309 0.624718 6.50119 0.624718 6.77163 0.897856L14.3356 8.51053C14.4708 8.64575 14.5385 8.82153 14.5385 9.00002C14.5385 9.1785 14.4708 9.35428 14.3356 9.4895L6.77163 17.1022C6.50119 17.3753 6.06309 17.3753 5.78996 17.1049L4.72716 16.0421C4.45943 15.7717 4.45672 15.339 4.72175 15.0685L10.6659 9.00002Z"
-                            fill="#FE6142" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <rect width="18" height="18" fill="white" transform="translate(0 18) rotate(-90)" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
-            <div class="cards-section" id="cards-section">
+    <!-- Section "Te puede interesar" -->
+    <section class="mejores-tours" id="section-tours">
+        <div class="container-title">
+            <h3 class="third-title">También te puede interesar</h3>
+            <a href="#" class="btn-text" id="allTours">Ver Todos</a>
+            <svg class="arrow-next" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                    <path
+                        d="M10.6659 9.00002L4.72175 2.93151C4.45672 2.66108 4.45943 2.22838 4.72716 1.95795L5.78996 0.895151C6.06309 0.624718 6.50119 0.624718 6.77163 0.897856L14.3356 8.51053C14.4708 8.64575 14.5385 8.82153 14.5385 9.00002C14.5385 9.1785 14.4708 9.35428 14.3356 9.4895L6.77163 17.1022C6.50119 17.3753 6.06309 17.3753 5.78996 17.1049L4.72716 16.0421C4.45943 15.7717 4.45672 15.339 4.72175 15.0685L10.6659 9.00002Z"
+                        fill="#FE6142" />
+                </g>
+                <defs>
+                    <clipPath id="clip0">
+                        <rect width="18" height="18" fill="white" transform="translate(0 18) rotate(-90)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div class="cards-section" id="cards-section"></div>
+    </section>
 
-            </div>
-        </section>
-
-
-        <div class="modal-container">
-            <div class="navegacion-container fondo-blanco">
-                <div class="navegacion-responsive">
-                    <div class="navegacion-fija">
-                        <div class="navegacion-logo">
-                            <a href="index.html">
-                                <img src="/assets/logos/logo-black.png" alt="Logo Evening" class="img-logo-oscuro" />
-                            </a>
-                        </div>
-                        <div class="navegacion-hamburguesa">
-                            <a href="javascript:void(0);" onclick="ToggleMenu()">
-                                <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
-                                <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="navegacion-desplegable">
-                        <div>
-                            <a href="#">Home</a>
-                        </div>
-                        <div>
-                            <a href="#">Acerca de</a>
-                        </div>
-                        <div>
-                            <a href="#">Contacto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="navegacion-desktop">
+    <div class="modal-container">
+        <div class="navegacion-container fondo-blanco">
+            <div class="navegacion-responsive">
+                <div class="navegacion-fija">
                     <div class="navegacion-logo">
                         <a href="index.html">
                             <img src="/assets/logos/logo-black.png" alt="Logo Evening" class="img-logo-oscuro" />
                         </a>
                     </div>
-                    <div class="navegacion-links">
-                        <div>
-                            <a href="">Home</a>
-                        </div>
-                        <div>
-                            <a href="">Acerca de</a>
-                        </div>
-                        <div>
-                            <a href="">Contacto</a>
-                        </div>
+                    <div class="navegacion-hamburguesa">
+                        <a href="javascript:void(0);" onclick="ToggleMenu()">
+                            <img id="img-hamburguesa" src="/assets/icons/icon-menu.png" alt="Abrir menu" />
+                            <img id="img-cruz" src="/assets/icons/icon-close.png" alt="Cerrar menu" />
+                        </a>
+                    </div>
+                </div>
+                <div class="navegacion-desplegable">
+                    <div>
+                        <a href="#">Home</a>
+                    </div>
+                    <div>
+                        <a href="#">Acerca de</a>
+                    </div>
+                    <div>
+                        <a href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navegacion-desktop">
+                <div class="navegacion-logo">
+                    <a href="index.html">
+                        <img src="/assets/logos/logo-black.png" alt="Logo Evening" class="img-logo-oscuro" />
+                    </a>
+                </div>
+                <div class="navegacion-links">
+                    <div>
+                        <a href="">Home</a>
+                    </div>
+                    <div>
+                        <a href="">Acerca de</a>
+                    </div>
+                    <div>
+                        <a href="">Contacto</a>
                     </div>
                 </div>
             </div>
         </div>
- <!-- modales -->
-      <div id="myModal" class="modal reservas">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h3 class="reservar-tour">Reservar Tour</h3>
-            <img source="01_arg.jpeg" />
-          </div>
-
-          <div class="modal-body">
-            <div class="modal-info">
-              <div class="argentina">Argentina</div>
-
-              <div class="buenos-aires">BUENOS AIRES</div>
-              <div class="sobre-el-tour">Sobre el Tour</div>
-              <div class="tour-info">
-                <p id="fecha-tour">Fecha del Tour:</p>
-                <p>Hora de Salida: 08:00 a.m.</p>
-                <p>Duración: 6 horas</p>
-              </div>
-
-              <div class="datos-reserva">Personas:</div>
-
-              <div class="personas">
-                <div class="firr">
-                  <label for="fname" class="datos-reserva-sub">Adultos:</label>
-                  <input
-                    type="number"
-                    id="fname"
-                    name="fname"
-                    class="adultos-input"
-                  />
-                </div>
-                <div class="firr">
-                  <label for="fname" class="datos-reserva-sub">Infantes:</label>
-                  <input
-                    type="number"
-                    id="fname"
-                    name="fname"
-                    class="spaceAround infantes-input"
-                  />
-                </div>
-              </div>
-
-              <div class="datos-reserva">Lider de la reservacion</div>
-
-              <div class="lider">
-                <div class="firr">
-                  <label for="fname" class="datos-reserva-sub">Nombre</label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    class="spaceAround"
-                  />
-                </div>
-                <div class="firr">
-                  <label for="fname" class="datos-reserva-sub">Apellido:</label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    class="spaceAround"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="divider"></div>
-
-            <div class="modal-orden">
-              <div class="sobre-el-tour">Orden de reservacion</div>
-              <div class="borrar-orden">
-                <div class="argentina">Argentina</div>
-                <div class="buenos-aires">BUENOS AIRES</div>
-                <div class="sobre-el-tour">Sobre el Tour</div>
-                <div class="tour-info">
-                  <p id="fecha-tour1">Fecha del Tour:</p>
-                  <p>Hora de Salida: 08:00 a.m.</p>
-                  <p>Duración: 6 horas</p>
-                </div>
-              </div>
-              <div class="reserva-totales">
-                <div class="adultos-numero" id="adultos-numero2">
-                  Adultos: 0
-                  <div></div>
-                </div>
-                <div></div>
-                <div id="infantes-numero">Infantes: 0</div>
-                <div></div>
-                <div>Total:</div>
-                <div>$5000</div>
-              </div>
-              <button class="reservar-button" id="modal-content-confirmada">
-                RESERVAR
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal reservas">
-        <div class="modal-content-confirmada">
-          <div class="modal-header">
-            <span class="close close-btn">&times;</span>
-
-            <h3 class="reservar-tour">Reserva Confirmada</h3>
-          </div>
-
-          <p class="info-reserva-confirmada">
-            Le llegará a la brevedad el link de pago a su cuenta de email.
-            Recuerde que tiene un vencimeinto de 24 hs. pasado ese plazo si no
-            se realizo el pago la reserva no tendrá válidez.
-          </p>
-
-          <div class="total">
-            <div class="data-tour confirmada">
-              <div class="argentina">Argentina</div>
-              <div class="buenos-aires">BUENOS AIRES</div>
-              <div class="sobre-el-tour">Sobre el Tour</div>
-              <br />
-              <div class="tour-info">
-                <p id="fecha-tour2">Fecha del Tour:</p>
-                <p class="hora-salida">Hora de Salida: 08:00 a.m.</p>
-                <div class="duracion">Duración: 6 horas</div>
-                <p class="adultos-numero" id="adultos-numero">Adultos:</p>
-                <p id="infantes-numero2"></p>
-              </div>
-              <br />
-
-              <div class="total-precio">
-                <p>Total: &ensp;&emsp;&emsp;&emsp;$5000</p>
-              </div>
-            </div>
-
-            <div class="img-cropped"><img src="marginalia.jpg" /></div>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <div class="footer-container">
-          <img
-            src="../assets/logos/logo-white.png"
-            alt="nombre del equipo"
-            class="footer-container-logo"
-          />
-          <p>Evening de CMYK 3 2021</p>
-          <img
-            src="../assets/icons/fec-logo.png"
-            alt="Logo del grupo"
-            class="footer-container-fe"
-          />
-        </div>
-
-        <footer>
-            <div class="footer-container">
-                <img src="../assets/logos/logo-white.png" alt="nombre del equipo" class="footer-container-logo">
-                <p>Evening de CMYK 3 2021</p>
-                <img src="../assets/icons/fec-logo.png" alt="Logo del grupo" class="footer-container-fe">
-            </div>
-        </footer>
     </div>
+    <!-- modales -->
+    <div id="myModal" class="modal reservas">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h3 class="reservar-tour">Reservar Tour</h3>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="argentina">Argentina</div>
+
+                    <div class="buenos-aires">BUENOS AIRES</div>
+                    <div class="sobre-el-tour">Sobre el Tour</div>
+                    <div class="tour-info">
+                        <p id="fecha-tour">Fecha del Tour:</p>
+                        <p>Hora de Salida: 08:00 a.m.</p>
+                        <p>Duración: 6 horas</p>
+                    </div>
+
+                    <div class="datos-reserva">Personas:</div>
+
+                    <div class="personas">
+                        <div class="firr">
+                            <label for="fname" class="datos-reserva-sub">Adultos:</label>
+                            <input type="number" id="fname" name="fname" class="adultos-input" />
+                        </div>
+                        <div class="firr">
+                            <label for="fname" class="datos-reserva-sub">Infantes:</label>
+                            <input type="number" id="fname" name="fname" class="spaceAround infantes-input" />
+                        </div>
+                    </div>
+
+                    <div class="datos-reserva">Lider de la reservacion</div>
+
+                    <div class="lider">
+                        <div class="firr">
+                            <label for="fname" class="datos-reserva-sub">Nombre</label>
+                            <input type="text" id="fname" name="fname" class="spaceAround" />
+                        </div>
+                        <div class="firr">
+                            <label for="fname" class="datos-reserva-sub">Apellido:</label>
+                            <input type="text" id="fname" name="fname" class="spaceAround" />
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="modal-orden">
+                    <div class="sobre-el-tour">Orden de reservacion</div>
+                    <div class="borrar-orden">
+                        <div class="argentina">Argentina</div>
+                        <div class="buenos-aires">BUENOS AIRES</div>
+                        <div class="sobre-el-tour">Sobre el Tour</div>
+                        <div class="tour-info">
+                            <p id="fecha-tour1">Fecha del Tour:</p>
+                            <p>Hora de Salida: 08:00 a.m.</p>
+                            <p>Duración: 6 horas</p>
+                        </div>
+                    </div>
+                    <div class="reserva-totales">
+                        <div class="adultos-numero" id="adultos-numero2">
+                            Adultos: 0
+                            <div></div>
+                        </div>
+                        <div></div>
+                        <div id="infantes-numero">Infantes: 0</div>
+                        <div></div>
+                        <div>Total:</div>
+                        <div>$5000</div>
+                    </div>
+                    <button class="reservar-button" id="modal-content-confirmada">
+                        RESERVAR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal reservas">
+        <div class="modal-content-confirmada">
+            <div class="modal-header-confirmada">
+                <span class="close close-btn">&times;</span>
+
+                <h3 class="reservar-tour-reserva">
+                    Reserva Confirmada
+                </h3>
+            </div>
+
+            <p class="info-reserva-confirmada">
+                Le llegará a la brevedad el link de pago a su cuenta de email.
+                Recuerde que tiene un vencimeinto de 24 hs. pasado ese plazo si
+                no se realizo el pago la reserva no tendrá válidez.
+            </p>
+
+            <div class="total">
+                <div class="data-tour confirmada">
+                    <div class="argentina">Argentina</div>
+                    <div class="buenos-aires">BUENOS AIRES</div>
+                    <div class="sobre-el-tour">Sobre el Tour</div>
+                    <br />
+                    <div class="tour-info">
+                        <p id="fecha-tour2">Fecha del Tour:</p>
+                        <p class="hora-salida">Hora de Salida: 08:00 a.m.</p>
+                        <div class="duracion">Duración: 6 horas</div>
+                        <p class="adultos-numero" id="adultos-numero">
+                            Adultos:
+                        </p>
+                        <p id="infantes-numero2"></p>
+                    </div>
+                    <br />
+
+                    <div class="total-precio">
+                        <p>Total: &ensp;&emsp;&emsp;&emsp;$5000</p>
+                    </div>
+                </div>
+
+                <div class="img-cropped"><img src="marginalia.jpg" /></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <img src="../assets/logos/logo-white.png" alt="nombre del equipo" class="footer-container-logo" />
+            <p>Evening de CMYK 3 2021</p>
+            <img src="../assets/icons/fec-logo.png" alt="Logo del grupo" class="footer-container-fe" />
+        </div>
+    </footer>
 
     <script src="/js/map.js"></script>
     <script src="./js/app.js" defer></script>
-    <script  src="./js/details.js"></script>
+    <script src="./js/details.js"></script>
     <script src="./js/modal.js"></script>
     <script src="/js/nav.js"></script>
 
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLZnu8WwhH4A0RrXCqk9JIcEuZ2k2tP0U&callback=initMap&libraries=&v=weekly"
-    async
-  ></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLZnu8WwhH4A0RrXCqk9JIcEuZ2k2tP0U&callback=initMap&libraries=&v=weekly"
+        async></script>
 </body>
 
 </html>
-
-
-
-
-

@@ -1,15 +1,17 @@
-const apiURL = '../data/tour_destinos.json';
+/** @format */
+
+const apiURL = "../data/tour_destinos.json";
 
 let resultsArray = [];
 
-const cardsSection = document.querySelector('#cards-section');
-const allTours = document.querySelector('#allTours');
-const bestTours = document.querySelector('.third-title');
-const arg = document.querySelector('#tours-arg');
-const mex = document.querySelector('#tours-mex');
-const per = document.querySelector('#tours-per');
-const chi = document.querySelector('#tours-chi');
-const ita = document.querySelector('#tours-ita');
+const cardsSection = document.querySelector("#cards-section");
+const allTours = document.querySelector("#allTours");
+const bestTours = document.querySelector(".third-title");
+const arg = document.querySelector("#tours-arg");
+const mex = document.querySelector("#tours-mex");
+const per = document.querySelector("#tours-per");
+const chi = document.querySelector("#tours-chi");
+const ita = document.querySelector("#tours-ita");
 
 const mobile = 3;
 const tablet = 4;
@@ -17,63 +19,63 @@ const desktop = 6;
 
 // Obtener info del JSON
 async function getInfoTours() {
-  try {
-    const response = await fetch(apiURL);
-    resultsArray = await response.json();
-    localStorage.setItem('data', JSON.stringify(resultsArray));
+    try {
+        const response = await fetch(apiURL);
+        resultsArray = await response.json();
+        localStorage.setItem("data", JSON.stringify(resultsArray));
 
-    displayCards();
-  } catch (error) {
-    console.log(error);
-  }
+        displayCards();
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 let all = false;
 function displayCards() {
-  let screen;
-  const sizeVW = window.innerWidth;
-  console.log(sizeVW);
-  if (sizeVW < 769) {
-    screen = mobile;
-  } else if ((769 <= sizeVW) & (sizeVW < 1137)) {
-    screen = tablet;
-  } else if (1137 <= sizeVW) {
-    screen = desktop;
-  }
-  console.log(screen);
-
-  const nArray = [];
-
-  if (all) {
-    nArray.push(...resultsArray);
-    console.log(nArray);
-    console.log(resultsArray);
-  } else {
-    while (nArray.length < screen) {
-      const randomI = Math.floor(Math.random() * resultsArray.length);
-      if (!nArray.includes(randomI)) {
-        nArray.push(randomI);
-      }
+    let screen;
+    const sizeVW = window.innerWidth;
+    console.log(sizeVW);
+    if (sizeVW < 769) {
+        screen = mobile;
+    } else if ((769 <= sizeVW) & (sizeVW < 1137)) {
+        screen = tablet;
+    } else if (1137 <= sizeVW) {
+        screen = desktop;
     }
-  }
-  console.log(nArray);
+    console.log(screen);
 
-  let num = 0;
-  cardsSection.innerHTML = '';
-  for (let value of nArray) {
-    // const randomI = Math.floor(Math.random() * resultsArray.length);
-    // console.log(randomI);
-    // console.log(resultsArray);
-    const city = resultsArray[value].city.name;
-    const country = resultsArray[value].city.country;
-    const tourName = resultsArray[value].tourName;
-    const price = resultsArray[value].priceUsd;
-    const imgFile = resultsArray[value].img;
-    const tourID = resultsArray[value].id;
+    const nArray = [];
 
-    console.log(tourID);
+    if (all) {
+        nArray.push(...resultsArray);
+        console.log(nArray);
+        console.log(resultsArray);
+    } else {
+        while (nArray.length < screen) {
+            const randomI = Math.floor(Math.random() * resultsArray.length);
+            if (!nArray.includes(randomI)) {
+                nArray.push(randomI);
+            }
+        }
+    }
+    console.log(nArray);
 
-    cardsSection.innerHTML += `
+    let num = 0;
+    cardsSection.innerHTML = "";
+    for (let value of nArray) {
+        // const randomI = Math.floor(Math.random() * resultsArray.length);
+        // console.log(randomI);
+        // console.log(resultsArray);
+        const city = resultsArray[value].city.name;
+        const country = resultsArray[value].city.country;
+        const tourName = resultsArray[value].tourName;
+        const price = resultsArray[value].priceUsd;
+        const imgFile = resultsArray[value].img;
+        const tourID = resultsArray[value].id;
+
+        console.log(tourID);
+
+        cardsSection.innerHTML += `
       <div class="tour-card tour-card-${num + 1}" data-tourID="${tourID}"
         style="background:#fff url(${imgFile}) no-repeat center;">
         <div class="card-content">
@@ -88,20 +90,20 @@ function displayCards() {
         </div>
       </div>
     `;
-    num++;
-  }
+        num++;
+    }
 }
 
 function displayAllCards(e) {
-  e.preventDefault();
-  bestTours.innerText = 'Todos nuestros tours';
-  allTours.classList.remove('btn-text');
-  allTours.classList.add('invisible');
+    e.preventDefault();
+    bestTours.innerText = "Todos nuestros tours";
+    allTours.classList.remove("btn-text");
+    allTours.classList.add("invisible");
 
-  cardsSection.innerHTML = '';
-  console.log(resultsArray);
-  resultsArray.forEach((tour, i) => {
-    cardsSection.innerHTML += `
+    cardsSection.innerHTML = "";
+    console.log(resultsArray);
+    resultsArray.forEach((tour, i) => {
+        cardsSection.innerHTML += `
       <div class="tour-card tour-card-${i + 1}" data-tourID="${tour.id}"
         style="background:#fff url(${tour.img}) no-repeat center;">
         <div class="card-content">
@@ -116,7 +118,7 @@ function displayAllCards(e) {
         </div>
       </div>
     `;
-  });
+    });
 }
 
 // function displayCardsByCountry(pais) {
@@ -152,8 +154,9 @@ function displayAllCards(e) {
 
 //   });
 // }
+allTours.addEventListener("click", displayAllCards);
 /*
-allTours.addEventListener('click', displayAllCards);
+
 window.addEventListener('resize', displayCards);*/
 // arg.addEventListener('click', function(){
 //   displayCardsByCountry('Argentina')
@@ -253,21 +256,19 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 */
 
-document
-  .querySelector(".input-date-calendar")
-  .addEventListener("input", (event) => {
+document.querySelector(".input-date-calendar").addEventListener("input", (event) => {
     document.getElementById("fecha-tour").innerHTML += event.target.value;
     document.getElementById("fecha-tour1").innerHTML += event.target.value;
     document.getElementById("fecha-tour2").innerHTML += event.target.value;
-  });
+});
 
 document
-  .querySelector(".input-date-calendar1")
-  .addEventListener("input", (event) => {
-    document.getElementById("fecha-tour").innerHTML += event.target.value;
-    document.getElementById("fecha-tour1").innerHTML += event.target.value;
-    document.getElementById("fecha-tour2").innerHTML += event.target.value;
-  });
+    .querySelector(".input-date-calendar1")
+    .addEventListener("input", (event) => {
+        document.getElementById("fecha-tour").innerHTML += event.target.value;
+        document.getElementById("fecha-tour1").innerHTML += event.target.value;
+        document.getElementById("fecha-tour2").innerHTML += event.target.value;
+    });
 
 /*
 document.querySelector(".adultos-input").addEventListener("input", (event) => {
@@ -280,32 +281,32 @@ document.querySelector(".adultos-input").addEventListener("input", (event) => {
 /**/
 
 document.querySelector(".adultos-input").addEventListener("input", (event) => {
-  document.getElementById("adultos-numero").innerText =
-    "Adultos:  " + +event.target.value;
-  document.getElementById("adultos-numero2").innerText =
-    "Adultos: " + event.target.value;
+    document.getElementById("adultos-numero").innerText =
+        "Adultos:  " + +event.target.value;
+    document.getElementById("adultos-numero2").innerText =
+        "Adultos: " + event.target.value;
 
-  console.log(event.target.value);
+    console.log(event.target.value);
 });
 
 document.querySelector(".infantes-input").addEventListener("input", (event) => {
-  document.getElementById("infantes-numero").innerText =
-    "infantes:  " + +event.target.value;
-  document.getElementById("infantes-numero2").innerText =
-    "Infantes: " + event.target.value;
+    document.getElementById("infantes-numero").innerText =
+        "infantes:  " + +event.target.value;
+    document.getElementById("infantes-numero2").innerText =
+        "Infantes: " + event.target.value;
 
-  console.log(event.target.value);
+    console.log(event.target.value);
 });
 
-
 for (let i = 0; i < 5; i++) {
-  document.querySelectorAll(".argentina")[
-    i
-  ].innerText = document.querySelectorAll(".city-country")[0].innerText;
-
-  document.querySelectorAll(".buenos-aires")[
-    i
-  ].innerText = document.querySelectorAll(".city-name")[0].innerText;
+    const argentina = document.querySelectorAll(".argentina")[i];
+    if (argentina) {
+        argentina.innerText = document.querySelectorAll(
+            ".city-country"
+        )[0].innerText;
+    }
+    const buenosAires = document.querySelectorAll(".buenos-aires")[i];
+    if (buenosAires) {
+        buenosAires.innerText = document.querySelectorAll(".city-name")[0].innerText;
+    }
 }
-
-
